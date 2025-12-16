@@ -1,0 +1,25 @@
+{
+  "name": "webscraper",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/main.ts",
+  "scripts": {
+    "scrape": "ts-node src/main.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "jest": "^30.2.0",
+    "puppeteer": "^24.32.1",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.10.2",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2"
+  }
+}

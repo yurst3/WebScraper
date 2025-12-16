@@ -1,0 +1,48 @@
+{
+    "parse": {
+        "title": "Regions",
+        "pageid": 5597,
+        "revid": 267594,
+        "text": {
+            "*": "<div>example html</div>"
+        },
+        "langlinks": [],
+        "categories": [],
+        "links": [],
+        "templates": [
+            {
+                "ns": 10,
+                "exists": "",
+                "*": "Template:Pic"
+            },
+            {
+                "ns": 10,
+                "exists": "",
+                "*": "Template:Pics"
+            },
+            {
+                "ns": 10,
+                "exists": "",
+                "*": "Template:Pic1"
+            }
+        ],
+        "images": [
+            "Regions_Map.jpg"
+        ],
+        "externallinks": [],
+        "sections": [],
+        "parsewarnings": [],
+        "displaytitle": "Regions",
+        "iwlinks": [],
+        "properties": [
+            {
+                "name": "smw-semanticdata-status",
+                "*": ""
+            },
+            {
+                "name": "noindex",
+                "*": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,955 @@
+{
+    "printrequests": [
+        {
+            "label": "",
+            "key": "",
+            "redi": "",
+            "typeid": "_wpg",
+            "mode": 2,
+            "format": false
+        },
+        {
+            "label": "pageid",
+            "key": "Has_pageid",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "name",
+            "key": "Has_name",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "coordinates",
+            "key": "Has_coordinates",
+            "redi": "",
+            "typeid": "_geo",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "region",
+            "key": "Located_in_region",
+            "redi": "",
+            "typeid": "_wpg",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "quality",
+            "key": "Has_user_rating",
+            "redi": "",
+            "typeid": "_num",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "rating",
+            "key": "Has_rating",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "timeRating",
+            "key": "Has_time_rating",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "kmlUrl",
+            "key": "Has_KML_file",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "technicalRating",
+            "key": "Has_technical_rating",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "waterRating",
+            "key": "Has_water_rating",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "riskRating",
+            "key": "Has_extra_risk_rating",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "permits",
+            "key": "Requires_permits",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "rappelCount",
+            "key": "Has_info_rappels",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "rappelLongest",
+            "key": "Has_longest_rappel",
+            "redi": "",
+            "typeid": "_qty",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "months",
+            "key": "Has_best_month",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "shuttle",
+            "key": "Has_shuttle_length",
+            "redi": "",
+            "typeid": "_qty",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "vehicle",
+            "key": "Has_vehicle_type",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "minTime",
+            "key": "Has_fastest_typical_time",
+            "redi": "",
+            "typeid": "_qty",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "maxTime",
+            "key": "Has_slowest_typical_time",
+            "redi": "",
+            "typeid": "_qty",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "hike",
+            "key": "Has_length_of_hike",
+            "redi": "",
+            "typeid": "_qty",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "url",
+            "key": "Has_url",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        }
+    ],
+    "results": {
+        "...must be on dope": {
+            "printouts": {
+                "pageid": [
+                    "59104"
+                ],
+                "name": [
+                    "...must be on dope"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 37.623,
+                        "lon": -110.8964
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Waterpocket Fold",
+                        "fullurl": "https://ropewiki.com/Waterpocket_Fold",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    5
+                ],
+                "rating": [],
+                "timeRating": [],
+                "kmlUrl": [],
+                "technicalRating": [],
+                "waterRating": [],
+                "riskRating": [],
+                "permits": [
+                    "Yes"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [],
+                "months": [],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [],
+                "maxTime": [],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/...must_be_on_dope"
+                ]
+            },
+            "fulltext": "...must be on dope",
+            "fullurl": "https://ropewiki.com/...must_be_on_dope",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "12 Mile Delta": {
+            "printouts": {
+                "pageid": [
+                    "25739"
+                ],
+                "name": [
+                    "12 Mile Delta"
+                ],
+                "coordinates": [
+                    {
+                        "lat": -45.0684,
+                        "lon": 168.5372
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Otago",
+                        "fullurl": "https://ropewiki.com/Otago",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    4
+                ],
+                "rating": [
+                    "3C I  (v2a3 II)"
+                ],
+                "timeRating": [
+                    "I"
+                ],
+                "kmlUrl": [
+                    "https://ropewiki.com/images/1/18/12_Mile_Delta.kml"
+                ],
+                "technicalRating": [
+                    "3"
+                ],
+                "waterRating": [
+                    "C"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [
+                    "2r"
+                ],
+                "rappelLongest": [
+                    {
+                        "value": 20,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [
+                    "Nov",
+                    "Dec",
+                    "Jan",
+                    "Feb",
+                    "Mar"
+                ],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [],
+                "maxTime": [],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/12_Mile_Delta"
+                ]
+            },
+            "fulltext": "12 Mile Delta",
+            "fullurl": "https://ropewiki.com/12_Mile_Delta",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "12.2-Mile Wash": {
+            "printouts": {
+                "pageid": [
+                    "784"
+                ],
+                "name": [
+                    "12.2-Mile Wash"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 36.7202,
+                        "lon": -111.6951
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Grand Canyon",
+                        "fullurl": "https://ropewiki.com/Grand_Canyon",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    1.7
+                ],
+                "rating": [
+                    "3A II  (<i>v3a1&nbsp;II</i>)"
+                ],
+                "timeRating": [
+                    "II"
+                ],
+                "kmlUrl": [],
+                "technicalRating": [
+                    "3"
+                ],
+                "waterRating": [
+                    "A"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "Yes"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [
+                    {
+                        "value": 100,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [
+                    "Sep",
+                    "Oct",
+                    "Nov",
+                    "Dec",
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May"
+                ],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [
+                    {
+                        "value": 4,
+                        "unit": "h"
+                    }
+                ],
+                "maxTime": [
+                    {
+                        "value": 6,
+                        "unit": "h"
+                    }
+                ],
+                "hike": [
+                    {
+                        "value": 9,
+                        "unit": "mi"
+                    }
+                ],
+                "url": [
+                    "https://ropewiki.com/12.2-Mile_Wash"
+                ]
+            },
+            "fulltext": "12.2-Mile Wash",
+            "fullurl": "https://ropewiki.com/12.2-Mile_Wash",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "14 Juillet": {
+            "printouts": {
+                "pageid": [
+                    "13957"
+                ],
+                "name": [
+                    "14 Juillet"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 43.1774,
+                        "lon": 5.5712
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Bouches-du-Rhone",
+                        "fullurl": "https://ropewiki.com/Bouches-du-Rhone",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    2.6
+                ],
+                "rating": [
+                    "<i>4A&nbsp;I</i>  (v4a1 VI)"
+                ],
+                "timeRating": [
+                    "I"
+                ],
+                "kmlUrl": [
+                    "https://ropewiki.com/luca/rwr?gpx%3Doff&filename%3D14_Juillet&kmlnfx&kmlx%3Dhttp://descente-canyon.com/canyoning/canyon-description/22332&ext%3D.kml"
+                ],
+                "technicalRating": [
+                    "4"
+                ],
+                "waterRating": [
+                    "A"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [
+                    {
+                        "value": 229.6588,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [],
+                "shuttle": [
+                    {
+                        "value": 0,
+                        "unit": "minutes"
+                    }
+                ],
+                "vehicle": [],
+                "minTime": [
+                    {
+                        "value": 2,
+                        "unit": "h"
+                    }
+                ],
+                "maxTime": [
+                    {
+                        "value": 2.25,
+                        "unit": "h"
+                    }
+                ],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/14_Juillet"
+                ]
+            },
+            "fulltext": "14 Juillet",
+            "fullurl": "https://ropewiki.com/14_Juillet",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "140 Mile": {
+            "printouts": {
+                "pageid": [
+                    "100979"
+                ],
+                "name": [
+                    "140 Mile"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 36.3671,
+                        "lon": -112.5452
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Grand Canyon",
+                        "fullurl": "https://ropewiki.com/Grand_Canyon",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    0
+                ],
+                "rating": [
+                    "3B   (<i>v3a2</i>)"
+                ],
+                "timeRating": [],
+                "kmlUrl": [],
+                "technicalRating": [
+                    "3"
+                ],
+                "waterRating": [
+                    "B"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [],
+                "months": [],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [],
+                "maxTime": [],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/140_Mile"
+                ]
+            },
+            "fulltext": "140 Mile",
+            "fullurl": "https://ropewiki.com/140_Mile",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "150 Mile Canyon": {
+            "printouts": {
+                "pageid": [
+                    "791"
+                ],
+                "name": [
+                    "150 Mile Canyon"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 36.3784,
+                        "lon": -112.7713
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Grand Canyon",
+                        "fullurl": "https://ropewiki.com/Grand_Canyon",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    5
+                ],
+                "rating": [
+                    "3B VI  (<i>v3a2&nbsp;VI</i>)"
+                ],
+                "timeRating": [
+                    "VI"
+                ],
+                "kmlUrl": [
+                    "https://ropewiki.com/images/6/6d/150_Mile_Canyon.kml"
+                ],
+                "technicalRating": [
+                    "3"
+                ],
+                "waterRating": [
+                    "B"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "Yes"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [
+                    {
+                        "value": 50,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul",
+                    "Aug",
+                    "Sep",
+                    "Oct",
+                    "Nov"
+                ],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [
+                    {
+                        "value": 48,
+                        "unit": "h"
+                    }
+                ],
+                "maxTime": [
+                    {
+                        "value": 96,
+                        "unit": "h"
+                    }
+                ],
+                "hike": [
+                    {
+                        "value": 13.5,
+                        "unit": "mi"
+                    }
+                ],
+                "url": [
+                    "https://ropewiki.com/150_Mile_Canyon"
+                ]
+            },
+            "fulltext": "150 Mile Canyon",
+            "fullurl": "https://ropewiki.com/150_Mile_Canyon",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "1601 SE Canyon": {
+            "printouts": {
+                "pageid": [
+                    "11460"
+                ],
+                "name": [
+                    "1601 SE Canyon"
+                ],
+                "coordinates": [
+                    {
+                        "lat": -44.4866,
+                        "lon": 168.784
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Westland",
+                        "fullurl": "https://ropewiki.com/Westland",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    0
+                ],
+                "rating": [],
+                "timeRating": [],
+                "kmlUrl": [],
+                "technicalRating": [],
+                "waterRating": [],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [],
+                "months": [],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [],
+                "maxTime": [],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/1601_SE_Canyon"
+                ]
+            },
+            "fulltext": "1601 SE Canyon",
+            "fullurl": "https://ropewiki.com/1601_SE_Canyon",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "2.8-Mile Wash": {
+            "printouts": {
+                "pageid": [
+                    "779"
+                ],
+                "name": [
+                    "2.8-Mile Wash"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 36.8442,
+                        "lon": -111.6189
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Grand Canyon",
+                        "fullurl": "https://ropewiki.com/Grand_Canyon",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    2.5
+                ],
+                "rating": [
+                    "3A I  (<i>v3a1&nbsp;I</i>)"
+                ],
+                "timeRating": [
+                    "I"
+                ],
+                "kmlUrl": [],
+                "technicalRating": [
+                    "3"
+                ],
+                "waterRating": [
+                    "A"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [
+                    "1r"
+                ],
+                "rappelLongest": [
+                    {
+                        "value": 160,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [
+                    "Sep",
+                    "Oct",
+                    "Nov",
+                    "Dec",
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May"
+                ],
+                "shuttle": [
+                    {
+                        "value": 0.5,
+                        "unit": "minutes"
+                    }
+                ],
+                "vehicle": [
+                    "Passenger"
+                ],
+                "minTime": [
+                    {
+                        "value": 2,
+                        "unit": "h"
+                    }
+                ],
+                "maxTime": [
+                    {
+                        "value": 3,
+                        "unit": "h"
+                    }
+                ],
+                "hike": [
+                    {
+                        "value": 3.7,
+                        "unit": "mi"
+                    }
+                ],
+                "url": [
+                    "https://ropewiki.com/2.8-Mile_Wash"
+                ]
+            },
+            "fulltext": "2.8-Mile Wash",
+            "fullurl": "https://ropewiki.com/2.8-Mile_Wash",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "20000 Steps": {
+            "printouts": {
+                "pageid": [
+                    "40726"
+                ],
+                "name": [
+                    "20000 Steps"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 35.7884,
+                        "lon": -106.1766
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "New Mexico",
+                        "fullurl": "https://ropewiki.com/New_Mexico",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    1
+                ],
+                "rating": [
+                    "3A III  (<i>v3a1&nbsp;III</i>)"
+                ],
+                "timeRating": [
+                    "III"
+                ],
+                "kmlUrl": [],
+                "technicalRating": [
+                    "3"
+                ],
+                "waterRating": [
+                    "A"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [
+                    "1-2r"
+                ],
+                "rappelLongest": [
+                    {
+                        "value": 85,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [
+                    "Dec",
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul",
+                    "Aug",
+                    "Sep",
+                    "Oct",
+                    "Nov"
+                ],
+                "shuttle": [
+                    {
+                        "value": 0,
+                        "unit": "minutes"
+                    }
+                ],
+                "vehicle": [
+                    "High Clearance"
+                ],
+                "minTime": [
+                    {
+                        "value": 3,
+                        "unit": "h"
+                    }
+                ],
+                "maxTime": [
+                    {
+                        "value": 5,
+                        "unit": "h"
+                    }
+                ],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/20000_Steps"
+                ]
+            },
+            "fulltext": "20000 Steps",
+            "fullurl": "https://ropewiki.com/20000_Steps",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        },
+        "209 Mile Canyon": {
+            "printouts": {
+                "pageid": [
+                    "792"
+                ],
+                "name": [
+                    "209 Mile Canyon"
+                ],
+                "coordinates": [
+                    {
+                        "lat": 35.9597,
+                        "lon": -113.4049
+                    }
+                ],
+                "region": [
+                    {
+                        "fulltext": "Grand Canyon",
+                        "fullurl": "https://ropewiki.com/Grand_Canyon",
+                        "namespace": 0,
+                        "exists": "1",
+                        "displaytitle": ""
+                    }
+                ],
+                "quality": [
+                    0
+                ],
+                "rating": [
+                    "2A   (<i>v1a1</i>)"
+                ],
+                "timeRating": [],
+                "kmlUrl": [],
+                "technicalRating": [
+                    "2"
+                ],
+                "waterRating": [
+                    "A"
+                ],
+                "riskRating": [],
+                "permits": [
+                    "No"
+                ],
+                "rappelCount": [],
+                "rappelLongest": [
+                    {
+                        "value": 0,
+                        "unit": "ft"
+                    }
+                ],
+                "months": [],
+                "shuttle": [],
+                "vehicle": [],
+                "minTime": [],
+                "maxTime": [],
+                "hike": [],
+                "url": [
+                    "https://ropewiki.com/209_Mile_Canyon"
+                ]
+            },
+            "fulltext": "209 Mile Canyon",
+            "fullurl": "https://ropewiki.com/209_Mile_Canyon",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": ""
+        }
+    },
+    "serializer": "SMW\\Serializers\\QueryResultSerializer",
+    "version": 2,
+    "rows": 10
+}

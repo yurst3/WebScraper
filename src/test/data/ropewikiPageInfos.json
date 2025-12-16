@@ -1,0 +1,321 @@
+[
+    {
+        "pageid": "59104",
+        "name": "...must be on dope",
+        "coordinates": {
+            "lat": 37.623,
+            "lon": -110.8964
+        },
+        "region": "Waterpocket Fold",
+        "quality": 5,
+        "permits": "Yes",
+        "months": [],
+        "url": "https://ropewiki.com/...must_be_on_dope",
+        "isValid": true
+    },
+    {
+        "pageid": "25739",
+        "name": "12 Mile Delta",
+        "coordinates": {
+            "lat": -45.0684,
+            "lon": 168.5372
+        },
+        "region": "Otago",
+        "quality": 4,
+        "rating": "3C I  (v2a3 II)",
+        "timeRating": "I",
+        "kmlUrl": "https://ropewiki.com/images/1/18/12_Mile_Delta.kml",
+        "technicalRating": "3",
+        "waterRating": "C",
+        "permits": "No",
+        "rappelCount": "2r",
+        "rappelLongest": {
+            "value": 20,
+            "unit": "ft"
+        },
+        "months": [
+            "Nov",
+            "Dec",
+            "Jan",
+            "Feb",
+            "Mar"
+        ],
+        "url": "https://ropewiki.com/12_Mile_Delta",
+        "isValid": true
+    },
+    {
+        "pageid": "784",
+        "name": "12.2-Mile Wash",
+        "coordinates": {
+            "lat": 36.7202,
+            "lon": -111.6951
+        },
+        "region": "Grand Canyon",
+        "quality": 1.7,
+        "rating": "3A II  (<i>v3a1&nbsp;II</i>)",
+        "timeRating": "II",
+        "technicalRating": "3",
+        "waterRating": "A",
+        "permits": "Yes",
+        "rappelLongest": {
+            "value": 100,
+            "unit": "ft"
+        },
+        "months": [
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May"
+        ],
+        "minTime": {
+            "value": 4,
+            "unit": "h"
+        },
+        "maxTime": {
+            "value": 6,
+            "unit": "h"
+        },
+        "hike": {
+            "value": 9,
+            "unit": "mi"
+        },
+        "url": "https://ropewiki.com/12.2-Mile_Wash",
+        "isValid": true
+    },
+    {
+        "pageid": "13957",
+        "name": "14 Juillet",
+        "coordinates": {
+            "lat": 43.1774,
+            "lon": 5.5712
+        },
+        "region": "Bouches-du-Rhone",
+        "quality": 2.6,
+        "rating": "<i>4A&nbsp;I</i>  (v4a1 VI)",
+        "timeRating": "I",
+        "kmlUrl": "https://ropewiki.com/luca/rwr?gpx%3Doff&filename%3D14_Juillet&kmlnfx&kmlx%3Dhttp://descente-canyon.com/canyoning/canyon-description/22332&ext%3D.kml",
+        "technicalRating": "4",
+        "waterRating": "A",
+        "permits": "No",
+        "rappelLongest": {
+            "value": 229.6588,
+            "unit": "ft"
+        },
+        "months": [],
+        "shuttle": {
+            "value": 0,
+            "unit": "minutes"
+        },
+        "minTime": {
+            "value": 2,
+            "unit": "h"
+        },
+        "maxTime": {
+            "value": 2.25,
+            "unit": "h"
+        },
+        "url": "https://ropewiki.com/14_Juillet",
+        "isValid": true
+    },
+    {
+        "pageid": "100979",
+        "name": "140 Mile",
+        "coordinates": {
+            "lat": 36.3671,
+            "lon": -112.5452
+        },
+        "region": "Grand Canyon",
+        "quality": 0,
+        "rating": "3B   (<i>v3a2</i>)",
+        "technicalRating": "3",
+        "waterRating": "B",
+        "permits": "No",
+        "months": [],
+        "url": "https://ropewiki.com/140_Mile",
+        "isValid": true
+    },
+    {
+        "pageid": "791",
+        "name": "150 Mile Canyon",
+        "coordinates": {
+            "lat": 36.3784,
+            "lon": -112.7713
+        },
+        "region": "Grand Canyon",
+        "quality": 5,
+        "rating": "3B VI  (<i>v3a2&nbsp;VI</i>)",
+        "timeRating": "VI",
+        "kmlUrl": "https://ropewiki.com/images/6/6d/150_Mile_Canyon.kml",
+        "technicalRating": "3",
+        "waterRating": "B",
+        "permits": "Yes",
+        "rappelLongest": {
+            "value": 50,
+            "unit": "ft"
+        },
+        "months": [
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov"
+        ],
+        "minTime": {
+            "value": 48,
+            "unit": "h"
+        },
+        "maxTime": {
+            "value": 96,
+            "unit": "h"
+        },
+        "hike": {
+            "value": 13.5,
+            "unit": "mi"
+        },
+        "url": "https://ropewiki.com/150_Mile_Canyon",
+        "isValid": true
+    },
+    {
+        "pageid": "11460",
+        "name": "1601 SE Canyon",
+        "coordinates": {
+            "lat": -44.4866,
+            "lon": 168.784
+        },
+        "region": "Westland",
+        "quality": 0,
+        "permits": "No",
+        "months": [],
+        "url": "https://ropewiki.com/1601_SE_Canyon",
+        "isValid": true
+    },
+    {
+        "pageid": "779",
+        "name": "2.8-Mile Wash",
+        "coordinates": {
+            "lat": 36.8442,
+            "lon": -111.6189
+        },
+        "region": "Grand Canyon",
+        "quality": 2.5,
+        "rating": "3A I  (<i>v3a1&nbsp;I</i>)",
+        "timeRating": "I",
+        "technicalRating": "3",
+        "waterRating": "A",
+        "permits": "No",
+        "rappelCount": "1r",
+        "rappelLongest": {
+            "value": 160,
+            "unit": "ft"
+        },
+        "months": [
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May"
+        ],
+        "shuttle": {
+            "value": 0.5,
+            "unit": "minutes"
+        },
+        "vehicle": "Passenger",
+        "minTime": {
+            "value": 2,
+            "unit": "h"
+        },
+        "maxTime": {
+            "value": 3,
+            "unit": "h"
+        },
+        "hike": {
+            "value": 3.7,
+            "unit": "mi"
+        },
+        "url": "https://ropewiki.com/2.8-Mile_Wash",
+        "isValid": true
+    },
+    {
+        "pageid": "40726",
+        "name": "20000 Steps",
+        "coordinates": {
+            "lat": 35.7884,
+            "lon": -106.1766
+        },
+        "region": "New Mexico",
+        "quality": 1,
+        "rating": "3A III  (<i>v3a1&nbsp;III</i>)",
+        "timeRating": "III",
+        "technicalRating": "3",
+        "waterRating": "A",
+        "permits": "No",
+        "rappelCount": "1-2r",
+        "rappelLongest": {
+            "value": 85,
+            "unit": "ft"
+        },
+        "months": [
+            "Dec",
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov"
+        ],
+        "shuttle": {
+            "value": 0,
+            "unit": "minutes"
+        },
+        "vehicle": "High Clearance",
+        "minTime": {
+            "value": 3,
+            "unit": "h"
+        },
+        "maxTime": {
+            "value": 5,
+            "unit": "h"
+        },
+        "url": "https://ropewiki.com/20000_Steps",
+        "isValid": true
+    },
+    {
+        "pageid": "792",
+        "name": "209 Mile Canyon",
+        "coordinates": {
+            "lat": 35.9597,
+            "lon": -113.4049
+        },
+        "region": "Grand Canyon",
+        "quality": 0,
+        "rating": "2A   (<i>v1a1</i>)",
+        "technicalRating": "2",
+        "waterRating": "A",
+        "permits": "No",
+        "rappelLongest": {
+            "value": 0,
+            "unit": "ft"
+        },
+        "months": [],
+        "url": "https://ropewiki.com/209_Mile_Canyon",
+        "isValid": true
+    }
+]

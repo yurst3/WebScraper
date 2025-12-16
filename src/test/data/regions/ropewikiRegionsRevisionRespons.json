@@ -1,0 +1,21 @@
+{
+    "batchcomplete": "",
+    "query": {
+        "pages": {
+            "5597": {
+                "pageid": 5597,
+                "ns": 0,
+                "title": "Regions",
+                "revisions": [
+                    {
+                        "revid": 267594,
+                        "parentid": 260819,
+                        "user": "Coops",
+                        "timestamp": "2023-09-08T17:51:54Z",
+                        "comment": ""
+                    }
+                ]
+            }
+        }
+    }
+}
