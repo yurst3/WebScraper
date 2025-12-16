@@ -1,3 +1,15 @@
+export interface RopewikiBetaSection {
+    title: string;
+    text: string;
+}
+
+export interface RopewikiImage {
+    betaSectionTitle: string | undefined;
+    linkUrl: string | undefined;
+    fileUrl: string | undefined;
+    caption: string | undefined;
+}
+
 class RopewikiPageInfo {
     pageid: string
     name: string
@@ -22,13 +34,15 @@ class RopewikiPageInfo {
     url: string
     isValid: boolean
     
-    // `raw` is one element from the API `printouts` array
-    constructor(raw: any) {
+    constructor(raw: unknown) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const { printouts } = raw as { printouts: any };
+
         // Check if required fields are present
-        const pageid = raw.pageid?.[0];
-        const name = raw.name?.[0];
-        const region = raw.region?.[0]?.fulltext;
-        const url = raw.url?.[0];
+        const pageid = printouts.pageid?.[0];
+        const name = printouts.name?.[0];
+        const region = printouts.region?.[0]?.fulltext;
+        const url = printouts.url?.[0];
 
         // Set isValid based on whether all required fields are present
         this.isValid = !!(pageid && name && region && url);
@@ -40,92 +54,80 @@ class RopewikiPageInfo {
         this.url = url ? String(url) : '';
 
         // Optional simple scalars
-        this.quality = Array.isArray(raw.quality) && raw.quality.length > 0
-            ? Number(raw.quality[0])
+        this.quality = Array.isArray(printouts.quality) && printouts.quality.length > 0
+            ? Number(printouts.quality[0])
             : undefined;
 
-        this.rating = Array.isArray(raw.rating) && raw.rating.length > 0
-            ? String(raw.rating[0])
+        this.rating = Array.isArray(printouts.rating) && printouts.rating.length > 0
+            ? String(printouts.rating[0])
             : undefined;
 
-        this.timeRating = Array.isArray(raw.timeRating) && raw.timeRating.length > 0
-            ? String(raw.timeRating[0])
+        this.timeRating = Array.isArray(printouts.timeRating) && printouts.timeRating.length > 0
+            ? String(printouts.timeRating[0])
             : undefined;
 
-        this.kmlUrl = Array.isArray(raw.kmlUrl) && raw.kmlUrl.length > 0
-            ? String(raw.kmlUrl[0])
+        this.kmlUrl = Array.isArray(printouts.kmlUrl) && printouts.kmlUrl.length > 0
+            ? String(printouts.kmlUrl[0])
             : undefined;
 
-        this.technicalRating = Array.isArray(raw.technicalRating) && raw.technicalRating.length > 0
-            ? String(raw.technicalRating[0])
+        this.technicalRating = Array.isArray(printouts.technicalRating) && printouts.technicalRating.length > 0
+            ? String(printouts.technicalRating[0])
             : undefined;
 
-        this.waterRating = Array.isArray(raw.waterRating) && raw.waterRating.length > 0
-            ? String(raw.waterRating[0])
+        this.waterRating = Array.isArray(printouts.waterRating) && printouts.waterRating.length > 0
+            ? String(printouts.waterRating[0])
             : undefined;
 
-        this.riskRating = Array.isArray(raw.riskRating) && raw.riskRating.length > 0
-            ? String(raw.riskRating[0])
+        this.riskRating = Array.isArray(printouts.riskRating) && printouts.riskRating.length > 0
+            ? String(printouts.riskRating[0])
             : undefined;
 
-        this.permits = Array.isArray(raw.permits) && raw.permits.length > 0
-            ? String(raw.permits[0])
+        this.permits = Array.isArray(printouts.permits) && printouts.permits.length > 0
+            ? String(printouts.permits[0])
             : undefined;
 
-        this.rappelCount = Array.isArray(raw.rappelCount) && raw.rappelCount.length > 0
-            ? String(raw.rappelCount[0])
+        this.rappelCount = Array.isArray(printouts.rappelCount) && printouts.rappelCount.length > 0
+            ? String(printouts.rappelCount[0])
             : undefined;
 
-        this.vehicle = Array.isArray(raw.vehicle) && raw.vehicle.length > 0
-            ? String(raw.vehicle[0])
+        this.vehicle = Array.isArray(printouts.vehicle) && printouts.vehicle.length > 0
+            ? String(printouts.vehicle[0])
             : undefined;
 
         // Optional object-valued fields (value/unit pairs)
-        this.coordinates = Array.isArray(raw.coordinates) && raw.coordinates.length > 0
-            ? {
-                lat: Number(raw.coordinates[0].lat),
-                lon: Number(raw.coordinates[0].lon),
-            }
+        const coord = Array.isArray(printouts.coordinates) && printouts.coordinates.length > 0 ? printouts.coordinates[0] : undefined;
+        this.coordinates = coord && coord.lat !== undefined && coord.lon !== undefined
+            ? { lat: Number(coord.lat), lon: Number(coord.lon) }
             : undefined;
 
-        this.rappelLongest = Array.isArray(raw.rappelLongest) && raw.rappelLongest.length > 0
-            ? {
-                value: Number(raw.rappelLongest[0].value),
-                unit: String(raw.rappelLongest[0].unit),
-            }
+        const rappelLongest = Array.isArray(printouts.rappelLongest) && printouts.rappelLongest.length > 0 ? printouts.rappelLongest[0] : undefined;
+        this.rappelLongest = rappelLongest && rappelLongest.value !== undefined && rappelLongest.unit !== undefined
+            ? { value: Number(rappelLongest.value), unit: String(rappelLongest.unit) }
             : undefined;
 
-        this.shuttle = Array.isArray(raw.shuttle) && raw.shuttle.length > 0
-            ? {
-                value: Number(raw.shuttle[0].value),
-                unit: String(raw.shuttle[0].unit),
-            }
+        const shuttle = Array.isArray(printouts.shuttle) && printouts.shuttle.length > 0 ? printouts.shuttle[0] : undefined;
+        this.shuttle = shuttle && shuttle.value !== undefined && shuttle.unit !== undefined
+            ? { value: Number(shuttle.value), unit: String(shuttle.unit) }
             : undefined;
 
-        this.minTime = Array.isArray(raw.minTime) && raw.minTime.length > 0
-            ? {
-                value: Number(raw.minTime[0].value),
-                unit: String(raw.minTime[0].unit),
-            }
+        const minTime = Array.isArray(printouts.minTime) && printouts.minTime.length > 0 ? printouts.minTime[0] : undefined;
+        this.minTime = minTime && minTime.value !== undefined && minTime.unit !== undefined
+            ? { value: Number(minTime.value), unit: String(minTime.unit) }
             : undefined;
 
-        this.maxTime = Array.isArray(raw.maxTime) && raw.maxTime.length > 0
-            ? {
-                value: Number(raw.maxTime[0].value),
-                unit: String(raw.maxTime[0].unit),
-            }
+        const maxTime = Array.isArray(printouts.maxTime) && printouts.maxTime.length > 0 ? printouts.maxTime[0] : undefined;
+        this.maxTime = maxTime && maxTime.value !== undefined && maxTime.unit !== undefined
+            ? { value: Number(maxTime.value), unit: String(maxTime.unit) }
             : undefined;
 
-        this.hike = Array.isArray(raw.hike) && raw.hike.length > 0
-            ? {
-                value: Number(raw.hike[0].value),
-                unit: String(raw.hike[0].unit),
-            }
+        const hike = Array.isArray(printouts.hike) && printouts.hike.length > 0 ? printouts.hike[0] : undefined;
+        this.hike = hike && hike.value !== undefined && hike.unit !== undefined
+            ? { value: Number(hike.value), unit: String(hike.unit) }
             : undefined;
 
         // Months is always an array of strings; fall back to []
-        this.months = Array.isArray(raw.months)
-            ? raw.months.map((m: unknown) => String(m))
+        this.months = Array.isArray(printouts.months)
+            ? printouts.months.map((m: unknown) => String(m))
             : [];
     }
 }

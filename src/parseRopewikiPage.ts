@@ -1,26 +1,24 @@
 import puppeteer from 'puppeteer';
+import { RopewikiBetaSection, RopewikiImage } from './types/ropewiki';
 
-const evalPage = (): { beta: any[], images: any[] } => {
+const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } => {
     // Functions have to be defined inside evalPage() because it is being run in a browser context and can't reference other functions
-    const getHeaderTitle = (childNodes: NodeListOf<ChildNode>): string | void => {
+    const getHeaderTitle = (childNodes: NodeListOf<ChildNode>): string | undefined => {
         for (let i = 0; i < childNodes.length; i++) {
             const child: ChildNode | undefined = childNodes[i];
             if (child && child.textContent && child.textContent.length > 0) return child.textContent;
         }
     }
 
-    let currentBeta: any | null = null;
+    let currentBeta: RopewikiBetaSection | null = null;
     const parseChildNodes = (childNodes: NodeListOf<ChildNode>) => {
         childNodes.forEach((child: ChildNode) => {
             switch (child.nodeName) {
                 case 'H2':
                     // Start of a new beta section
                     if (currentBeta) beta.push(currentBeta);
-                    const title = getHeaderTitle(child.childNodes);
-                    currentBeta = title ? {
-                        title,
-                        text: ''
-                    } : null;
+                    const title = getHeaderTitle(child.childNodes); // eslint-disable-line no-case-declarations
+                    currentBeta = title ? { title, text: '' } : null;
                     break;
                 case 'A':
                 case 'B':
@@ -137,8 +135,8 @@ const evalPage = (): { beta: any[], images: any[] } => {
         });
     }
 
-    const beta: any[] = [];
-    const images: any[] = [];
+    const beta: RopewikiBetaSection[] = [];
+    const images: RopewikiImage[] = [];
 
     const parent: Element | null = document.querySelector('.mw-parser-output');
     if (parent === null) return { beta, images };

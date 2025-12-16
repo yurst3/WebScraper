@@ -8,18 +8,22 @@
   "main": "src/main.ts",
   "scripts": {
     "scrape": "ts-node src/main.ts",
+    "lint:dev": "npx eslint .",
     "test": "jest"
   },
   "dependencies": {
     "fetch": "^1.1.0",
     "jest": "^30.2.0",
-    "puppeteer": "^24.32.1",
-    "typescript": "^5.9.3"
+    "puppeteer": "^24.32.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.10.2",
+    "eslint": "^9.39.2",
     "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.0"
   }
 }

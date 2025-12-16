@@ -50,7 +50,8 @@ const getRopewikiPageInfoForRegion = async (region: string, offset: number, limi
         if (response.ok) {
             const body = await response.json();
 
-            return Object.values(body.results).map((result: any) => new RopewikiPageInfo(result.printouts));
+            // result.printouts follows the API schema; cast to unknown then to the expected shape
+            return Object.values(body.results).map((result: unknown) => new RopewikiPageInfo(result));
         } else {
             throw new Error(`Error getting pages info for region ${region} offset ${offset} limit ${limit}: ${response.status} ${response.statusText}`);
         }

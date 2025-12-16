@@ -34,7 +34,7 @@ const evalPage = () => {
         const listItems = unorderedListElement.childNodes;
         listItems.forEach((node: ChildNode) => {
             if (node.nodeName !== '#text') { // I'm not quite sure why these #text child nodes are being included, let's just ignore them
-                let name = node.childNodes[0]?.textContent;
+                const name = node.childNodes[0]?.textContent;
                 const unorderedListElement: ChildNode | undefined = node.childNodes[2];
         
                 regions.push({ name, parent });
