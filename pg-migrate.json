@@ -1,0 +1,21 @@
+{
+    "db": {
+        "user": "",
+        "password": "",
+        "host": "localhost",
+        "port": 5432,
+        "database": "development"
+    },
+    "schema": "public",
+    "createSchema": false,
+    "migrationsDir": "src/migrations",
+    "migrationsSchema": "public",
+    "createMigrationsSchema": false,
+    "migrationsTable": "pgmigrations",
+    "migrationFilenameFormat": "utc",
+    "migrationFileLanguage": "ts",
+    "ignorePattern": "undefined",
+    "checkOrder": true,
+    "verbose": true,
+    "decamelize": false
+  }
