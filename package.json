@@ -9,7 +9,8 @@
   "scripts": {
     "scrape": "ts-node src/main.ts",
     "lint:dev": "npx eslint .",
-    "migrate": "node-pg-migrate --config-file ./pg-migrate.json --migration-file-language js",
+    "migrate:up": "npx dbmate up && npx zapatos",
+    "migrate:down": "npx dbmate down && npx zapatos",
     "test": "jest"
   },
   "dependencies": {
@@ -17,15 +18,15 @@
     "fetch": "^1.1.0",
     "jest": "^30.2.0",
     "pg": "^8.16.3",
-    "puppeteer": "^24.32.1"
+    "puppeteer": "^24.32.1",
+    "zapatos": "^6.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.10.2",
-    "@types/node-pg-migrate": "^2.3.1",
+    "dbmate": "^2.28.0",
     "eslint": "^9.39.2",
-    "node-pg-migrate": "^8.0.4",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
