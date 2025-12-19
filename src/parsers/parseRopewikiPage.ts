@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer';
-import { RopewikiBetaSection, RopewikiImage } from './types/ropewiki';
+import { RopewikiBetaSection, RopewikiImage } from '../types/ropewiki';
 
 const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } => {
     // Functions have to be defined inside evalPage() because it is being run in a browser context and can't reference other functions

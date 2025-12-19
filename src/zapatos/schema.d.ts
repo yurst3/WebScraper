@@ -66,6 +66,12 @@ declare module 'zapatos/schema' {
       */
       id: string;
       /**
+      * **RopewikiImage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: Date;
+      /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
       * - Nullable, no default
@@ -121,6 +127,12 @@ declare module 'zapatos/schema' {
       * - `NOT NULL`, no default
       */
       id: string;
+      /**
+      * **RopewikiImage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: db.TimestampString;
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
@@ -178,6 +190,12 @@ declare module 'zapatos/schema' {
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
+      * **RopewikiImage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn>;
+      /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
       * - Nullable, no default
@@ -234,6 +252,12 @@ declare module 'zapatos/schema' {
       */
       id: string | db.Parameter<string> | db.SQLFragment;
       /**
+      * **RopewikiImage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment;
+      /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
       * - Nullable, no default
@@ -289,6 +313,12 @@ declare module 'zapatos/schema' {
       * - `NOT NULL`, no default
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
+      /**
+      * **RopewikiImage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment>;
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
@@ -358,6 +388,12 @@ declare module 'zapatos/schema' {
       * - Nullable, no default
       */
       kmlUrl: string | null;
+      /**
+      * **RopewikiPage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: Date;
       /**
       * **RopewikiPage.maxTime**
       * - `jsonb` in database
@@ -511,6 +547,12 @@ declare module 'zapatos/schema' {
       */
       kmlUrl: string | null;
       /**
+      * **RopewikiPage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: db.TimestampString;
+      /**
       * **RopewikiPage.maxTime**
       * - `jsonb` in database
       * - Nullable, no default
@@ -662,6 +704,12 @@ declare module 'zapatos/schema' {
       * - Nullable, no default
       */
       kmlUrl?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
+      /**
+      * **RopewikiPage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn>;
       /**
       * **RopewikiPage.maxTime**
       * - `jsonb` in database
@@ -815,6 +863,12 @@ declare module 'zapatos/schema' {
       */
       kmlUrl?: string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment;
       /**
+      * **RopewikiPage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment;
+      /**
       * **RopewikiPage.maxTime**
       * - `jsonb` in database
       * - Nullable, no default
@@ -967,6 +1021,12 @@ declare module 'zapatos/schema' {
       */
       kmlUrl?: string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment>;
       /**
+      * **RopewikiPage.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment>;
+      /**
       * **RopewikiPage.maxTime**
       * - `jsonb` in database
       * - Nullable, no default
@@ -1114,6 +1174,12 @@ declare module 'zapatos/schema' {
       */
       id: string;
       /**
+      * **RopewikiPageBetaSection.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: Date;
+      /**
       * **RopewikiPageBetaSection.ropewikiPage**
       * - `uuid` in database
       * - `NOT NULL`, no default
@@ -1157,6 +1223,12 @@ declare module 'zapatos/schema' {
       * - `NOT NULL`, no default
       */
       id: string;
+      /**
+      * **RopewikiPageBetaSection.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: db.TimestampString;
       /**
       * **RopewikiPageBetaSection.ropewikiPage**
       * - `uuid` in database
@@ -1202,6 +1274,12 @@ declare module 'zapatos/schema' {
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
+      * **RopewikiPageBetaSection.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn>;
+      /**
       * **RopewikiPageBetaSection.ropewikiPage**
       * - `uuid` in database
       * - `NOT NULL`, no default
@@ -1246,6 +1324,12 @@ declare module 'zapatos/schema' {
       */
       id: string | db.Parameter<string> | db.SQLFragment;
       /**
+      * **RopewikiPageBetaSection.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment;
+      /**
       * **RopewikiPageBetaSection.ropewikiPage**
       * - `uuid` in database
       * - `NOT NULL`, no default
@@ -1289,6 +1373,12 @@ declare module 'zapatos/schema' {
       * - `NOT NULL`, no default
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
+      /**
+      * **RopewikiPageBetaSection.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment>;
       /**
       * **RopewikiPageBetaSection.ropewikiPage**
       * - `uuid` in database
@@ -1347,6 +1437,12 @@ declare module 'zapatos/schema' {
       */
       id: string;
       /**
+      * **RopewikiRegion.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: Date;
+      /**
       * **RopewikiRegion.name**
       * - `text` in database
       * - `NOT NULL`, no default
@@ -1384,6 +1480,12 @@ declare module 'zapatos/schema' {
       * - `NOT NULL`, no default
       */
       id: string;
+      /**
+      * **RopewikiRegion.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate: db.TimestampString;
       /**
       * **RopewikiRegion.name**
       * - `text` in database
@@ -1423,6 +1525,12 @@ declare module 'zapatos/schema' {
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
+      * **RopewikiRegion.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.SQLFragment | db.ParentColumn>;
+      /**
       * **RopewikiRegion.name**
       * - `text` in database
       * - `NOT NULL`, no default
@@ -1460,6 +1568,12 @@ declare module 'zapatos/schema' {
       * - `NOT NULL`, no default
       */
       id: string | db.Parameter<string> | db.SQLFragment;
+      /**
+      * **RopewikiRegion.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment;
       /**
       * **RopewikiRegion.name**
       * - `text` in database
@@ -1499,6 +1613,12 @@ declare module 'zapatos/schema' {
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
       /**
+      * **RopewikiRegion.latestRevisionDate**
+      * - `timestamp` in database
+      * - `NOT NULL`, default: `CURRENT_TIMESTAMP`
+      */
+      latestRevisionDate?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment>;
+      /**
       * **RopewikiRegion.name**
       * - `text` in database
       * - `NOT NULL`, no default
@@ -1517,7 +1637,7 @@ declare module 'zapatos/schema' {
       */
       updatedAt?: (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, (db.TimestampString | Date) | db.Parameter<(db.TimestampString | Date)> | db.DefaultType | db.SQLFragment>;
     }
-    export type UniqueIndex = 'RopewikiRegion_pkey' | 'uk_ropewikiRegion_name';
+    export type UniqueIndex = 'RopewikiRegion_pkey' | 'uk_ropewikiRegion_name_parentRegion';
     export type Column = keyof Selectable;
     export type OnlyCols<T extends readonly Column[]> = Pick<Selectable, T[number]>;
     export type SQLExpression = Table | db.ColumnNames<Updatable | (keyof Updatable)[]> | db.ColumnValues<Updatable> | Whereable | Column | db.ParentColumn | db.GenericSQLExpression;

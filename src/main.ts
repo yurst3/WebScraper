@@ -1,8 +1,17 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import getRopewikiPageHtml from './getRopewikiPageHtml';
-import parseRopewikiPage from './parseRopewikiPage';
-import getRopewikiPageInfoForRegion from './getRopewikiPageInfoForRegion';
+require('dotenv').config();
+import { Pool } from 'pg';
+import handleRopewikiRegions from "./handleRopewikiRegions"
+
+const pool = new Pool({
+    host: process.env.DEVELOPMENT_DB_HOST,
+    database: process.env.DEVELOPMENT_DB_NAME,
+});
 
 (async () => {
-    const pageInfos = await getRopewikiPageInfoForRegion('World', 0, 10);
+    try {
+        await handleRopewikiRegions(pool);
+    } finally {
+        await pool.end();
+    }
 })()

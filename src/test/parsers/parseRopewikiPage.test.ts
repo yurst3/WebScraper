@@ -1,13 +1,13 @@
 import { describe, it, expect } from '@jest/globals';
 import fs from 'fs';
 import path from 'path';
-import parseRopewikiPage from '../parseRopewikiPage';
+import parseRopewikiPage from '../../parsers/parseRopewikiPage';
 
 describe('parseRopewikiPage', () => {
     it('parses Bear Creek Canyon HTML and matches expected beta and images', async () => {
-        const htmlPath = path.join(__dirname, 'data', 'bearCreekCanyon', 'bearCreekCanyon.html');
-        const expectedBetaPath = path.join(__dirname, 'data', 'bearCreekCanyon', 'bearCreekCanyonBeta.json');
-        const expectedImagesPath = path.join(__dirname, 'data', 'bearCreekCanyon', 'bearCreekCanyonImages.json');
+        const htmlPath = path.join(__dirname, '..', 'data', 'bearCreekCanyon', 'bearCreekCanyon.html');
+        const expectedBetaPath = path.join(__dirname, '..', 'data', 'bearCreekCanyon', 'bearCreekCanyonBeta.json');
+        const expectedImagesPath = path.join(__dirname, '..', 'data', 'bearCreekCanyon', 'bearCreekCanyonImages.json');
 
         const html = fs.readFileSync(htmlPath, 'utf-8'); // This file shouldn't have any formatting
         const expectedBeta = JSON.parse(fs.readFileSync(expectedBetaPath, 'utf-8'));

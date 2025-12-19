@@ -1,14 +1,16 @@
 import { describe, it, expect, afterEach, jest } from '@jest/globals';
 import fs from 'fs';
 import path from 'path';
-import getRopewikiPageRevisionDate from '../getRopewikiPageRevisionDate';
+import getRopewikiPageInfoForRegion from '../../http/getRopewikiPageInfoForRegion';
 
-const fixturePath = path.join(__dirname, 'data', 'regions', 'ropewikiRegionsRevisionRespons.json');
-const fixture = JSON.parse(fs.readFileSync(fixturePath, 'utf-8'));
+const responseFixturePath = path.join(__dirname, '..', 'data', 'ropewikiPageInfosResponse.json');
+const responseFixture = JSON.parse(fs.readFileSync(responseFixturePath, 'utf-8'));
+const expectedResultsPath = path.join(__dirname, '..', 'data', 'ropewikiPageInfos.json');
+const expectedResults = JSON.parse(fs.readFileSync(expectedResultsPath, 'utf-8'));
 
 type MockFetch = ReturnType<typeof jest.fn<typeof fetch>>;
 
-describe('getRopewikiPageRevisionDate', () => {
+describe('getRopewikiPageInfoForRegion', () => {
     afterEach(() => {
         const mockFetch = globalThis.fetch as MockFetch | undefined;
         if (mockFetch && typeof mockFetch.mockClear === 'function') {
@@ -18,25 +20,28 @@ describe('getRopewikiPageRevisionDate', () => {
         globalThis.fetch = undefined;
     });
 
-    it('returns Date when fetch succeeds', async () => {
-        const pageId = 5597;
+    it('returns RopewikiPageInfo array when fetch succeeds', async () => {
+        const region = 'World';
+        const offset = 0;
+        const limit = 10;
         const mockFetch = jest.fn<typeof fetch>().mockResolvedValue({
             ok: true,
             status: 200,
             statusText: 'OK',
-            json: async () => fixture,
+            json: async () => responseFixture,
         } as Response);
         globalThis.fetch = mockFetch as unknown as typeof fetch;
 
-        const date = await getRopewikiPageRevisionDate(pageId);
+        const pageInfos = await getRopewikiPageInfoForRegion(region, offset, limit);
 
-        const expectedDate = new Date('2023-09-08T17:51:54Z');
-        expect(date).toEqual(expectedDate);
+        expect(pageInfos).toEqual(expectedResults);
         expect(mockFetch).toHaveBeenCalledTimes(1);
     });
 
     it('throws when fetch returns an error status', async () => {
-        const pageId = 5597;
+        const region = 'World';
+        const offset = 0;
+        const limit = 10;
         const mockFetch = jest.fn<typeof fetch>().mockResolvedValue({
             ok: false,
             status: 500,
@@ -44,19 +49,21 @@ describe('getRopewikiPageRevisionDate', () => {
         } as Response);
         globalThis.fetch = mockFetch as unknown as typeof fetch;
 
-        await expect(getRopewikiPageRevisionDate(pageId)).rejects.toThrow(
-            'Error getting page revision date: 500 Internal Server Error'
+        await expect(getRopewikiPageInfoForRegion(region, offset, limit)).rejects.toThrow(
+            'Error getting pages info for region World offset 0 limit 10: 500 Internal Server Error'
         );
         expect(mockFetch).toHaveBeenCalledTimes(1);
     });
 
     it('throws when fetch itself rejects', async () => {
-        const pageId = 5597;
+        const region = 'World';
+        const offset = 0;
+        const limit = 10;
         const mockFetch = jest.fn<typeof fetch>().mockRejectedValue(new Error('network failure'));
         globalThis.fetch = mockFetch as unknown as typeof fetch;
 
-        await expect(getRopewikiPageRevisionDate(pageId)).rejects.toThrow(
-            'Error getting page revision date: Error: network failure'
+        await expect(getRopewikiPageInfoForRegion(region, offset, limit)).rejects.toThrow(
+            'Error getting pages info for region World offset 0 limit 10: Error: network failure'
         );
         expect(mockFetch).toHaveBeenCalledTimes(1);
     });

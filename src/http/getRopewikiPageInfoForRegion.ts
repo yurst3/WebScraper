@@ -1,4 +1,4 @@
-import RopewikiPageInfo from './types/ropewiki';
+import RopewikiPageInfo from '../types/ropewiki';
 
 const apiRequestPrintouts = {
     pageid: 'Has pageid',

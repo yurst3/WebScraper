@@ -4,10 +4,12 @@ import RopewikiPageInfo from '../types/ropewiki';
 describe('RopewikiPageInfo', () => {
     it('sets isValid to false when required fields are missing', () => {
         const invalidRawData = {
-            pageid: [], // Missing required field
-            name: ['Invalid Page'],
-            region: [],
-            url: [],
+            printouts: {
+                pageid: [], // Missing required field
+                name: ['Invalid Page'],
+                region: [],
+                url: [],
+            },
         };
 
         const pageInfo = new RopewikiPageInfo(invalidRawData);
@@ -21,10 +23,12 @@ describe('RopewikiPageInfo', () => {
 
     it('sets isValid to false when name is missing', () => {
         const invalidRawData = {
-            pageid: ['12345'],
-            name: [], // Missing required field
-            region: [{ fulltext: 'Test Region' }],
-            url: ['https://ropewiki.com/test'],
+            printouts: {
+                pageid: ['12345'],
+                name: [], // Missing required field
+                region: [{ fulltext: 'Test Region' }],
+                url: ['https://ropewiki.com/test'],
+            },
         };
 
         const pageInfo = new RopewikiPageInfo(invalidRawData);
@@ -36,10 +40,12 @@ describe('RopewikiPageInfo', () => {
 
     it('sets isValid to false when region is missing', () => {
         const invalidRawData = {
-            pageid: ['12345'],
-            name: ['Test Page'],
-            region: [], // Missing required field
-            url: ['https://ropewiki.com/test'],
+            printouts: {
+                pageid: ['12345'],
+                name: ['Test Page'],
+                region: [], // Missing required field
+                url: ['https://ropewiki.com/test'],
+            },
         };
 
         const pageInfo = new RopewikiPageInfo(invalidRawData);
@@ -50,10 +56,12 @@ describe('RopewikiPageInfo', () => {
 
     it('sets isValid to false when url is missing', () => {
         const invalidRawData = {
-            pageid: ['12345'],
-            name: ['Test Page'],
-            region: [{ fulltext: 'Test Region' }],
-            url: [], // Missing required field
+            printouts: {
+                pageid: ['12345'],
+                name: ['Test Page'],
+                region: [{ fulltext: 'Test Region' }],
+                url: [], // Missing required field
+            },
         };
 
         const pageInfo = new RopewikiPageInfo(invalidRawData);
@@ -64,10 +72,12 @@ describe('RopewikiPageInfo', () => {
 
     it('sets isValid to true when all required fields are present', () => {
         const validRawData = {
-            pageid: ['12345'],
-            name: ['Test Page'],
-            region: [{ fulltext: 'Test Region' }],
-            url: ['https://ropewiki.com/test'],
+            printouts: {
+                pageid: ['12345'],
+                name: ['Test Page'],
+                region: [{ fulltext: 'Test Region' }],
+                url: ['https://ropewiki.com/test'],
+            },
         };
 
         const pageInfo = new RopewikiPageInfo(validRawData);

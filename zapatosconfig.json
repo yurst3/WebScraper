@@ -2,5 +2,5 @@
     "db": {
         "connectionString": "postgresql://localhost/development"
     },
-    "outDir": "./src/types"
+    "outDir": "./src"
 }

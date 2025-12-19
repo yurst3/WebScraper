@@ -1,0 +1,4541 @@
+[
+    {
+        "id": "World",
+        "name": "World"
+    },
+    {
+        "id": "AfricaWorld",
+        "name": "Africa",
+        "parentRegion": "World"
+    },
+    {
+        "id": "Cape VerdeAfrica",
+        "name": "Cape Verde",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "ComorosAfrica",
+        "name": "Comoros",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "AnjouanComoros",
+        "name": "Anjouan",
+        "parentRegion": "ComorosAfrica"
+    },
+    {
+        "id": "Grand ComoroComoros",
+        "name": "Grand Comoro",
+        "parentRegion": "ComorosAfrica"
+    },
+    {
+        "id": "DjiboutiAfrica",
+        "name": "Djibouti",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "EthiopiaAfrica",
+        "name": "Ethiopia",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "KenyaAfrica",
+        "name": "Kenya",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "MadagascarAfrica",
+        "name": "Madagascar",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "MauritiusAfrica",
+        "name": "Mauritius",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "MayotteAfrica",
+        "name": "Mayotte",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "MoroccoAfrica",
+        "name": "Morocco",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "Anti-AtlasMorocco",
+        "name": "Anti-Atlas",
+        "parentRegion": "MoroccoAfrica"
+    },
+    {
+        "id": "ReunionAfrica",
+        "name": "Reunion",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "Saint-BenoitReunion",
+        "name": "Saint-Benoit",
+        "parentRegion": "ReunionAfrica"
+    },
+    {
+        "id": "Saint-DenisReunion",
+        "name": "Saint-Denis",
+        "parentRegion": "ReunionAfrica"
+    },
+    {
+        "id": "Saint-PaulReunion",
+        "name": "Saint-Paul",
+        "parentRegion": "ReunionAfrica"
+    },
+    {
+        "id": "Saint-PierreReunion",
+        "name": "Saint-Pierre",
+        "parentRegion": "ReunionAfrica"
+    },
+    {
+        "id": "South AfricaAfrica",
+        "name": "South Africa",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "Western CapeSouth Africa",
+        "name": "Western Cape",
+        "parentRegion": "South AfricaAfrica"
+    },
+    {
+        "id": "UgandaAfrica",
+        "name": "Uganda",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "ZimbabweAfrica",
+        "name": "Zimbabwe",
+        "parentRegion": "AfricaWorld"
+    },
+    {
+        "id": "AsiaWorld",
+        "name": "Asia",
+        "parentRegion": "World"
+    },
+    {
+        "id": "ChinaAsia",
+        "name": "China",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "AnhuiChina",
+        "name": "Anhui",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "ChongqingChina",
+        "name": "Chongqing",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "GuangxiChina",
+        "name": "Guangxi",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "GuizhouChina",
+        "name": "Guizhou",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "HeilongjiangChina",
+        "name": "Heilongjiang",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "HubeiChina",
+        "name": "Hubei",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "ShaanxiChina",
+        "name": "Shaanxi",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "YunnanChina",
+        "name": "Yunnan",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "ZhejiangChina",
+        "name": "Zhejiang",
+        "parentRegion": "ChinaAsia"
+    },
+    {
+        "id": "Hong KongAsia",
+        "name": "Hong Kong",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "IndiaAsia",
+        "name": "India",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "India - NorthIndia",
+        "name": "India - North",
+        "parentRegion": "IndiaAsia"
+    },
+    {
+        "id": "Himachal PradeshIndia - North",
+        "name": "Himachal Pradesh",
+        "parentRegion": "India - NorthIndia"
+    },
+    {
+        "id": "India - WestIndia",
+        "name": "India - West",
+        "parentRegion": "IndiaAsia"
+    },
+    {
+        "id": "MaharashtraIndia - West",
+        "name": "Maharashtra",
+        "parentRegion": "India - WestIndia"
+    },
+    {
+        "id": "North EastIndia",
+        "name": "North East",
+        "parentRegion": "IndiaAsia"
+    },
+    {
+        "id": "SikkimNorth East",
+        "name": "Sikkim",
+        "parentRegion": "North EastIndia"
+    },
+    {
+        "id": "IndonesiaAsia",
+        "name": "Indonesia",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "BaliIndonesia",
+        "name": "Bali",
+        "parentRegion": "IndonesiaAsia"
+    },
+    {
+        "id": "Central KalimantanIndonesia",
+        "name": "Central Kalimantan",
+        "parentRegion": "IndonesiaAsia"
+    },
+    {
+        "id": "East JavaIndonesia",
+        "name": "East Java",
+        "parentRegion": "IndonesiaAsia"
+    },
+    {
+        "id": "East KalimantanIndonesia",
+        "name": "East Kalimantan",
+        "parentRegion": "IndonesiaAsia"
+    },
+    {
+        "id": "East Nusa TenggaraIndonesia",
+        "name": "East Nusa Tenggara",
+        "parentRegion": "IndonesiaAsia"
+    },
+    {
+        "id": "West Nusa TenggaraIndonesia",
+        "name": "West Nusa Tenggara",
+        "parentRegion": "IndonesiaAsia"
+    },
+    {
+        "id": "JapanAsia",
+        "name": "Japan",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "HokkaidoJapan",
+        "name": "Hokkaido",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "MieJapan",
+        "name": "Mie",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "NaganoJapan",
+        "name": "Nagano",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "NaraJapan",
+        "name": "Nara",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "ShigaJapan",
+        "name": "Shiga",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "ShizuokaJapan",
+        "name": "Shizuoka",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "TokyoJapan",
+        "name": "Tokyo",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "WakayamaJapan",
+        "name": "Wakayama",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "YamagataJapan",
+        "name": "Yamagata",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "YamanashiJapan",
+        "name": "Yamanashi",
+        "parentRegion": "JapanAsia"
+    },
+    {
+        "id": "LaosAsia",
+        "name": "Laos",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "HouaphanLaos",
+        "name": "Houaphan",
+        "parentRegion": "LaosAsia"
+    },
+    {
+        "id": "Luang PrabangLaos",
+        "name": "Luang Prabang",
+        "parentRegion": "LaosAsia"
+    },
+    {
+        "id": "Muang NanLaos",
+        "name": "Muang Nan",
+        "parentRegion": "LaosAsia"
+    },
+    {
+        "id": "Muang NgoyLaos",
+        "name": "Muang Ngoy",
+        "parentRegion": "LaosAsia"
+    },
+    {
+        "id": "Phou KhounLaos",
+        "name": "Phou Khoun",
+        "parentRegion": "LaosAsia"
+    },
+    {
+        "id": "Vieng PhoukaLaos",
+        "name": "Vieng Phouka",
+        "parentRegion": "LaosAsia"
+    },
+    {
+        "id": "NepalAsia",
+        "name": "Nepal",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "Central NepalNepal",
+        "name": "Central Nepal",
+        "parentRegion": "NepalAsia"
+    },
+    {
+        "id": "Mid-Western NepalNepal",
+        "name": "Mid-Western Nepal",
+        "parentRegion": "NepalAsia"
+    },
+    {
+        "id": "South KoreaAsia",
+        "name": "South Korea",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "TaiwanAsia",
+        "name": "Taiwan",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "VietnamAsia",
+        "name": "Vietnam",
+        "parentRegion": "AsiaWorld"
+    },
+    {
+        "id": "Son La ProvinceVietnam",
+        "name": "Son La Province",
+        "parentRegion": "VietnamAsia"
+    },
+    {
+        "id": "Khau PhaSon La Province",
+        "name": "Khau Pha",
+        "parentRegion": "Son La ProvinceVietnam"
+    },
+    {
+        "id": "Central AmericaWorld",
+        "name": "Central America",
+        "parentRegion": "World"
+    },
+    {
+        "id": "BelizeCentral America",
+        "name": "Belize",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "CaribbeanCentral America",
+        "name": "Caribbean",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "CubaCaribbean",
+        "name": "Cuba",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "DominicaCaribbean",
+        "name": "Dominica",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "Dominican RepublicCaribbean",
+        "name": "Dominican Republic",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "BonaoDominican Republic",
+        "name": "Bonao",
+        "parentRegion": "Dominican RepublicCaribbean"
+    },
+    {
+        "id": "GuadeloupeCaribbean",
+        "name": "Guadeloupe",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "JamaicaCaribbean",
+        "name": "Jamaica",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "MartiniqueCaribbean",
+        "name": "Martinique",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "Puerto RicoCaribbean",
+        "name": "Puerto Rico",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "Saint VincentCaribbean",
+        "name": "Saint Vincent",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "Trinidad and TobagoCaribbean",
+        "name": "Trinidad and Tobago",
+        "parentRegion": "CaribbeanCentral America"
+    },
+    {
+        "id": "Costa RicaCentral America",
+        "name": "Costa Rica",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "Bajos del ToroCosta Rica",
+        "name": "Bajos del Toro",
+        "parentRegion": "Costa RicaCentral America"
+    },
+    {
+        "id": "Costa PacíficaCosta Rica",
+        "name": "Costa Pacífica",
+        "parentRegion": "Costa RicaCentral America"
+    },
+    {
+        "id": "La FortunaCosta Rica",
+        "name": "La Fortuna",
+        "parentRegion": "Costa RicaCentral America"
+    },
+    {
+        "id": "TurrialbaCosta Rica",
+        "name": "Turrialba",
+        "parentRegion": "Costa RicaCentral America"
+    },
+    {
+        "id": "Valle CentralCosta Rica",
+        "name": "Valle Central",
+        "parentRegion": "Costa RicaCentral America"
+    },
+    {
+        "id": "Western Juan Castro Blanco Parque NacionalCosta Rica",
+        "name": "Western Juan Castro Blanco Parque Nacional",
+        "parentRegion": "Costa RicaCentral America"
+    },
+    {
+        "id": "El SalvadorCentral America",
+        "name": "El Salvador",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "GuatemalaCentral America",
+        "name": "Guatemala",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "Alta VerapazGuatemala",
+        "name": "Alta Verapaz",
+        "parentRegion": "GuatemalaCentral America"
+    },
+    {
+        "id": "HuehuetenangoGuatemala",
+        "name": "Huehuetenango",
+        "parentRegion": "GuatemalaCentral America"
+    },
+    {
+        "id": "IzabalGuatemala",
+        "name": "Izabal",
+        "parentRegion": "GuatemalaCentral America"
+    },
+    {
+        "id": "PetenGuatemala",
+        "name": "Peten",
+        "parentRegion": "GuatemalaCentral America"
+    },
+    {
+        "id": "QuicheGuatemala",
+        "name": "Quiche",
+        "parentRegion": "GuatemalaCentral America"
+    },
+    {
+        "id": "HondurasCentral America",
+        "name": "Honduras",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "MexicoCentral America",
+        "name": "Mexico",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "BajaMexico",
+        "name": "Baja",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "ChiapasMexico",
+        "name": "Chiapas",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "ChihuahuaMexico",
+        "name": "Chihuahua",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "CoahuilaMexico",
+        "name": "Coahuila",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "ColimaMexico",
+        "name": "Colima",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "HidalgoMexico",
+        "name": "Hidalgo",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "JaliscoMexico",
+        "name": "Jalisco",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "Mexico DFMexico",
+        "name": "Mexico DF",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "MorelosMexico",
+        "name": "Morelos",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "NayaritMexico",
+        "name": "Nayarit",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "Nuevo LeonMexico",
+        "name": "Nuevo Leon",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "OaxacaMexico",
+        "name": "Oaxaca",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "PueblaMexico",
+        "name": "Puebla",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "QueretaroMexico",
+        "name": "Queretaro",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "San Luis PotosiMexico",
+        "name": "San Luis Potosi",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "SinaloaMexico",
+        "name": "Sinaloa",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "SonoraMexico",
+        "name": "Sonora",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "TabascoMexico",
+        "name": "Tabasco",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "TlaxcalaMexico",
+        "name": "Tlaxcala",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "VeracruzMexico",
+        "name": "Veracruz",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "YucatanMexico",
+        "name": "Yucatan",
+        "parentRegion": "MexicoNorth America"
+    },
+    {
+        "id": "NicaraguaCentral America",
+        "name": "Nicaragua",
+        "parentRegion": "Central AmericaWorld"
+    },
+    {
+        "id": "EuropeWorld",
+        "name": "Europe",
+        "parentRegion": "World"
+    },
+    {
+        "id": "AlbaniaEurope",
+        "name": "Albania",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "BeratAlbania",
+        "name": "Berat",
+        "parentRegion": "AlbaniaEurope"
+    },
+    {
+        "id": "Central AlbaniaAlbania",
+        "name": "Central Albania",
+        "parentRegion": "AlbaniaEurope"
+    },
+    {
+        "id": "ElbasanAlbania",
+        "name": "Elbasan",
+        "parentRegion": "AlbaniaEurope"
+    },
+    {
+        "id": "Northern AlbaniaAlbania",
+        "name": "Northern Albania",
+        "parentRegion": "AlbaniaEurope"
+    },
+    {
+        "id": "Southern AlbaniaAlbania",
+        "name": "Southern Albania",
+        "parentRegion": "AlbaniaEurope"
+    },
+    {
+        "id": "AlpsEurope",
+        "name": "Alps",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AustriaAlps",
+        "name": "Austria",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "CarinthiaAustria",
+        "name": "Carinthia",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "Gemeinde MallnitzCarinthia",
+        "name": "Gemeinde Mallnitz",
+        "parentRegion": "CarinthiaAustria"
+    },
+    {
+        "id": "HermagorCarinthia",
+        "name": "Hermagor",
+        "parentRegion": "CarinthiaAustria"
+    },
+    {
+        "id": "KlagenfurtCarinthia",
+        "name": "Klagenfurt",
+        "parentRegion": "CarinthiaAustria"
+    },
+    {
+        "id": "Spittal an der DrauCarinthia",
+        "name": "Spittal an der Drau",
+        "parentRegion": "CarinthiaAustria"
+    },
+    {
+        "id": "VillachCarinthia",
+        "name": "Villach",
+        "parentRegion": "CarinthiaAustria"
+    },
+    {
+        "id": "Lower AustriaAustria",
+        "name": "Lower Austria",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "LilienfeldLower Austria",
+        "name": "Lilienfeld",
+        "parentRegion": "Lower AustriaAustria"
+    },
+    {
+        "id": "ScheibbsLower Austria",
+        "name": "Scheibbs",
+        "parentRegion": "Lower AustriaAustria"
+    },
+    {
+        "id": "SalzburgAustria",
+        "name": "Salzburg",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "StyriaAustria",
+        "name": "Styria",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "Bruck an der MurStyria",
+        "name": "Bruck an der Mur",
+        "parentRegion": "StyriaAustria"
+    },
+    {
+        "id": "LeobenStyria",
+        "name": "Leoben",
+        "parentRegion": "StyriaAustria"
+    },
+    {
+        "id": "LiezenStyria",
+        "name": "Liezen",
+        "parentRegion": "StyriaAustria"
+    },
+    {
+        "id": "MurzzuschlagStyria",
+        "name": "Murzzuschlag",
+        "parentRegion": "StyriaAustria"
+    },
+    {
+        "id": "WeizStyria",
+        "name": "Weiz",
+        "parentRegion": "StyriaAustria"
+    },
+    {
+        "id": "TyrolAustria",
+        "name": "Tyrol",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "ImstTyrol",
+        "name": "Imst",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "InnsbruckTyrol",
+        "name": "Innsbruck",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "KitzbuhelTyrol",
+        "name": "Kitzbuhel",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "KufsteinTyrol",
+        "name": "Kufstein",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "LandeckTyrol",
+        "name": "Landeck",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "LienzTyrol",
+        "name": "Lienz",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "ReutteTyrol",
+        "name": "Reutte",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "SchwazTyrol",
+        "name": "Schwaz",
+        "parentRegion": "TyrolAustria"
+    },
+    {
+        "id": "Upper AustriaAustria",
+        "name": "Upper Austria",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "GmundenUpper Austria",
+        "name": "Gmunden",
+        "parentRegion": "Upper AustriaAustria"
+    },
+    {
+        "id": "Kirchdorf an der KremsUpper Austria",
+        "name": "Kirchdorf an der Krems",
+        "parentRegion": "Upper AustriaAustria"
+    },
+    {
+        "id": "SteyrUpper Austria",
+        "name": "Steyr",
+        "parentRegion": "Upper AustriaAustria"
+    },
+    {
+        "id": "VocklabruckUpper Austria",
+        "name": "Vocklabruck",
+        "parentRegion": "Upper AustriaAustria"
+    },
+    {
+        "id": "VorarlbergAustria",
+        "name": "Vorarlberg",
+        "parentRegion": "AustriaEurope"
+    },
+    {
+        "id": "BludenzVorarlberg",
+        "name": "Bludenz",
+        "parentRegion": "VorarlbergAustria"
+    },
+    {
+        "id": "BregenzVorarlberg",
+        "name": "Bregenz",
+        "parentRegion": "VorarlbergAustria"
+    },
+    {
+        "id": "DornbirnVorarlberg",
+        "name": "Dornbirn",
+        "parentRegion": "VorarlbergAustria"
+    },
+    {
+        "id": "FeldkirchVorarlberg",
+        "name": "Feldkirch",
+        "parentRegion": "VorarlbergAustria"
+    },
+    {
+        "id": "BavariaAlps",
+        "name": "Bavaria",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "SwabiaBavaria",
+        "name": "Swabia",
+        "parentRegion": "BavariaGermany"
+    },
+    {
+        "id": "Upper BavariaBavaria",
+        "name": "Upper Bavaria",
+        "parentRegion": "BavariaGermany"
+    },
+    {
+        "id": "Friuli Venezia GiuliaAlps",
+        "name": "Friuli Venezia Giulia",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "PordenoneFriuli Venezia Giulia",
+        "name": "Pordenone",
+        "parentRegion": "Friuli Venezia GiuliaItaly"
+    },
+    {
+        "id": "UdineFriuli Venezia Giulia",
+        "name": "Udine",
+        "parentRegion": "Friuli Venezia GiuliaItaly"
+    },
+    {
+        "id": "LombardiaAlps",
+        "name": "Lombardia",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "BergamoLombardia",
+        "name": "Bergamo",
+        "parentRegion": "LombardiaItaly"
+    },
+    {
+        "id": "BresciaLombardia",
+        "name": "Brescia",
+        "parentRegion": "LombardiaItaly"
+    },
+    {
+        "id": "ComoLombardia",
+        "name": "Como",
+        "parentRegion": "LombardiaItaly"
+    },
+    {
+        "id": "LeccoLombardia",
+        "name": "Lecco",
+        "parentRegion": "LombardiaItaly"
+    },
+    {
+        "id": "SondrioLombardia",
+        "name": "Sondrio",
+        "parentRegion": "LombardiaItaly"
+    },
+    {
+        "id": "VareseLombardia",
+        "name": "Varese",
+        "parentRegion": "LombardiaItaly"
+    },
+    {
+        "id": "PiemonteAlps",
+        "name": "Piemonte",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "AlessandriaPiemonte",
+        "name": "Alessandria",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "BiellaPiemonte",
+        "name": "Biella",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "CuneoPiemonte",
+        "name": "Cuneo",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "NovaraPiemonte",
+        "name": "Novara",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "OssolaPiemonte",
+        "name": "Ossola",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "TorinoPiemonte",
+        "name": "Torino",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "VercelliPiemonte",
+        "name": "Vercelli",
+        "parentRegion": "PiemonteItaly"
+    },
+    {
+        "id": "Provence-Alpes-Cote d'AzurAlps",
+        "name": "Provence-Alpes-Cote d'Azur",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "Alpes-MaritimesProvence-Alpes-Cote d'Azur",
+        "name": "Alpes-Maritimes",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "Alpes-de-Haute-ProvenceProvence-Alpes-Cote d'Azur",
+        "name": "Alpes-de-Haute-Provence",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "Bouches-du-RhoneProvence-Alpes-Cote d'Azur",
+        "name": "Bouches-du-Rhone",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "DromeProvence-Alpes-Cote d'Azur",
+        "name": "Drome",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "Hautes-AlpesProvence-Alpes-Cote d'Azur",
+        "name": "Hautes-Alpes",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "VarProvence-Alpes-Cote d'Azur",
+        "name": "Var",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "VaucluseProvence-Alpes-Cote d'Azur",
+        "name": "Vaucluse",
+        "parentRegion": "Provence-Alpes-Cote d'AzurFrance"
+    },
+    {
+        "id": "SloveniaAlps",
+        "name": "Slovenia",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "SwitzerlandAlps",
+        "name": "Switzerland",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "BernSwitzerland",
+        "name": "Bern",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "InterlakenBern",
+        "name": "Interlaken",
+        "parentRegion": "BernSwitzerland"
+    },
+    {
+        "id": "MeiringenBern",
+        "name": "Meiringen",
+        "parentRegion": "BernSwitzerland"
+    },
+    {
+        "id": "Thun/SpiezBern",
+        "name": "Thun/Spiez",
+        "parentRegion": "BernSwitzerland"
+    },
+    {
+        "id": "GraubundenSwitzerland",
+        "name": "Graubunden",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "EngadinGraubunden",
+        "name": "Engadin",
+        "parentRegion": "GraubundenSwitzerland"
+    },
+    {
+        "id": "HinterrheinGraubunden",
+        "name": "Hinterrhein",
+        "parentRegion": "GraubundenSwitzerland"
+    },
+    {
+        "id": "MesolcinaGraubunden",
+        "name": "Mesolcina",
+        "parentRegion": "GraubundenSwitzerland"
+    },
+    {
+        "id": "Rheintal + PrättigauGraubunden",
+        "name": "Rheintal + Prättigau",
+        "parentRegion": "GraubundenSwitzerland"
+    },
+    {
+        "id": "VorderrheinGraubunden",
+        "name": "Vorderrhein",
+        "parentRegion": "GraubundenSwitzerland"
+    },
+    {
+        "id": "InnerschweizSwitzerland",
+        "name": "Innerschweiz",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "GlarusInnerschweiz",
+        "name": "Glarus",
+        "parentRegion": "InnerschweizSwitzerland"
+    },
+    {
+        "id": "NidwaldenInnerschweiz",
+        "name": "Nidwalden",
+        "parentRegion": "InnerschweizSwitzerland"
+    },
+    {
+        "id": "ObwaldenInnerschweiz",
+        "name": "Obwalden",
+        "parentRegion": "InnerschweizSwitzerland"
+    },
+    {
+        "id": "SchwyzInnerschweiz",
+        "name": "Schwyz",
+        "parentRegion": "InnerschweizSwitzerland"
+    },
+    {
+        "id": "UriInnerschweiz",
+        "name": "Uri",
+        "parentRegion": "InnerschweizSwitzerland"
+    },
+    {
+        "id": "Jura MountainsSwitzerland",
+        "name": "Jura Mountains",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "Jura BernoisJura Mountains",
+        "name": "Jura Bernois",
+        "parentRegion": "Jura MountainsSwitzerland"
+    },
+    {
+        "id": "Jura VaudoisJura Mountains",
+        "name": "Jura Vaudois",
+        "parentRegion": "Jura MountainsSwitzerland"
+    },
+    {
+        "id": "NeuchatelJura Mountains",
+        "name": "Neuchatel",
+        "parentRegion": "Jura MountainsSwitzerland"
+    },
+    {
+        "id": "SolothurnJura Mountains",
+        "name": "Solothurn",
+        "parentRegion": "Jura MountainsSwitzerland"
+    },
+    {
+        "id": "Pre-AlpsSwitzerland",
+        "name": "Pre-Alps",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "AppenzellPre-Alps",
+        "name": "Appenzell",
+        "parentRegion": "Pre-AlpsSwitzerland"
+    },
+    {
+        "id": "FribourgPre-Alps",
+        "name": "Fribourg",
+        "parentRegion": "Pre-AlpsSwitzerland"
+    },
+    {
+        "id": "LucernePre-Alps",
+        "name": "Lucerne",
+        "parentRegion": "Pre-AlpsSwitzerland"
+    },
+    {
+        "id": "VaudPre-Alps",
+        "name": "Vaud",
+        "parentRegion": "Pre-AlpsSwitzerland"
+    },
+    {
+        "id": "Sankt GallenSwitzerland",
+        "name": "Sankt Gallen",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "TicinoSwitzerland",
+        "name": "Ticino",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "LeventinaTicino",
+        "name": "Leventina",
+        "parentRegion": "TicinoSwitzerland"
+    },
+    {
+        "id": "Maggia (Valle)Ticino",
+        "name": "Maggia (Valle)",
+        "parentRegion": "TicinoSwitzerland"
+    },
+    {
+        "id": "Monte CeneriTicino",
+        "name": "Monte Ceneri",
+        "parentRegion": "TicinoSwitzerland"
+    },
+    {
+        "id": "Verzasca (Valle)Ticino",
+        "name": "Verzasca (Valle)",
+        "parentRegion": "TicinoSwitzerland"
+    },
+    {
+        "id": "WallisSwitzerland",
+        "name": "Wallis",
+        "parentRegion": "SwitzerlandEurope"
+    },
+    {
+        "id": "Bas ValaisWallis",
+        "name": "Bas Valais",
+        "parentRegion": "WallisSwitzerland"
+    },
+    {
+        "id": "OberwallisWallis",
+        "name": "Oberwallis",
+        "parentRegion": "WallisSwitzerland"
+    },
+    {
+        "id": "Valais CentralWallis",
+        "name": "Valais Central",
+        "parentRegion": "WallisSwitzerland"
+    },
+    {
+        "id": "Trentino-Alto AdigeAlps",
+        "name": "Trentino-Alto Adige",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "BolzanoTrentino-Alto Adige",
+        "name": "Bolzano",
+        "parentRegion": "Trentino-Alto AdigeItaly"
+    },
+    {
+        "id": "TrentoTrentino-Alto Adige",
+        "name": "Trento",
+        "parentRegion": "Trentino-Alto AdigeItaly"
+    },
+    {
+        "id": "Valle d'AostaAlps",
+        "name": "Valle d'Aosta",
+        "parentRegion": "AlpsEurope"
+    },
+    {
+        "id": "AostaValle d'Aosta",
+        "name": "Aosta",
+        "parentRegion": "Valle d'AostaItaly"
+    },
+    {
+        "id": "AndorraEurope",
+        "name": "Andorra",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "CanilloAndorra",
+        "name": "Canillo",
+        "parentRegion": "AndorraEurope"
+    },
+    {
+        "id": "EncampAndorra",
+        "name": "Encamp",
+        "parentRegion": "AndorraEurope"
+    },
+    {
+        "id": "Escaldes-EngordanyAndorra",
+        "name": "Escaldes-Engordany",
+        "parentRegion": "AndorraEurope"
+    },
+    {
+        "id": "OrdinoAndorra",
+        "name": "Ordino",
+        "parentRegion": "AndorraEurope"
+    },
+    {
+        "id": "Sant Julia de LoriaAndorra",
+        "name": "Sant Julia de Loria",
+        "parentRegion": "AndorraEurope"
+    },
+    {
+        "id": "AustriaEurope",
+        "name": "Austria",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "BulgariaEurope",
+        "name": "Bulgaria",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "CroatiaEurope",
+        "name": "Croatia",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "FranceEurope",
+        "name": "France",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AlsaceFrance",
+        "name": "Alsace",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "Haut-RhinAlsace",
+        "name": "Haut-Rhin",
+        "parentRegion": "AlsaceFrance"
+    },
+    {
+        "id": "AquitaineFrance",
+        "name": "Aquitaine",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "Pyrenees-AtlantiquesAquitaine",
+        "name": "Pyrenees-Atlantiques",
+        "parentRegion": "AquitaineFrance"
+    },
+    {
+        "id": "AuvergneFrance",
+        "name": "Auvergne",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "CantalAuvergne",
+        "name": "Cantal",
+        "parentRegion": "AuvergneFrance"
+    },
+    {
+        "id": "Haute-LoireAuvergne",
+        "name": "Haute-Loire",
+        "parentRegion": "AuvergneFrance"
+    },
+    {
+        "id": "Puy-de-DomeAuvergne",
+        "name": "Puy-de-Dome",
+        "parentRegion": "AuvergneFrance"
+    },
+    {
+        "id": "BrittanyFrance",
+        "name": "Brittany",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "FinistereBrittany",
+        "name": "Finistere",
+        "parentRegion": "BrittanyFrance"
+    },
+    {
+        "id": "BurgundyFrance",
+        "name": "Burgundy",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "Cote-d'OrBurgundy",
+        "name": "Cote-d'Or",
+        "parentRegion": "BurgundyFrance"
+    },
+    {
+        "id": "CorsicaFrance",
+        "name": "Corsica",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "Franche-ComteFrance",
+        "name": "Franche-Comte",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "DoubsFranche-Comte",
+        "name": "Doubs",
+        "parentRegion": "Franche-ComteFrance"
+    },
+    {
+        "id": "Haute-SaoneFranche-Comte",
+        "name": "Haute-Saone",
+        "parentRegion": "Franche-ComteFrance"
+    },
+    {
+        "id": "JuraFranche-Comte",
+        "name": "Jura",
+        "parentRegion": "Franche-ComteFrance"
+    },
+    {
+        "id": "Languedoc-RoussillonFrance",
+        "name": "Languedoc-Roussillon",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "AudeLanguedoc-Roussillon",
+        "name": "Aude",
+        "parentRegion": "Languedoc-RoussillonFrance"
+    },
+    {
+        "id": "GardLanguedoc-Roussillon",
+        "name": "Gard",
+        "parentRegion": "Languedoc-RoussillonFrance"
+    },
+    {
+        "id": "HeraultLanguedoc-Roussillon",
+        "name": "Herault",
+        "parentRegion": "Languedoc-RoussillonFrance"
+    },
+    {
+        "id": "LozereLanguedoc-Roussillon",
+        "name": "Lozere",
+        "parentRegion": "Languedoc-RoussillonFrance"
+    },
+    {
+        "id": "Pyrenees-OrientalesLanguedoc-Roussillon",
+        "name": "Pyrenees-Orientales",
+        "parentRegion": "Languedoc-RoussillonFrance"
+    },
+    {
+        "id": "Lower NormandyFrance",
+        "name": "Lower Normandy",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "MancheLower Normandy",
+        "name": "Manche",
+        "parentRegion": "Lower NormandyFrance"
+    },
+    {
+        "id": "Midi-PyreneesFrance",
+        "name": "Midi-Pyrenees",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "AriegeMidi-Pyrenees",
+        "name": "Ariege",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "AveyronMidi-Pyrenees",
+        "name": "Aveyron",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "Haute-GaronneMidi-Pyrenees",
+        "name": "Haute-Garonne",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "Hautes-PyreneesMidi-Pyrenees",
+        "name": "Hautes-Pyrenees",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "LotMidi-Pyrenees",
+        "name": "Lot",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "TarnMidi-Pyrenees",
+        "name": "Tarn",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "Tarn-et-GaronneMidi-Pyrenees",
+        "name": "Tarn-et-Garonne",
+        "parentRegion": "Midi-PyreneesFrance"
+    },
+    {
+        "id": "Provence-Alpes-Cote d'AzurFrance",
+        "name": "Provence-Alpes-Cote d'Azur",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "Rhone-AlpesFrance",
+        "name": "Rhone-Alpes",
+        "parentRegion": "FranceEurope"
+    },
+    {
+        "id": "AinRhone-Alpes",
+        "name": "Ain",
+        "parentRegion": "Rhone-AlpesFrance"
+    },
+    {
+        "id": "ArdecheRhone-Alpes",
+        "name": "Ardeche",
+        "parentRegion": "Rhone-AlpesFrance"
+    },
+    {
+        "id": "Haute-SavoieRhone-Alpes",
+        "name": "Haute-Savoie",
+        "parentRegion": "Rhone-AlpesFrance"
+    },
+    {
+        "id": "IsereRhone-Alpes",
+        "name": "Isere",
+        "parentRegion": "Rhone-AlpesFrance"
+    },
+    {
+        "id": "LoireRhone-Alpes",
+        "name": "Loire",
+        "parentRegion": "Rhone-AlpesFrance"
+    },
+    {
+        "id": "SavoieRhone-Alpes",
+        "name": "Savoie",
+        "parentRegion": "Rhone-AlpesFrance"
+    },
+    {
+        "id": "GermanyEurope",
+        "name": "Germany",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "Baden-WurttembergGermany",
+        "name": "Baden-Wurttemberg",
+        "parentRegion": "GermanyEurope"
+    },
+    {
+        "id": "FreiburgBaden-Wurttemberg",
+        "name": "Freiburg",
+        "parentRegion": "Baden-WurttembergGermany"
+    },
+    {
+        "id": "BavariaGermany",
+        "name": "Bavaria",
+        "parentRegion": "GermanyEurope"
+    },
+    {
+        "id": "Lower SaxonyGermany",
+        "name": "Lower Saxony",
+        "parentRegion": "GermanyEurope"
+    },
+    {
+        "id": "DetmoldLower Saxony",
+        "name": "Detmold",
+        "parentRegion": "Lower SaxonyGermany"
+    },
+    {
+        "id": "GreeceEurope",
+        "name": "Greece",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AtticaGreece",
+        "name": "Attica",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "Central GreeceGreece",
+        "name": "Central Greece",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "EvrytaniaCentral Greece",
+        "name": "Evrytania",
+        "parentRegion": "Central GreeceGreece"
+    },
+    {
+        "id": "PhthiotisCentral Greece",
+        "name": "Phthiotis",
+        "parentRegion": "Central GreeceGreece"
+    },
+    {
+        "id": "Central MacedoniaGreece",
+        "name": "Central Macedonia",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "PieriaCentral Macedonia",
+        "name": "Pieria",
+        "parentRegion": "Central MacedoniaGreece"
+    },
+    {
+        "id": "CreteGreece",
+        "name": "Crete",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "ChaniaCrete",
+        "name": "Chania",
+        "parentRegion": "CreteGreece"
+    },
+    {
+        "id": "HeraklionCrete",
+        "name": "Heraklion",
+        "parentRegion": "CreteGreece"
+    },
+    {
+        "id": "LasithiCrete",
+        "name": "Lasithi",
+        "parentRegion": "CreteGreece"
+    },
+    {
+        "id": "RethymnoCrete",
+        "name": "Rethymno",
+        "parentRegion": "CreteGreece"
+    },
+    {
+        "id": "East Macedonia and ThraceGreece",
+        "name": "East Macedonia and Thrace",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "EvrosEast Macedonia and Thrace",
+        "name": "Evros",
+        "parentRegion": "East Macedonia and ThraceGreece"
+    },
+    {
+        "id": "EpirusGreece",
+        "name": "Epirus",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "IoanninaEpirus",
+        "name": "Ioannina",
+        "parentRegion": "EpirusGreece"
+    },
+    {
+        "id": "Ionian IslandsGreece",
+        "name": "Ionian Islands",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "KefaloniaIonian Islands",
+        "name": "Kefalonia",
+        "parentRegion": "Ionian IslandsGreece"
+    },
+    {
+        "id": "PeloponneseGreece",
+        "name": "Peloponnese",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "AchaiaPeloponnese",
+        "name": "Achaia",
+        "parentRegion": "PeloponneseGreece"
+    },
+    {
+        "id": "ArgolidaPeloponnese",
+        "name": "Argolida",
+        "parentRegion": "PeloponneseGreece"
+    },
+    {
+        "id": "CorinthPeloponnese",
+        "name": "Corinth",
+        "parentRegion": "PeloponneseGreece"
+    },
+    {
+        "id": "ThessalyGreece",
+        "name": "Thessaly",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "KarditsaThessaly",
+        "name": "Karditsa",
+        "parentRegion": "ThessalyGreece"
+    },
+    {
+        "id": "LarissaThessaly",
+        "name": "Larissa",
+        "parentRegion": "ThessalyGreece"
+    },
+    {
+        "id": "MagnesiaThessaly",
+        "name": "Magnesia",
+        "parentRegion": "ThessalyGreece"
+    },
+    {
+        "id": "West MacedoniaGreece",
+        "name": "West Macedonia",
+        "parentRegion": "GreeceEurope"
+    },
+    {
+        "id": "KozaniWest Macedonia",
+        "name": "Kozani",
+        "parentRegion": "West MacedoniaGreece"
+    },
+    {
+        "id": "HungaryEurope",
+        "name": "Hungary",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "IcelandEurope",
+        "name": "Iceland",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "IrelandEurope",
+        "name": "Ireland",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "Northern IrelandIreland",
+        "name": "Northern Ireland",
+        "parentRegion": "IrelandEurope"
+    },
+    {
+        "id": "Islas CanariasEurope",
+        "name": "Islas Canarias",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "El HierroIslas Canarias",
+        "name": "El Hierro",
+        "parentRegion": "Islas CanariasEurope"
+    },
+    {
+        "id": "Gran CanariaIslas Canarias",
+        "name": "Gran Canaria",
+        "parentRegion": "Islas CanariasEurope"
+    },
+    {
+        "id": "La GomeraIslas Canarias",
+        "name": "La Gomera",
+        "parentRegion": "Islas CanariasEurope"
+    },
+    {
+        "id": "La PalmaIslas Canarias",
+        "name": "La Palma",
+        "parentRegion": "Islas CanariasEurope"
+    },
+    {
+        "id": "LanzaroteIslas Canarias",
+        "name": "Lanzarote",
+        "parentRegion": "Islas CanariasEurope"
+    },
+    {
+        "id": "TenerifeIslas Canarias",
+        "name": "Tenerife",
+        "parentRegion": "Islas CanariasEurope"
+    },
+    {
+        "id": "ItalyEurope",
+        "name": "Italy",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AbruzzoItaly",
+        "name": "Abruzzo",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "AquilaAbruzzo",
+        "name": "Aquila",
+        "parentRegion": "AbruzzoItaly"
+    },
+    {
+        "id": "ChietiAbruzzo",
+        "name": "Chieti",
+        "parentRegion": "AbruzzoItaly"
+    },
+    {
+        "id": "PescaraAbruzzo",
+        "name": "Pescara",
+        "parentRegion": "AbruzzoItaly"
+    },
+    {
+        "id": "TeramoAbruzzo",
+        "name": "Teramo",
+        "parentRegion": "AbruzzoItaly"
+    },
+    {
+        "id": "ApuliaItaly",
+        "name": "Apulia",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "TarantoApulia",
+        "name": "Taranto",
+        "parentRegion": "ApuliaItaly"
+    },
+    {
+        "id": "BasilicataItaly",
+        "name": "Basilicata",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "PotenzaBasilicata",
+        "name": "Potenza",
+        "parentRegion": "BasilicataItaly"
+    },
+    {
+        "id": "CalabriaItaly",
+        "name": "Calabria",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "CatanzaroCalabria",
+        "name": "Catanzaro",
+        "parentRegion": "CalabriaItaly"
+    },
+    {
+        "id": "CosenzaCalabria",
+        "name": "Cosenza",
+        "parentRegion": "CalabriaItaly"
+    },
+    {
+        "id": "CrotoneCalabria",
+        "name": "Crotone",
+        "parentRegion": "CalabriaItaly"
+    },
+    {
+        "id": "Reggio CalabriaCalabria",
+        "name": "Reggio Calabria",
+        "parentRegion": "CalabriaItaly"
+    },
+    {
+        "id": "CampaniaItaly",
+        "name": "Campania",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "AvellinoCampania",
+        "name": "Avellino",
+        "parentRegion": "CampaniaItaly"
+    },
+    {
+        "id": "BeneventoCampania",
+        "name": "Benevento",
+        "parentRegion": "CampaniaItaly"
+    },
+    {
+        "id": "CasertaCampania",
+        "name": "Caserta",
+        "parentRegion": "CampaniaItaly"
+    },
+    {
+        "id": "NapoliCampania",
+        "name": "Napoli",
+        "parentRegion": "CampaniaItaly"
+    },
+    {
+        "id": "SalernoCampania",
+        "name": "Salerno",
+        "parentRegion": "CampaniaItaly"
+    },
+    {
+        "id": "Emilia-RomagnaItaly",
+        "name": "Emilia-Romagna",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "BolognaEmilia-Romagna",
+        "name": "Bologna",
+        "parentRegion": "Emilia-RomagnaItaly"
+    },
+    {
+        "id": "ParmaEmilia-Romagna",
+        "name": "Parma",
+        "parentRegion": "Emilia-RomagnaItaly"
+    },
+    {
+        "id": "PiacenzaEmilia-Romagna",
+        "name": "Piacenza",
+        "parentRegion": "Emilia-RomagnaItaly"
+    },
+    {
+        "id": "Friul-Venezia GiuliaItaly",
+        "name": "Friul-Venezia Giulia",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "Friuli Venezia GiuliaItaly",
+        "name": "Friuli Venezia Giulia",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "LazioItaly",
+        "name": "Lazio",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "FrosinoneLazio",
+        "name": "Frosinone",
+        "parentRegion": "LazioItaly"
+    },
+    {
+        "id": "LatinaLazio",
+        "name": "Latina",
+        "parentRegion": "LazioItaly"
+    },
+    {
+        "id": "RietiLazio",
+        "name": "Rieti",
+        "parentRegion": "LazioItaly"
+    },
+    {
+        "id": "RomaLazio",
+        "name": "Roma",
+        "parentRegion": "LazioItaly"
+    },
+    {
+        "id": "ViterboLazio",
+        "name": "Viterbo",
+        "parentRegion": "LazioItaly"
+    },
+    {
+        "id": "LiguriaItaly",
+        "name": "Liguria",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "GenovaLiguria",
+        "name": "Genova",
+        "parentRegion": "LiguriaItaly"
+    },
+    {
+        "id": "ImperiaLiguria",
+        "name": "Imperia",
+        "parentRegion": "LiguriaItaly"
+    },
+    {
+        "id": "SavonaLiguria",
+        "name": "Savona",
+        "parentRegion": "LiguriaItaly"
+    },
+    {
+        "id": "SpeziaLiguria",
+        "name": "Spezia",
+        "parentRegion": "LiguriaItaly"
+    },
+    {
+        "id": "LombardiaItaly",
+        "name": "Lombardia",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "MarcheItaly",
+        "name": "Marche",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "AnconaMarche",
+        "name": "Ancona",
+        "parentRegion": "MarcheItaly"
+    },
+    {
+        "id": "Ascoli PicenoMarche",
+        "name": "Ascoli Piceno",
+        "parentRegion": "MarcheItaly"
+    },
+    {
+        "id": "FermoMarche",
+        "name": "Fermo",
+        "parentRegion": "MarcheItaly"
+    },
+    {
+        "id": "MacerataMarche",
+        "name": "Macerata",
+        "parentRegion": "MarcheItaly"
+    },
+    {
+        "id": "PesaroMarche",
+        "name": "Pesaro",
+        "parentRegion": "MarcheItaly"
+    },
+    {
+        "id": "MoliseItaly",
+        "name": "Molise",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "CampobassoMolise",
+        "name": "Campobasso",
+        "parentRegion": "MoliseItaly"
+    },
+    {
+        "id": "IserniaMolise",
+        "name": "Isernia",
+        "parentRegion": "MoliseItaly"
+    },
+    {
+        "id": "PiemonteItaly",
+        "name": "Piemonte",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "SardegnaItaly",
+        "name": "Sardegna",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "CagliariSardegna",
+        "name": "Cagliari",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "Carbonia-IglesiasSardegna",
+        "name": "Carbonia-Iglesias",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "Medio CampidanoSardegna",
+        "name": "Medio Campidano",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "NuoroSardegna",
+        "name": "Nuoro",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "OgliastraSardegna",
+        "name": "Ogliastra",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "Olbia-TempioSardegna",
+        "name": "Olbia-Tempio",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "OristanoSardegna",
+        "name": "Oristano",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "SassariSardegna",
+        "name": "Sassari",
+        "parentRegion": "SardegnaItaly"
+    },
+    {
+        "id": "SiciliaItaly",
+        "name": "Sicilia",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "AgrigentoSicilia",
+        "name": "Agrigento",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "CataniaSicilia",
+        "name": "Catania",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "MessinaSicilia",
+        "name": "Messina",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "PalermoSicilia",
+        "name": "Palermo",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "RagusaSicilia",
+        "name": "Ragusa",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "SiracusaSicilia",
+        "name": "Siracusa",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "TrapaniSicilia",
+        "name": "Trapani",
+        "parentRegion": "SiciliaItaly"
+    },
+    {
+        "id": "ToscanaItaly",
+        "name": "Toscana",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "GrossetoToscana",
+        "name": "Grosseto",
+        "parentRegion": "ToscanaItaly"
+    },
+    {
+        "id": "LuccaToscana",
+        "name": "Lucca",
+        "parentRegion": "ToscanaItaly"
+    },
+    {
+        "id": "Massa CarraraToscana",
+        "name": "Massa Carrara",
+        "parentRegion": "ToscanaItaly"
+    },
+    {
+        "id": "PratoToscana",
+        "name": "Prato",
+        "parentRegion": "ToscanaItaly"
+    },
+    {
+        "id": "Trentino-Alto AdigeItaly",
+        "name": "Trentino-Alto Adige",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "UmbriaItaly",
+        "name": "Umbria",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "PerugiaUmbria",
+        "name": "Perugia",
+        "parentRegion": "UmbriaItaly"
+    },
+    {
+        "id": "TerniUmbria",
+        "name": "Terni",
+        "parentRegion": "UmbriaItaly"
+    },
+    {
+        "id": "Valle d'AostaItaly",
+        "name": "Valle d'Aosta",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "VenetoItaly",
+        "name": "Veneto",
+        "parentRegion": "ItalyEurope"
+    },
+    {
+        "id": "BellunoVeneto",
+        "name": "Belluno",
+        "parentRegion": "VenetoItaly"
+    },
+    {
+        "id": "VeronaVeneto",
+        "name": "Verona",
+        "parentRegion": "VenetoItaly"
+    },
+    {
+        "id": "VicenzaVeneto",
+        "name": "Vicenza",
+        "parentRegion": "VenetoItaly"
+    },
+    {
+        "id": "LithuaniaEurope",
+        "name": "Lithuania",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "MacedoniaEurope",
+        "name": "Macedonia",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "MontenegroEurope",
+        "name": "Montenegro",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "PolandEurope",
+        "name": "Poland",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "PortugalEurope",
+        "name": "Portugal",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AzoresPortugal",
+        "name": "Azores",
+        "parentRegion": "PortugalEurope"
+    },
+    {
+        "id": "FaialAzores",
+        "name": "Faial",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "FloresAzores",
+        "name": "Flores",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "GraciosaAzores",
+        "name": "Graciosa",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "PicoAzores",
+        "name": "Pico",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "Santa MariaAzores",
+        "name": "Santa Maria",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "Sao JorgeAzores",
+        "name": "Sao Jorge",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "Sao MiguelAzores",
+        "name": "Sao Miguel",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "TerceiraAzores",
+        "name": "Terceira",
+        "parentRegion": "AzoresPortugal"
+    },
+    {
+        "id": "MadeiraPortugal",
+        "name": "Madeira",
+        "parentRegion": "PortugalEurope"
+    },
+    {
+        "id": "Portugal NorthPortugal",
+        "name": "Portugal North",
+        "parentRegion": "PortugalEurope"
+    },
+    {
+        "id": "RomaniaEurope",
+        "name": "Romania",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "SlovakiaEurope",
+        "name": "Slovakia",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "SloveniaEurope",
+        "name": "Slovenia",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "SpainEurope",
+        "name": "Spain",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AndaluciaSpain",
+        "name": "Andalucia",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "AlmeriaAndalucia",
+        "name": "Almeria",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "CadizAndalucia",
+        "name": "Cadiz",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "CordobaAndalucia",
+        "name": "Cordoba",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "GranadaAndalucia",
+        "name": "Granada",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "JaenAndalucia",
+        "name": "Jaen",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "MalagaAndalucia",
+        "name": "Malaga",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "SevillaAndalucia",
+        "name": "Sevilla",
+        "parentRegion": "AndaluciaSpain"
+    },
+    {
+        "id": "AragonSpain",
+        "name": "Aragon",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "HuescaAragon",
+        "name": "Huesca",
+        "parentRegion": "AragonSpain"
+    },
+    {
+        "id": "TeruelAragon",
+        "name": "Teruel",
+        "parentRegion": "AragonSpain"
+    },
+    {
+        "id": "ZaragozaAragon",
+        "name": "Zaragoza",
+        "parentRegion": "AragonSpain"
+    },
+    {
+        "id": "AsturiasSpain",
+        "name": "Asturias",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "CantabriaSpain",
+        "name": "Cantabria",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "Castilla - La ManchaSpain",
+        "name": "Castilla - La Mancha",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "AlbaceteCastilla - La Mancha",
+        "name": "Albacete",
+        "parentRegion": "Castilla - La ManchaSpain"
+    },
+    {
+        "id": "Ciudad RealCastilla - La Mancha",
+        "name": "Ciudad Real",
+        "parentRegion": "Castilla - La ManchaSpain"
+    },
+    {
+        "id": "CuencaCastilla - La Mancha",
+        "name": "Cuenca",
+        "parentRegion": "Castilla - La ManchaSpain"
+    },
+    {
+        "id": "GuadalajaraCastilla - La Mancha",
+        "name": "Guadalajara",
+        "parentRegion": "Castilla - La ManchaSpain"
+    },
+    {
+        "id": "Castilla y LeonSpain",
+        "name": "Castilla y Leon",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "AvilaCastilla y Leon",
+        "name": "Avila",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "BurgosCastilla y Leon",
+        "name": "Burgos",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "LeonCastilla y Leon",
+        "name": "Leon",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "PalenciaCastilla y Leon",
+        "name": "Palencia",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "SalamancaCastilla y Leon",
+        "name": "Salamanca",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "SoriaCastilla y Leon",
+        "name": "Soria",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "ZamoraCastilla y Leon",
+        "name": "Zamora",
+        "parentRegion": "Castilla y LeonSpain"
+    },
+    {
+        "id": "CataluñaSpain",
+        "name": "Cataluña",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "BarcelonaCataluña",
+        "name": "Barcelona",
+        "parentRegion": "CataluñaSpain"
+    },
+    {
+        "id": "GeronaCataluña",
+        "name": "Gerona",
+        "parentRegion": "CataluñaSpain"
+    },
+    {
+        "id": "LeridaCataluña",
+        "name": "Lerida",
+        "parentRegion": "CataluñaSpain"
+    },
+    {
+        "id": "TarragonaCataluña",
+        "name": "Tarragona",
+        "parentRegion": "CataluñaSpain"
+    },
+    {
+        "id": "ExtremaduraSpain",
+        "name": "Extremadura",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "CaceresExtremadura",
+        "name": "Caceres",
+        "parentRegion": "ExtremaduraSpain"
+    },
+    {
+        "id": "GaliciaSpain",
+        "name": "Galicia",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "La CoruñaGalicia",
+        "name": "La Coruña",
+        "parentRegion": "GaliciaSpain"
+    },
+    {
+        "id": "LugoGalicia",
+        "name": "Lugo",
+        "parentRegion": "GaliciaSpain"
+    },
+    {
+        "id": "OrenseGalicia",
+        "name": "Orense",
+        "parentRegion": "GaliciaSpain"
+    },
+    {
+        "id": "PontevedraGalicia",
+        "name": "Pontevedra",
+        "parentRegion": "GaliciaSpain"
+    },
+    {
+        "id": "Islas BalearesSpain",
+        "name": "Islas Baleares",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "MallorcaIslas Baleares",
+        "name": "Mallorca",
+        "parentRegion": "Islas BalearesSpain"
+    },
+    {
+        "id": "MadridSpain",
+        "name": "Madrid",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "MurciaSpain",
+        "name": "Murcia",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "NavarraSpain",
+        "name": "Navarra",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "Pais VascoSpain",
+        "name": "Pais Vasco",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "AlavaPais Vasco",
+        "name": "Alava",
+        "parentRegion": "Pais VascoSpain"
+    },
+    {
+        "id": "GuipuzcoaPais Vasco",
+        "name": "Guipuzcoa",
+        "parentRegion": "Pais VascoSpain"
+    },
+    {
+        "id": "VizcayaPais Vasco",
+        "name": "Vizcaya",
+        "parentRegion": "Pais VascoSpain"
+    },
+    {
+        "id": "RiojaSpain",
+        "name": "Rioja",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "ValenciaSpain",
+        "name": "Valencia",
+        "parentRegion": "SpainEurope"
+    },
+    {
+        "id": "AlicanteValencia",
+        "name": "Alicante",
+        "parentRegion": "ValenciaSpain"
+    },
+    {
+        "id": "CastellonValencia",
+        "name": "Castellon",
+        "parentRegion": "ValenciaSpain"
+    },
+    {
+        "id": "SwitzerlandEurope",
+        "name": "Switzerland",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "TurkeyEurope",
+        "name": "Turkey",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "AntalyaTurkey",
+        "name": "Antalya",
+        "parentRegion": "TurkeyMiddle East"
+    },
+    {
+        "id": "IzmirTurkey",
+        "name": "Izmir",
+        "parentRegion": "TurkeyMiddle East"
+    },
+    {
+        "id": "KastamonuTurkey",
+        "name": "Kastamonu",
+        "parentRegion": "TurkeyMiddle East"
+    },
+    {
+        "id": "ManisaTurkey",
+        "name": "Manisa",
+        "parentRegion": "TurkeyMiddle East"
+    },
+    {
+        "id": "MuglaTurkey",
+        "name": "Mugla",
+        "parentRegion": "TurkeyMiddle East"
+    },
+    {
+        "id": "United KingdomEurope",
+        "name": "United Kingdom",
+        "parentRegion": "EuropeWorld"
+    },
+    {
+        "id": "EnglandUnited Kingdom",
+        "name": "England",
+        "parentRegion": "United KingdomEurope"
+    },
+    {
+        "id": "Northern IrelandUnited Kingdom",
+        "name": "Northern Ireland",
+        "parentRegion": "United KingdomEurope"
+    },
+    {
+        "id": "ScotlandUnited Kingdom",
+        "name": "Scotland",
+        "parentRegion": "United KingdomEurope"
+    },
+    {
+        "id": "WalesUnited Kingdom",
+        "name": "Wales",
+        "parentRegion": "United KingdomEurope"
+    },
+    {
+        "id": "Middle EastWorld",
+        "name": "Middle East",
+        "parentRegion": "World"
+    },
+    {
+        "id": "EmiratesMiddle East",
+        "name": "Emirates",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "Georgia (Middle East)Middle East",
+        "name": "Georgia (Middle East)",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "IranMiddle East",
+        "name": "Iran",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "IsraelMiddle East",
+        "name": "Israel",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "JordanMiddle East",
+        "name": "Jordan",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "AqabaJordan",
+        "name": "Aqaba",
+        "parentRegion": "JordanMiddle East"
+    },
+    {
+        "id": "KarakJordan",
+        "name": "Karak",
+        "parentRegion": "JordanMiddle East"
+    },
+    {
+        "id": "Ma'anJordan",
+        "name": "Ma'an",
+        "parentRegion": "JordanMiddle East"
+    },
+    {
+        "id": "MadabaJordan",
+        "name": "Madaba",
+        "parentRegion": "JordanMiddle East"
+    },
+    {
+        "id": "TafilahJordan",
+        "name": "Tafilah",
+        "parentRegion": "JordanMiddle East"
+    },
+    {
+        "id": "OmanMiddle East",
+        "name": "Oman",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "Saudi ArabiaMiddle East",
+        "name": "Saudi Arabia",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "SyriaMiddle East",
+        "name": "Syria",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "TurkeyMiddle East",
+        "name": "Turkey",
+        "parentRegion": "Middle EastWorld"
+    },
+    {
+        "id": "North AmericaWorld",
+        "name": "North America",
+        "parentRegion": "World"
+    },
+    {
+        "id": "CanadaNorth America",
+        "name": "Canada",
+        "parentRegion": "North AmericaWorld"
+    },
+    {
+        "id": "British ColumbiaCanada",
+        "name": "British Columbia",
+        "parentRegion": "CanadaNorth America"
+    },
+    {
+        "id": "Fraser ValleyBritish Columbia",
+        "name": "Fraser Valley",
+        "parentRegion": "British ColumbiaPacific Northwest"
+    },
+    {
+        "id": "Sea-to-SkyBritish Columbia",
+        "name": "Sea-to-Sky",
+        "parentRegion": "British ColumbiaPacific Northwest"
+    },
+    {
+        "id": "SquamishSea-to-Sky",
+        "name": "Squamish",
+        "parentRegion": "Sea-to-SkyBritish Columbia"
+    },
+    {
+        "id": "Sunshine CoastBritish Columbia",
+        "name": "Sunshine Coast",
+        "parentRegion": "British ColumbiaPacific Northwest"
+    },
+    {
+        "id": "VancouverBritish Columbia",
+        "name": "Vancouver",
+        "parentRegion": "British ColumbiaPacific Northwest"
+    },
+    {
+        "id": "Vancouver IslandBritish Columbia",
+        "name": "Vancouver Island",
+        "parentRegion": "British ColumbiaPacific Northwest"
+    },
+    {
+        "id": "Canadian RockiesCanada",
+        "name": "Canadian Rockies",
+        "parentRegion": "CanadaNorth America"
+    },
+    {
+        "id": "Northwest TerritoriesCanada",
+        "name": "Northwest Territories",
+        "parentRegion": "CanadaNorth America"
+    },
+    {
+        "id": "QuebecCanada",
+        "name": "Quebec",
+        "parentRegion": "CanadaNorth America"
+    },
+    {
+        "id": "MexicoNorth America",
+        "name": "Mexico",
+        "parentRegion": "North AmericaWorld"
+    },
+    {
+        "id": "Pacific NorthwestNorth America",
+        "name": "Pacific Northwest",
+        "parentRegion": "North AmericaWorld"
+    },
+    {
+        "id": "British ColumbiaPacific Northwest",
+        "name": "British Columbia",
+        "parentRegion": "Pacific NorthwestNorth America"
+    },
+    {
+        "id": "IdahoPacific Northwest",
+        "name": "Idaho",
+        "parentRegion": "Pacific NorthwestNorth America"
+    },
+    {
+        "id": "Northern Idaho (Panhandle)Idaho",
+        "name": "Northern Idaho (Panhandle)",
+        "parentRegion": "IdahoUnited States"
+    },
+    {
+        "id": "Southeastern IdahoIdaho",
+        "name": "Southeastern Idaho",
+        "parentRegion": "IdahoUnited States"
+    },
+    {
+        "id": "OregonPacific Northwest",
+        "name": "Oregon",
+        "parentRegion": "Pacific NorthwestNorth America"
+    },
+    {
+        "id": "Central Oregon CascadesOregon",
+        "name": "Central Oregon Cascades",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Coast RangeOregon",
+        "name": "Coast Range",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Columbia River GorgeOregon",
+        "name": "Columbia River Gorge",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Oregon SideColumbia River Gorge",
+        "name": "Oregon Side",
+        "parentRegion": "Columbia River GorgeWashington"
+    },
+    {
+        "id": "Washington SideColumbia River Gorge",
+        "name": "Washington Side",
+        "parentRegion": "Columbia River GorgeWashington"
+    },
+    {
+        "id": "Northeastern OregonOregon",
+        "name": "Northeastern Oregon",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Northern Oregon CascadesOregon",
+        "name": "Northern Oregon Cascades",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Southeastern OregonOregon",
+        "name": "Southeastern Oregon",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Southern Oregon CascadesOregon",
+        "name": "Southern Oregon Cascades",
+        "parentRegion": "OregonUnited States"
+    },
+    {
+        "id": "Crater Lake National ParkSouthern Oregon Cascades",
+        "name": "Crater Lake National Park",
+        "parentRegion": "Southern Oregon CascadesOregon"
+    },
+    {
+        "id": "WashingtonPacific Northwest",
+        "name": "Washington",
+        "parentRegion": "Pacific NorthwestNorth America"
+    },
+    {
+        "id": "Alpine LakesWashington",
+        "name": "Alpine Lakes",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "Columbia River GorgeWashington",
+        "name": "Columbia River Gorge",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "East CascadesWashington",
+        "name": "East Cascades",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "Eastern WashingtonWashington",
+        "name": "Eastern Washington",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "North CascadesWashington",
+        "name": "North Cascades",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "Darrington Ranger DistrictNorth Cascades",
+        "name": "Darrington Ranger District",
+        "parentRegion": "North CascadesWashington"
+    },
+    {
+        "id": "Mt. Baker Ranger DistrictNorth Cascades",
+        "name": "Mt. Baker Ranger District",
+        "parentRegion": "North CascadesWashington"
+    },
+    {
+        "id": "Olympic PeninsulaWashington",
+        "name": "Olympic Peninsula",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "South CascadesWashington",
+        "name": "South Cascades",
+        "parentRegion": "WashingtonUnited States"
+    },
+    {
+        "id": "Lewis River (Washington)South Cascades",
+        "name": "Lewis River (Washington)",
+        "parentRegion": "South CascadesWashington"
+    },
+    {
+        "id": "Mount Rainier National ParkSouth Cascades",
+        "name": "Mount Rainier National Park",
+        "parentRegion": "South CascadesWashington"
+    },
+    {
+        "id": "Mount St. HelensSouth Cascades",
+        "name": "Mount St. Helens",
+        "parentRegion": "South CascadesWashington"
+    },
+    {
+        "id": "United StatesNorth America",
+        "name": "United States",
+        "parentRegion": "North AmericaWorld"
+    },
+    {
+        "id": "AlaskaUnited States",
+        "name": "Alaska",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "ArizonaUnited States",
+        "name": "Arizona",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Aravaipa Canyon Wilderness AreaArizona",
+        "name": "Aravaipa Canyon Wilderness Area",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Bradshaw MountainsArizona",
+        "name": "Bradshaw Mountains",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Four Peaks WildernessArizona",
+        "name": "Four Peaks Wilderness",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Gila Box Riparian National Conservation AreaArizona",
+        "name": "Gila Box Riparian National Conservation Area",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Grand CanyonArizona",
+        "name": "Grand Canyon",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Hellsgate WildernessArizona",
+        "name": "Hellsgate Wilderness",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Lake Mead NRAArizona",
+        "name": "Lake Mead NRA",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "MazatzalArizona",
+        "name": "Mazatzal",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Mogollon RimArizona",
+        "name": "Mogollon Rim",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "FlagstaffMogollon Rim",
+        "name": "Flagstaff",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "Fossil Springs WildernessMogollon Rim",
+        "name": "Fossil Springs Wilderness",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "Secret MountainMogollon Rim",
+        "name": "Secret Mountain",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "SedonaMogollon Rim",
+        "name": "Sedona",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "Sycamore Canyon WildernessMogollon Rim",
+        "name": "Sycamore Canyon Wilderness",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "West Clear Creek WildernessMogollon Rim",
+        "name": "West Clear Creek Wilderness",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "West Fork Oak CreekMogollon Rim",
+        "name": "West Fork Oak Creek",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "West ForkWest Fork Oak Creek",
+        "name": "West Fork",
+        "parentRegion": "West Fork Oak CreekMogollon Rim"
+    },
+    {
+        "id": "Wet Beaver WildernessMogollon Rim",
+        "name": "Wet Beaver Wilderness",
+        "parentRegion": "Mogollon RimArizona"
+    },
+    {
+        "id": "Navajo Indian ReservationArizona",
+        "name": "Navajo Indian Reservation",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Page and WahweapArizona",
+        "name": "Page and Wahweap",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Navajo CanyonPage and Wahweap",
+        "name": "Navajo Canyon",
+        "parentRegion": "Page and WahweapArizona"
+    },
+    {
+        "id": "Waterholes ComplexPage and Wahweap",
+        "name": "Waterholes Complex",
+        "parentRegion": "Page and WahweapArizona"
+    },
+    {
+        "id": "West CanyonPage and Wahweap",
+        "name": "West Canyon",
+        "parentRegion": "Page and WahweapArizona"
+    },
+    {
+        "id": "Pinaleno MountainsArizona",
+        "name": "Pinaleno Mountains",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Salt River Canyon WildernessArizona",
+        "name": "Salt River Canyon Wilderness",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "San Carlos Indian ReservationArizona",
+        "name": "San Carlos Indian Reservation",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Santa Catalina MountainsArizona",
+        "name": "Santa Catalina Mountains",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Sierra Ancha MountainsArizona",
+        "name": "Sierra Ancha Mountains",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Superior/GlobeArizona",
+        "name": "Superior/Globe",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Superstition MountainsArizona",
+        "name": "Superstition Mountains",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "The Black MountainsArizona",
+        "name": "The Black Mountains",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Tonto BasinArizona",
+        "name": "Tonto Basin",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "Virgin River GorgeArizona",
+        "name": "Virgin River Gorge",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "White Mountain Apache ReservationArizona",
+        "name": "White Mountain Apache Reservation",
+        "parentRegion": "ArizonaUnited States"
+    },
+    {
+        "id": "ArkansasUnited States",
+        "name": "Arkansas",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "CaliforniaUnited States",
+        "name": "California",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "California Central CoastCalifornia",
+        "name": "California Central Coast",
+        "parentRegion": "CaliforniaUnited States"
+    },
+    {
+        "id": "Big SurCalifornia Central Coast",
+        "name": "Big Sur",
+        "parentRegion": "California Central CoastCalifornia"
+    },
+    {
+        "id": "Santa Cruz MountainsCalifornia Central Coast",
+        "name": "Santa Cruz Mountains",
+        "parentRegion": "California Central CoastCalifornia"
+    },
+    {
+        "id": "California SierrasCalifornia",
+        "name": "California Sierras",
+        "parentRegion": "CaliforniaUnited States"
+    },
+    {
+        "id": "El Dorado National ForestCalifornia Sierras",
+        "name": "El Dorado National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Inyo National ForestCalifornia Sierras",
+        "name": "Inyo National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Kings Canyon National ParkCalifornia Sierras",
+        "name": "Kings Canyon National Park",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Plumas National ForestCalifornia Sierras",
+        "name": "Plumas National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Sequoia National ForestCalifornia Sierras",
+        "name": "Sequoia National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Sequoia National ParkCalifornia Sierras",
+        "name": "Sequoia National Park",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Sierra National ForestCalifornia Sierras",
+        "name": "Sierra National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Stanislaus National ForestCalifornia Sierras",
+        "name": "Stanislaus National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Tahoe National ForestCalifornia Sierras",
+        "name": "Tahoe National Forest",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Yosemite National ParkCalifornia Sierras",
+        "name": "Yosemite National Park",
+        "parentRegion": "California SierrasCalifornia"
+    },
+    {
+        "id": "Death Valley National ParkCalifornia",
+        "name": "Death Valley National Park",
+        "parentRegion": "CaliforniaUnited States"
+    },
+    {
+        "id": "Black MountainsDeath Valley National Park",
+        "name": "Black Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Black Mountains NorthBlack Mountains",
+        "name": "Black Mountains North",
+        "parentRegion": "Black MountainsDeath Valley National Park"
+    },
+    {
+        "id": "Black Mountains SouthBlack Mountains",
+        "name": "Black Mountains South",
+        "parentRegion": "Black MountainsDeath Valley National Park"
+    },
+    {
+        "id": "Cottonwood MountainsDeath Valley National Park",
+        "name": "Cottonwood Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Princess Bride RangeCottonwood Mountains",
+        "name": "Princess Bride Range",
+        "parentRegion": "Cottonwood MountainsDeath Valley National Park"
+    },
+    {
+        "id": "Eureka DunesDeath Valley National Park",
+        "name": "Eureka Dunes",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Funeral MountainsDeath Valley National Park",
+        "name": "Funeral Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Grapevine MountainsDeath Valley National Park",
+        "name": "Grapevine Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Inyo MountainsDeath Valley National Park",
+        "name": "Inyo Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Last Chance MountainsDeath Valley National Park",
+        "name": "Last Chance Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Nopah RangeDeath Valley National Park",
+        "name": "Nopah Range",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Panamint Range WestDeath Valley National Park",
+        "name": "Panamint Range West",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Racetrack ValleyDeath Valley National Park",
+        "name": "Racetrack Valley",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Saline ValleyDeath Valley National Park",
+        "name": "Saline Valley",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Sylvania MountainsDeath Valley National Park",
+        "name": "Sylvania Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Tucki MountainsDeath Valley National Park",
+        "name": "Tucki Mountains",
+        "parentRegion": "Death Valley National ParkCalifornia"
+    },
+    {
+        "id": "Klamath MountainsCalifornia",
+        "name": "Klamath Mountains",
+        "parentRegion": "CaliforniaUnited States"
+    },
+    {
+        "id": "Northern Coastal RangesCalifornia",
+        "name": "Northern Coastal Ranges",
+        "parentRegion": "CaliforniaUnited States"
+    },
+    {
+        "id": "Southern CaliforniaCalifornia",
+        "name": "Southern California",
+        "parentRegion": "CaliforniaUnited States"
+    },
+    {
+        "id": "Cady MountainsSouthern California",
+        "name": "Cady Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Channel IslandsSouthern California",
+        "name": "Channel Islands",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Catalina IslandChannel Islands",
+        "name": "Catalina Island",
+        "parentRegion": "Channel IslandsSouthern California"
+    },
+    {
+        "id": "San Miguel IslandChannel Islands",
+        "name": "San Miguel Island",
+        "parentRegion": "Channel IslandsSouthern California"
+    },
+    {
+        "id": "Santa Cruz IslandChannel Islands",
+        "name": "Santa Cruz Island",
+        "parentRegion": "Channel IslandsSouthern California"
+    },
+    {
+        "id": "Joshua Tree National ParkSouthern California",
+        "name": "Joshua Tree National Park",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Mecca HillsSouthern California",
+        "name": "Mecca Hills",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Newberry MountainsSouthern California",
+        "name": "Newberry Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Orange CountySouthern California",
+        "name": "Orange County",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "San Bernardino MountainsSouthern California",
+        "name": "San Bernardino Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "San DiegoSouthern California",
+        "name": "San Diego",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Anza Borrego DesertSan Diego",
+        "name": "Anza Borrego Desert",
+        "parentRegion": "San DiegoSouthern California"
+    },
+    {
+        "id": "Coyote MountainsSan Diego",
+        "name": "Coyote Mountains",
+        "parentRegion": "San DiegoSouthern California"
+    },
+    {
+        "id": "San Gabriel MountainsSouthern California",
+        "name": "San Gabriel Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Arroyo Seco regionSan Gabriel Mountains",
+        "name": "Arroyo Seco region",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "Big Tujunga RegionSan Gabriel Mountains",
+        "name": "Big Tujunga Region",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "Crystal LakeSan Gabriel Mountains",
+        "name": "Crystal Lake",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "East Fork San GabrielSan Gabriel Mountains",
+        "name": "East Fork San Gabriel",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "Ice HouseSan Gabriel Mountains",
+        "name": "Ice House",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "La CanadaSan Gabriel Mountains",
+        "name": "La Canada",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "Lytle Creek AreaSan Gabriel Mountains",
+        "name": "Lytle Creek Area",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "PacoimaSan Gabriel Mountains",
+        "name": "Pacoima",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "Red BoxSan Gabriel Mountains",
+        "name": "Red Box",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "San Gabriels Front RangeSan Gabriel Mountains",
+        "name": "San Gabriels Front Range",
+        "parentRegion": "San Gabriel MountainsSouthern California"
+    },
+    {
+        "id": "San Jacinto MountainsSouthern California",
+        "name": "San Jacinto Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Santa BarbaraSouthern California",
+        "name": "Santa Barbara",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Santa Monica MountainsSouthern California",
+        "name": "Santa Monica Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Santa Rosa MountainsSouthern California",
+        "name": "Santa Rosa Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "VenturaSouthern California",
+        "name": "Ventura",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "Castaic LakeVentura",
+        "name": "Castaic Lake",
+        "parentRegion": "VenturaSouthern California"
+    },
+    {
+        "id": "Los Padres National ForestVentura",
+        "name": "Los Padres National Forest",
+        "parentRegion": "VenturaSouthern California"
+    },
+    {
+        "id": "Verdugo MountainsSouthern California",
+        "name": "Verdugo Mountains",
+        "parentRegion": "Southern CaliforniaCalifornia"
+    },
+    {
+        "id": "ColoradoUnited States",
+        "name": "Colorado",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Elk & West Elk RangesColorado",
+        "name": "Elk & West Elk Ranges",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Flat TopsColorado",
+        "name": "Flat Tops",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Front Range (Colorado)Colorado",
+        "name": "Front Range (Colorado)",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Park Range (Colorado)Colorado",
+        "name": "Park Range (Colorado)",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Roan PlateauColorado",
+        "name": "Roan Plateau",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "San Juan MountainsColorado",
+        "name": "San Juan Mountains",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "DurangoSan Juan Mountains",
+        "name": "Durango",
+        "parentRegion": "San Juan MountainsColorado"
+    },
+    {
+        "id": "OuraySan Juan Mountains",
+        "name": "Ouray",
+        "parentRegion": "San Juan MountainsColorado"
+    },
+    {
+        "id": "Pagosa SpringsSan Juan Mountains",
+        "name": "Pagosa Springs",
+        "parentRegion": "San Juan MountainsColorado"
+    },
+    {
+        "id": "RidgwaySan Juan Mountains",
+        "name": "Ridgway",
+        "parentRegion": "San Juan MountainsColorado"
+    },
+    {
+        "id": "SilvertonSan Juan Mountains",
+        "name": "Silverton",
+        "parentRegion": "San Juan MountainsColorado"
+    },
+    {
+        "id": "TellurideSan Juan Mountains",
+        "name": "Telluride",
+        "parentRegion": "San Juan MountainsColorado"
+    },
+    {
+        "id": "Sangre de Cristo MountainsColorado",
+        "name": "Sangre de Cristo Mountains",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Sawatch RangeColorado",
+        "name": "Sawatch Range",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Vail & Summit CountyColorado",
+        "name": "Vail & Summit County",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Western SlopeColorado",
+        "name": "Western Slope",
+        "parentRegion": "ColoradoUnited States"
+    },
+    {
+        "id": "Bangs SRMAWestern Slope",
+        "name": "Bangs SRMA",
+        "parentRegion": "Western SlopeColorado"
+    },
+    {
+        "id": "Colorado National MonumentWestern Slope",
+        "name": "Colorado National Monument",
+        "parentRegion": "Western SlopeColorado"
+    },
+    {
+        "id": "DeltaWestern Slope",
+        "name": "Delta",
+        "parentRegion": "Western SlopeColorado"
+    },
+    {
+        "id": "Dinosaur National MonumentWestern Slope",
+        "name": "Dinosaur National Monument",
+        "parentRegion": "Western SlopeColorado"
+    },
+    {
+        "id": "Grand JunctionWestern Slope",
+        "name": "Grand Junction",
+        "parentRegion": "Western SlopeColorado"
+    },
+    {
+        "id": "West EndWestern Slope",
+        "name": "West End",
+        "parentRegion": "Western SlopeColorado"
+    },
+    {
+        "id": "GeorgiaUnited States",
+        "name": "Georgia",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "HawaiiUnited States",
+        "name": "Hawaii",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Big IslandHawaii",
+        "name": "Big Island",
+        "parentRegion": "HawaiiPacific"
+    },
+    {
+        "id": "MauiHawaii",
+        "name": "Maui",
+        "parentRegion": "HawaiiPacific"
+    },
+    {
+        "id": "North ShoreMaui",
+        "name": "North Shore",
+        "parentRegion": "MauiHawaii"
+    },
+    {
+        "id": "South ShoreMaui",
+        "name": "South Shore",
+        "parentRegion": "MauiHawaii"
+    },
+    {
+        "id": "West MauiMaui",
+        "name": "West Maui",
+        "parentRegion": "MauiHawaii"
+    },
+    {
+        "id": "OahuHawaii",
+        "name": "Oahu",
+        "parentRegion": "HawaiiPacific"
+    },
+    {
+        "id": "IdahoUnited States",
+        "name": "Idaho",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "MinnesotaUnited States",
+        "name": "Minnesota",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "MontanaUnited States",
+        "name": "Montana",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Glacier National ParkMontana",
+        "name": "Glacier National Park",
+        "parentRegion": "MontanaUnited States"
+    },
+    {
+        "id": "Midwest MontanaMontana",
+        "name": "Midwest Montana",
+        "parentRegion": "MontanaUnited States"
+    },
+    {
+        "id": "Southwest MontanaMontana",
+        "name": "Southwest Montana",
+        "parentRegion": "MontanaUnited States"
+    },
+    {
+        "id": "NevadaUnited States",
+        "name": "Nevada",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Las VegasNevada",
+        "name": "Las Vegas",
+        "parentRegion": "NevadaUnited States"
+    },
+    {
+        "id": "Lake Mead NRALas Vegas",
+        "name": "Lake Mead NRA",
+        "parentRegion": "Las VegasNevada"
+    },
+    {
+        "id": "Mount CharlestonLas Vegas",
+        "name": "Mount Charleston",
+        "parentRegion": "Las VegasNevada"
+    },
+    {
+        "id": "Red Rock CanyonLas Vegas",
+        "name": "Red Rock Canyon",
+        "parentRegion": "Las VegasNevada"
+    },
+    {
+        "id": "State Line HillsLas Vegas",
+        "name": "State Line Hills",
+        "parentRegion": "Las VegasNevada"
+    },
+    {
+        "id": "Virgin River GorgeLas Vegas",
+        "name": "Virgin River Gorge",
+        "parentRegion": "Las VegasNevada"
+    },
+    {
+        "id": "New MexicoUnited States",
+        "name": "New Mexico",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "North CarolinaUnited States",
+        "name": "North Carolina",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "NortheastUnited States",
+        "name": "Northeast",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "ConnecticutNortheast",
+        "name": "Connecticut",
+        "parentRegion": "NortheastUnited States"
+    },
+    {
+        "id": "MaineNortheast",
+        "name": "Maine",
+        "parentRegion": "NortheastUnited States"
+    },
+    {
+        "id": "MassachusettsNortheast",
+        "name": "Massachusetts",
+        "parentRegion": "NortheastUnited States"
+    },
+    {
+        "id": "New YorkNortheast",
+        "name": "New York",
+        "parentRegion": "NortheastUnited States"
+    },
+    {
+        "id": "OregonUnited States",
+        "name": "Oregon",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "South CarolinaUnited States",
+        "name": "South Carolina",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "South DakotaUnited States",
+        "name": "South Dakota",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "TexasUnited States",
+        "name": "Texas",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "UtahUnited States",
+        "name": "Utah",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Capitol Reef National ParkUtah",
+        "name": "Capitol Reef National Park",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Fruita DistrictCapitol Reef National Park",
+        "name": "Fruita District",
+        "parentRegion": "Capitol Reef National ParkUtah"
+    },
+    {
+        "id": "BicknellFruita District",
+        "name": "Bicknell",
+        "parentRegion": "Fruita DistrictCapitol Reef National Park"
+    },
+    {
+        "id": "Cohab CanyonFruita District",
+        "name": "Cohab Canyon",
+        "parentRegion": "Fruita DistrictCapitol Reef National Park"
+    },
+    {
+        "id": "ShinobFruita District",
+        "name": "Shinob",
+        "parentRegion": "Fruita DistrictCapitol Reef National Park"
+    },
+    {
+        "id": "NotamCapitol Reef National Park",
+        "name": "Notam",
+        "parentRegion": "Capitol Reef National ParkUtah"
+    },
+    {
+        "id": "Waterpocket FoldCapitol Reef National Park",
+        "name": "Waterpocket Fold",
+        "parentRegion": "Capitol Reef National ParkUtah"
+    },
+    {
+        "id": "Halls Creek areaWaterpocket Fold",
+        "name": "Halls Creek area",
+        "parentRegion": "Waterpocket FoldCapitol Reef National Park"
+    },
+    {
+        "id": "Central UtahUtah",
+        "name": "Central Utah",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Pahvant RangeCentral Utah",
+        "name": "Pahvant Range",
+        "parentRegion": "Central UtahUtah"
+    },
+    {
+        "id": "Dinosaur National MonumentUtah",
+        "name": "Dinosaur National Monument",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "EscalanteUtah",
+        "name": "Escalante",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Choprock BenchEscalante",
+        "name": "Choprock Bench",
+        "parentRegion": "EscalanteUtah"
+    },
+    {
+        "id": "PariaEscalante",
+        "name": "Paria",
+        "parentRegion": "EscalanteUtah"
+    },
+    {
+        "id": "Southwest EscalanteEscalante",
+        "name": "Southwest Escalante",
+        "parentRegion": "EscalanteUtah"
+    },
+    {
+        "id": "The EgyptsEscalante",
+        "name": "The Egypts",
+        "parentRegion": "EscalanteUtah"
+    },
+    {
+        "id": "Glen Canyon NRAUtah",
+        "name": "Glen Canyon NRA",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Big WaterGlen Canyon NRA",
+        "name": "Big Water",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "BullfrogGlen Canyon NRA",
+        "name": "Bullfrog",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "Halls Creek areaGlen Canyon NRA",
+        "name": "Halls Creek area",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "Lake PowellGlen Canyon NRA",
+        "name": "Lake Powell",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "Navajo NationGlen Canyon NRA",
+        "name": "Navajo Nation",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "The CatacombsGlen Canyon NRA",
+        "name": "The Catacombs",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "Ticaboo MesaGlen Canyon NRA",
+        "name": "Ticaboo Mesa",
+        "parentRegion": "Glen Canyon NRAUtah"
+    },
+    {
+        "id": "MoabUtah",
+        "name": "Moab",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Arches National ParkMoab",
+        "name": "Arches National Park",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Canyonlands National ParkMoab",
+        "name": "Canyonlands National Park",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Castle ValleyMoab",
+        "name": "Castle Valley",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Gemini BridgesMoab",
+        "name": "Gemini Bridges",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Kane Creek RoadMoab",
+        "name": "Kane Creek Road",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Potash RoadMoab",
+        "name": "Potash Road",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Sand Flats RoadMoab",
+        "name": "Sand Flats Road",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Spanish ValleyMoab",
+        "name": "Spanish Valley",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "Yellow Cat MesaMoab",
+        "name": "Yellow Cat Mesa",
+        "parentRegion": "MoabUtah"
+    },
+    {
+        "id": "San Rafael SwellUtah",
+        "name": "San Rafael Swell",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Central SwellSan Rafael Swell",
+        "name": "Central Swell",
+        "parentRegion": "San Rafael SwellUtah"
+    },
+    {
+        "id": "Eastern ReefSan Rafael Swell",
+        "name": "Eastern Reef",
+        "parentRegion": "San Rafael SwellUtah"
+    },
+    {
+        "id": "Goblin Valley State ParkSan Rafael Swell",
+        "name": "Goblin Valley State Park",
+        "parentRegion": "San Rafael SwellUtah"
+    },
+    {
+        "id": "Northern SwellSan Rafael Swell",
+        "name": "Northern Swell",
+        "parentRegion": "San Rafael SwellUtah"
+    },
+    {
+        "id": "Southern SwellSan Rafael Swell",
+        "name": "Southern Swell",
+        "parentRegion": "San Rafael SwellUtah"
+    },
+    {
+        "id": "Western ReefSan Rafael Swell",
+        "name": "Western Reef",
+        "parentRegion": "San Rafael SwellUtah"
+    },
+    {
+        "id": "Southeast UtahUtah",
+        "name": "Southeast Utah",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Cedar MesaSoutheast Utah",
+        "name": "Cedar Mesa",
+        "parentRegion": "Southeast UtahUtah"
+    },
+    {
+        "id": "Henry MountainsSoutheast Utah",
+        "name": "Henry Mountains",
+        "parentRegion": "Southeast UtahUtah"
+    },
+    {
+        "id": "North WashSoutheast Utah",
+        "name": "North Wash",
+        "parentRegion": "Southeast UtahUtah"
+    },
+    {
+        "id": "Angel PointNorth Wash",
+        "name": "Angel Point",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Beaver Canyon AreaNorth Wash",
+        "name": "Beaver Canyon Area",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Burr PointNorth Wash",
+        "name": "Burr Point",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Hog SpringsNorth Wash",
+        "name": "Hog Springs",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Poison SpringsNorth Wash",
+        "name": "Poison Springs",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Sand Slide SlotsNorth Wash",
+        "name": "Sand Slide Slots",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "The IrishNorth Wash",
+        "name": "The Irish",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Trachyte AreaNorth Wash",
+        "name": "Trachyte Area",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "West ButlerNorth Wash",
+        "name": "West Butler",
+        "parentRegion": "North WashSoutheast Utah"
+    },
+    {
+        "id": "Robbers RoostSoutheast Utah",
+        "name": "Robbers Roost",
+        "parentRegion": "Southeast UtahUtah"
+    },
+    {
+        "id": "Bluejohn ComplexRobbers Roost",
+        "name": "Bluejohn Complex",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "Burr PassRobbers Roost",
+        "name": "Burr Pass",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "Ekker Ranch RoadRobbers Roost",
+        "name": "Ekker Ranch Road",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "Hans Flat RoadRobbers Roost",
+        "name": "Hans Flat Road",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "San Rafael DesertRobbers Roost",
+        "name": "San Rafael Desert",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "Sand Slide SlotsRobbers Roost",
+        "name": "Sand Slide Slots",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "White RoostRobbers Roost",
+        "name": "White Roost",
+        "parentRegion": "Robbers RoostSoutheast Utah"
+    },
+    {
+        "id": "Southwest UtahUtah",
+        "name": "Southwest Utah",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Dixie National ForestSouthwest Utah",
+        "name": "Dixie National Forest",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "KanabSouthwest Utah",
+        "name": "Kanab",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "Kolob AreaSouthwest Utah",
+        "name": "Kolob Area",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "Mt CarmelSouthwest Utah",
+        "name": "Mt Carmel",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "St. GeorgeSouthwest Utah",
+        "name": "St. George",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "Virgin River GorgeSouthwest Utah",
+        "name": "Virgin River Gorge",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "Zion National ParkSouthwest Utah",
+        "name": "Zion National Park",
+        "parentRegion": "Southwest UtahUtah"
+    },
+    {
+        "id": "Zion East SideZion National Park",
+        "name": "Zion East Side",
+        "parentRegion": "Zion National ParkSouthwest Utah"
+    },
+    {
+        "id": "Zion Main CanyonZion National Park",
+        "name": "Zion Main Canyon",
+        "parentRegion": "Zion National ParkSouthwest Utah"
+    },
+    {
+        "id": "Zion West SideZion National Park",
+        "name": "Zion West Side",
+        "parentRegion": "Zion National ParkSouthwest Utah"
+    },
+    {
+        "id": "Wasatch FrontUtah",
+        "name": "Wasatch Front",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Spanish Fork CanyonWasatch Front",
+        "name": "Spanish Fork Canyon",
+        "parentRegion": "Wasatch FrontUtah"
+    },
+    {
+        "id": "West DesertUtah",
+        "name": "West Desert",
+        "parentRegion": "UtahUnited States"
+    },
+    {
+        "id": "Confusion RangeWest Desert",
+        "name": "Confusion Range",
+        "parentRegion": "West DesertUtah"
+    },
+    {
+        "id": "VirginiaUnited States",
+        "name": "Virginia",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "WashingtonUnited States",
+        "name": "Washington",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "WyomingUnited States",
+        "name": "Wyoming",
+        "parentRegion": "United StatesNorth America"
+    },
+    {
+        "id": "Bighorn MountainsWyoming",
+        "name": "Bighorn Mountains",
+        "parentRegion": "WyomingUnited States"
+    },
+    {
+        "id": "PacificWorld",
+        "name": "Pacific",
+        "parentRegion": "World"
+    },
+    {
+        "id": "AustraliaPacific",
+        "name": "Australia",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "New South WalesAustralia",
+        "name": "New South Wales",
+        "parentRegion": "AustraliaPacific"
+    },
+    {
+        "id": "Blue MountainsNew South Wales",
+        "name": "Blue Mountains",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "Central CoastNew South Wales",
+        "name": "Central Coast",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "Hunter ValleyNew South Wales",
+        "name": "Hunter Valley",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "KanangraNew South Wales",
+        "name": "Kanangra",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "Northern NSWNew South Wales",
+        "name": "Northern NSW",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "Barrington TopsNorthern NSW",
+        "name": "Barrington Tops",
+        "parentRegion": "Northern NSWNew South Wales"
+    },
+    {
+        "id": "Coffs HarbourNorthern NSW",
+        "name": "Coffs Harbour",
+        "parentRegion": "Northern NSWNew South Wales"
+    },
+    {
+        "id": "Gibraltar RangeNorthern NSW",
+        "name": "Gibraltar Range",
+        "parentRegion": "Northern NSWNew South Wales"
+    },
+    {
+        "id": "New England TablelandNorthern NSW",
+        "name": "New England Tableland",
+        "parentRegion": "Northern NSWNew South Wales"
+    },
+    {
+        "id": "Southern NSWNew South Wales",
+        "name": "Southern NSW",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "BungoniaSouthern NSW",
+        "name": "Bungonia",
+        "parentRegion": "Southern NSWNew South Wales"
+    },
+    {
+        "id": "Snowy MountainsSouthern NSW",
+        "name": "Snowy Mountains",
+        "parentRegion": "Southern NSWNew South Wales"
+    },
+    {
+        "id": "WollemiNew South Wales",
+        "name": "Wollemi",
+        "parentRegion": "New South WalesAustralia"
+    },
+    {
+        "id": "CoorongoobaWollemi",
+        "name": "Coorongooba",
+        "parentRegion": "WollemiNew South Wales"
+    },
+    {
+        "id": "Glen DavisWollemi",
+        "name": "Glen Davis",
+        "parentRegion": "WollemiNew South Wales"
+    },
+    {
+        "id": "Mugii Murum-Ban SCAWollemi",
+        "name": "Mugii Murum-Ban SCA",
+        "parentRegion": "WollemiNew South Wales"
+    },
+    {
+        "id": "Newnes PlateauWollemi",
+        "name": "Newnes Plateau",
+        "parentRegion": "WollemiNew South Wales"
+    },
+    {
+        "id": "Wolgan ValleyWollemi",
+        "name": "Wolgan Valley",
+        "parentRegion": "WollemiNew South Wales"
+    },
+    {
+        "id": "Northern TerritoryAustralia",
+        "name": "Northern Territory",
+        "parentRegion": "AustraliaPacific"
+    },
+    {
+        "id": "Finke GorgeNorthern Territory",
+        "name": "Finke Gorge",
+        "parentRegion": "Northern TerritoryAustralia"
+    },
+    {
+        "id": "West MacDonnell RangesNorthern Territory",
+        "name": "West MacDonnell Ranges",
+        "parentRegion": "Northern TerritoryAustralia"
+    },
+    {
+        "id": "QueenslandAustralia",
+        "name": "Queensland",
+        "parentRegion": "AustraliaPacific"
+    },
+    {
+        "id": "BrisbaneQueensland",
+        "name": "Brisbane",
+        "parentRegion": "QueenslandAustralia"
+    },
+    {
+        "id": "TownsvilleQueensland",
+        "name": "Townsville",
+        "parentRegion": "QueenslandAustralia"
+    },
+    {
+        "id": "TasmaniaAustralia",
+        "name": "Tasmania",
+        "parentRegion": "AustraliaPacific"
+    },
+    {
+        "id": "VictoriaAustralia",
+        "name": "Victoria",
+        "parentRegion": "AustraliaPacific"
+    },
+    {
+        "id": "Bogong High PlainsVictoria",
+        "name": "Bogong High Plains",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "Cobbler PlateauVictoria",
+        "name": "Cobbler Plateau",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "GrampiansVictoria",
+        "name": "Grampians",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "Mount BuffaloVictoria",
+        "name": "Mount Buffalo",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "OmeoVictoria",
+        "name": "Omeo",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "OtwaysVictoria",
+        "name": "Otways",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "Snowy PlainsVictoria",
+        "name": "Snowy Plains",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "WulgumerangVictoria",
+        "name": "Wulgumerang",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "Yarra/Eildon RangesVictoria",
+        "name": "Yarra/Eildon Ranges",
+        "parentRegion": "VictoriaAustralia"
+    },
+    {
+        "id": "Western AustraliaAustralia",
+        "name": "Western Australia",
+        "parentRegion": "AustraliaPacific"
+    },
+    {
+        "id": "Easter IslandPacific",
+        "name": "Easter Island",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "French PolynesiaPacific",
+        "name": "French Polynesia",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "Marquesas IslandsFrench Polynesia",
+        "name": "Marquesas Islands",
+        "parentRegion": "French PolynesiaPacific"
+    },
+    {
+        "id": "MooreaFrench Polynesia",
+        "name": "Moorea",
+        "parentRegion": "French PolynesiaPacific"
+    },
+    {
+        "id": "AfareaituMoorea",
+        "name": "Afareaitu",
+        "parentRegion": "MooreaFrench Polynesia"
+    },
+    {
+        "id": "PapetoaiMoorea",
+        "name": "Papetoai",
+        "parentRegion": "MooreaFrench Polynesia"
+    },
+    {
+        "id": "TahitiFrench Polynesia",
+        "name": "Tahiti",
+        "parentRegion": "French PolynesiaPacific"
+    },
+    {
+        "id": "AfaahitiTahiti",
+        "name": "Afaahiti",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "FaaaTahiti",
+        "name": "Faaa",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "FaaoneTahiti",
+        "name": "Faaone",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "HitiaaTahiti",
+        "name": "Hitiaa",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "MataieaTahiti",
+        "name": "Mataiea",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "PaparaTahiti",
+        "name": "Papara",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "PapeariTahiti",
+        "name": "Papeari",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "PapenooTahiti",
+        "name": "Papenoo",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "PueuTahiti",
+        "name": "Pueu",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "PunaauiaTahiti",
+        "name": "Punaauia",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "TeahupooTahiti",
+        "name": "Teahupoo",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "TiareiTahiti",
+        "name": "Tiarei",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "ToahotuTahiti",
+        "name": "Toahotu",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "VairaoTahiti",
+        "name": "Vairao",
+        "parentRegion": "TahitiFrench Polynesia"
+    },
+    {
+        "id": "Galapagos IslandsPacific",
+        "name": "Galapagos Islands",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "HawaiiPacific",
+        "name": "Hawaii",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "New CaledoniaPacific",
+        "name": "New Caledonia",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "New ZealandPacific",
+        "name": "New Zealand",
+        "parentRegion": "PacificWorld"
+    },
+    {
+        "id": "North IslandNew Zealand",
+        "name": "North Island",
+        "parentRegion": "New ZealandPacific"
+    },
+    {
+        "id": "Central NorthNorth Island",
+        "name": "Central North",
+        "parentRegion": "North IslandNew Zealand"
+    },
+    {
+        "id": "Lower NorthNorth Island",
+        "name": "Lower North",
+        "parentRegion": "North IslandNew Zealand"
+    },
+    {
+        "id": "The EastNorth Island",
+        "name": "The East",
+        "parentRegion": "North IslandNew Zealand"
+    },
+    {
+        "id": "Upper NorthNorth Island",
+        "name": "Upper North",
+        "parentRegion": "North IslandNew Zealand"
+    },
+    {
+        "id": "South IslandNew Zealand",
+        "name": "South Island",
+        "parentRegion": "New ZealandPacific"
+    },
+    {
+        "id": "CanterburySouth Island",
+        "name": "Canterbury",
+        "parentRegion": "South IslandNew Zealand"
+    },
+    {
+        "id": "FiordlandSouth Island",
+        "name": "Fiordland",
+        "parentRegion": "South IslandNew Zealand"
+    },
+    {
+        "id": "OtagoSouth Island",
+        "name": "Otago",
+        "parentRegion": "South IslandNew Zealand"
+    },
+    {
+        "id": "Top of the SouthSouth Island",
+        "name": "Top of the South",
+        "parentRegion": "South IslandNew Zealand"
+    },
+    {
+        "id": "WestlandSouth Island",
+        "name": "Westland",
+        "parentRegion": "South IslandNew Zealand"
+    },
+    {
+        "id": "South AmericaWorld",
+        "name": "South America",
+        "parentRegion": "World"
+    },
+    {
+        "id": "ArgentinaSouth America",
+        "name": "Argentina",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "BoliviaSouth America",
+        "name": "Bolivia",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "La PazBolivia",
+        "name": "La Paz",
+        "parentRegion": "BoliviaSouth America"
+    },
+    {
+        "id": "CoroicoLa Paz",
+        "name": "Coroico",
+        "parentRegion": "La PazBolivia"
+    },
+    {
+        "id": "Torotoro National ParkBolivia",
+        "name": "Torotoro National Park",
+        "parentRegion": "BoliviaSouth America"
+    },
+    {
+        "id": "BrazilSouth America",
+        "name": "Brazil",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "BrasiliaBrazil",
+        "name": "Brasilia",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "Canastra Mountains National ParkBrazil",
+        "name": "Canastra Mountains National Park",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "FlorianopolisBrazil",
+        "name": "Florianopolis",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "Porto AlegreBrazil",
+        "name": "Porto Alegre",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "Praia GrandeBrazil",
+        "name": "Praia Grande",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "Sao PauloBrazil",
+        "name": "Sao Paulo",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "Veadeiros PlateauBrazil",
+        "name": "Veadeiros Plateau",
+        "parentRegion": "BrazilSouth America"
+    },
+    {
+        "id": "ChileSouth America",
+        "name": "Chile",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "Bio BioChile",
+        "name": "Bio Bio",
+        "parentRegion": "ChileSouth America"
+    },
+    {
+        "id": "Easter IslandChile",
+        "name": "Easter Island",
+        "parentRegion": "ChileSouth America"
+    },
+    {
+        "id": "Los LagosChile",
+        "name": "Los Lagos",
+        "parentRegion": "ChileSouth America"
+    },
+    {
+        "id": "MauleChile",
+        "name": "Maule",
+        "parentRegion": "ChileSouth America"
+    },
+    {
+        "id": "O'HigginsChile",
+        "name": "O'Higgins",
+        "parentRegion": "ChileSouth America"
+    },
+    {
+        "id": "SantiagoChile",
+        "name": "Santiago",
+        "parentRegion": "ChileSouth America"
+    },
+    {
+        "id": "ColombiaSouth America",
+        "name": "Colombia",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "BogotaColombia",
+        "name": "Bogota",
+        "parentRegion": "ColombiaSouth America"
+    },
+    {
+        "id": "Cali (Colombia)Colombia",
+        "name": "Cali (Colombia)",
+        "parentRegion": "ColombiaSouth America"
+    },
+    {
+        "id": "IbaguéColombia",
+        "name": "Ibagué",
+        "parentRegion": "ColombiaSouth America"
+    },
+    {
+        "id": "MedellinColombia",
+        "name": "Medellin",
+        "parentRegion": "ColombiaSouth America"
+    },
+    {
+        "id": "Southern ColombiaColombia",
+        "name": "Southern Colombia",
+        "parentRegion": "ColombiaSouth America"
+    },
+    {
+        "id": "EcuadorSouth America",
+        "name": "Ecuador",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "Galapagos IslandsEcuador",
+        "name": "Galapagos Islands",
+        "parentRegion": "EcuadorSouth America"
+    },
+    {
+        "id": "PeruSouth America",
+        "name": "Peru",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "VenezuelaSouth America",
+        "name": "Venezuela",
+        "parentRegion": "South AmericaWorld"
+    },
+    {
+        "id": "MeridaVenezuela",
+        "name": "Merida",
+        "parentRegion": "VenezuelaSouth America"
+    }
+]

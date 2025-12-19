@@ -12,5 +12,11 @@ module.exports = {
         'src/**/*.ts',
         '!src/**/*.test.ts',
     ],
+    transformIgnorePatterns: [
+        "/node_modules/(?!(uuid)/)", // This regex tells Jest to ignore all node_modules *except* uuid
+    ],
+    moduleNameMapper: {
+        "^uuid$": require.resolve('uuid'),
+    }
 };
 

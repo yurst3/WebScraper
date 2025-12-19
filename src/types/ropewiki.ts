@@ -1,3 +1,9 @@
+export interface RopewikiRegion {
+    id: string
+    name: string
+    parentRegion: string | undefined
+}
+
 export interface RopewikiBetaSection {
     title: string;
     text: string;

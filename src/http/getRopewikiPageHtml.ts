@@ -1,4 +1,4 @@
-const getRopewikiRegionsHtml = async (pageId: number): Promise<string> => {
+const getRopewikiPageHtml = async (pageId: string): Promise<string> => {
     const url = `http://ropewiki.com/api.php?action=parse&pageid=${pageId}&format=json`;
 
     try {
@@ -15,4 +15,4 @@ const getRopewikiRegionsHtml = async (pageId: number): Promise<string> => {
     }
 }
 
-export default getRopewikiRegionsHtml;
+export default getRopewikiPageHtml;

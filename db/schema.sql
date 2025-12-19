@@ -1,4 +1,4 @@
-\restrict MZQ5vesMflzx6iF5Wq21W0C9D2YrvNYuEYzPxNWdk1idbHfU6C9jk6cvMPyova1
+\restrict MSLaUR0jhAYLmLbEVngMk9s470QOqiVEbpaMCm69pHBaEHxZygBkjeLd1YjEKKA
 
 -- Dumped from database version 18.1 (Homebrew)
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -14,20 +14,6 @@ SET check_function_bodies = false;
 SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
-
---
--- Name: public; Type: SCHEMA; Schema: -; Owner: -
---
-
--- *not* creating schema, since initdb creates it
-
-
---
--- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: -
---
-
-COMMENT ON SCHEMA public IS '';
-
 
 SET default_tablespace = '';
 
@@ -46,7 +32,8 @@ CREATE TABLE public."RopewikiImage" (
     caption text,
     "createdAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updatedAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "deletedAt" timestamp without time zone
+    "deletedAt" timestamp without time zone,
+    "latestRevisionDate" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -79,7 +66,8 @@ CREATE TABLE public."RopewikiPage" (
     months jsonb,
     "createdAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updatedAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "deletedAt" timestamp without time zone
+    "deletedAt" timestamp without time zone,
+    "latestRevisionDate" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -94,7 +82,8 @@ CREATE TABLE public."RopewikiPageBetaSection" (
     text text NOT NULL,
     "createdAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updatedAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "deletedAt" timestamp without time zone
+    "deletedAt" timestamp without time zone,
+    "latestRevisionDate" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -108,7 +97,8 @@ CREATE TABLE public."RopewikiRegion" (
     name text NOT NULL,
     "createdAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updatedAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "deletedAt" timestamp without time zone
+    "deletedAt" timestamp without time zone,
+    "latestRevisionDate" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -186,11 +176,11 @@ ALTER TABLE ONLY public."RopewikiPage"
 
 
 --
--- Name: RopewikiRegion uk_ropewikiRegion_name; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: RopewikiRegion uk_ropewikiRegion_name_parentRegion; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public."RopewikiRegion"
-    ADD CONSTRAINT "uk_ropewikiRegion_name" UNIQUE (name);
+    ADD CONSTRAINT "uk_ropewikiRegion_name_parentRegion" UNIQUE (name, "parentRegion");
 
 
 --
@@ -244,7 +234,7 @@ ALTER TABLE ONLY public."RopewikiRegion"
 -- PostgreSQL database dump complete
 --
 
-\unrestrict MZQ5vesMflzx6iF5Wq21W0C9D2YrvNYuEYzPxNWdk1idbHfU6C9jk6cvMPyova1
+\unrestrict MSLaUR0jhAYLmLbEVngMk9s470QOqiVEbpaMCm69pHBaEHxZygBkjeLd1YjEKKA
 
 
 --
@@ -252,4 +242,6 @@ ALTER TABLE ONLY public."RopewikiRegion"
 --
 
 INSERT INTO public.schema_migrations (version) VALUES
-    ('20251217200307');
+    ('20251217200307'),
+    ('20251218183945'),
+    ('20251218202306');
