@@ -18,11 +18,12 @@ const upsertRegions = async (
         parentRegion: region.parentRegion ?? null,
         latestRevisionDate,
         updatedAt: now,
+        deletedAt: null,
     }));
 
     await db
         .upsert('RopewikiRegion', rows, ['id'], {
-            updateColumns: ['name', 'parentRegion', 'latestRevisionDate', 'updatedAt'],
+            updateColumns: ['name', 'parentRegion', 'latestRevisionDate', 'updatedAt', 'deletedAt'],
         })
         .run(conn);
 };

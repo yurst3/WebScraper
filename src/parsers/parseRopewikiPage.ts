@@ -89,6 +89,12 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
             ?.join('/');
     }
 
+    const attachDomain = (uri: string | undefined) => {
+        if (!uri) return undefined;
+        if (uri[0] === '/') return 'https://ropewiki.com' + uri;
+        return uri;
+    }
+
     const parseGalleryBoxImage = (element: Element) => {
         const imageParent = element.querySelector('.thumbinner');
         const captionParent = element.querySelector('.thumbcaption');
@@ -110,8 +116,8 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
             
         images.push({
             betaSectionTitle: currentBeta?.title,
-            linkUrl: linkUri ? 'https://ropewiki.com' + linkUri : undefined,
-            fileUrl: fileUri ? 'https://ropewiki.com' + fileUri : undefined,
+            linkUrl: attachDomain(linkUri),
+            fileUrl: attachDomain(fileUri),
             caption,
         });
     }
@@ -129,8 +135,8 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
 
         images.push({
             betaSectionTitle: undefined,
-            linkUrl: linkUri ? 'https://ropewiki.com' + linkUri : undefined,
-            fileUrl: fileUri ? 'https://ropewiki.com' + fileUri : undefined,
+            linkUrl: attachDomain(linkUri),
+            fileUrl: attachDomain(fileUri),
             caption: undefined,
         });
     }

@@ -97,6 +97,40 @@ describe('upsertRegions (integration)', () => {
     );
   });
 
+  it('sets deletedAt to null when upserting', async () => {
+    const latestRevisionDate = new Date('2024-01-01T00:00:00Z');
+    const id = '88888888-8888-8888-8888-888888888888';
+
+    // Insert a region with deletedAt set
+    await db
+      .insert('RopewikiRegion', {
+        id,
+        name: 'Deleted Region',
+        parentRegion: null,
+        latestRevisionDate: '2024-01-01T00:00:00' as db.TimestampString,
+        deletedAt: '2024-01-01T00:00:00' as db.TimestampString,
+      })
+      .run(conn);
+
+    // Verify deletedAt is set
+    const beforeRows = await db.select('RopewikiRegion', { id }).run(conn);
+    expect(beforeRows[0]?.deletedAt).not.toBeNull();
+
+    // Upsert the region
+    await upsertRegions(
+      conn,
+      [{ id, name: 'Restored Region', parentRegion: undefined }],
+      latestRevisionDate,
+    );
+
+    // Verify deletedAt is now null
+    const afterRows = await db.select('RopewikiRegion', { id }).run(conn);
+    expect(afterRows).toHaveLength(1);
+    const region = afterRows[0] as s.RopewikiRegion.JSONSelectable;
+    expect(region.deletedAt).toBeNull();
+    expect(region.name).toBe('Restored Region');
+  });
+
   it('propagates errors from the database layer', async () => {
     const latestRevisionDate = new Date('2024-03-01T00:00:00Z');
     const regions: RopewikiRegion[] = [

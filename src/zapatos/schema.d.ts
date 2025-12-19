@@ -62,7 +62,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id: string;
       /**
@@ -124,7 +124,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id: string;
       /**
@@ -186,7 +186,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
@@ -248,9 +248,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
-      id: string | db.Parameter<string> | db.SQLFragment;
+      id?: string | db.Parameter<string> | db.DefaultType | db.SQLFragment;
       /**
       * **RopewikiImage.latestRevisionDate**
       * - `timestamp` in database
@@ -310,9 +310,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
-      id?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
+      id?: string | db.Parameter<string> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.DefaultType | db.SQLFragment>;
       /**
       * **RopewikiImage.latestRevisionDate**
       * - `timestamp` in database
@@ -379,7 +379,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id: string;
       /**
@@ -537,7 +537,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id: string;
       /**
@@ -695,7 +695,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
@@ -853,9 +853,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
-      id: string | db.Parameter<string> | db.SQLFragment;
+      id?: string | db.Parameter<string> | db.DefaultType | db.SQLFragment;
       /**
       * **RopewikiPage.kmlUrl**
       * - `text` in database
@@ -1011,9 +1011,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPage.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
-      id?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
+      id?: string | db.Parameter<string> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.DefaultType | db.SQLFragment>;
       /**
       * **RopewikiPage.kmlUrl**
       * - `text` in database
@@ -1170,7 +1170,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPageBetaSection.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id: string;
       /**
@@ -1220,7 +1220,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPageBetaSection.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id: string;
       /**
@@ -1270,7 +1270,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPageBetaSection.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
       id?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
@@ -1320,9 +1320,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPageBetaSection.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
-      id: string | db.Parameter<string> | db.SQLFragment;
+      id?: string | db.Parameter<string> | db.DefaultType | db.SQLFragment;
       /**
       * **RopewikiPageBetaSection.latestRevisionDate**
       * - `timestamp` in database
@@ -1370,9 +1370,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiPageBetaSection.id**
       * - `uuid` in database
-      * - `NOT NULL`, no default
+      * - `NOT NULL`, default: `gen_random_uuid()`
       */
-      id?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
+      id?: string | db.Parameter<string> | db.DefaultType | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.DefaultType | db.SQLFragment>;
       /**
       * **RopewikiPageBetaSection.latestRevisionDate**
       * - `timestamp` in database

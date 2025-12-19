@@ -2,6 +2,7 @@
 require('dotenv').config();
 import { Pool } from 'pg';
 import handleRopewikiRegions from "./handleRopewikiRegions"
+import handleRopewikiPages from './handleRopewikiPages';
 
 const pool = new Pool({
     host: process.env.DEVELOPMENT_DB_HOST,
@@ -10,7 +11,8 @@ const pool = new Pool({
 
 (async () => {
     try {
-        await handleRopewikiRegions(pool);
+        const regionNameIds: {[name: string]: string} = await handleRopewikiRegions(pool);
+        await handleRopewikiPages(pool, regionNameIds);
     } finally {
         await pool.end();
     }

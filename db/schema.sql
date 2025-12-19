@@ -1,4 +1,4 @@
-\restrict MSLaUR0jhAYLmLbEVngMk9s470QOqiVEbpaMCm69pHBaEHxZygBkjeLd1YjEKKA
+\restrict 49ZSnyG2wafOkh9xuxO4sLfCmDCjbrTy5grYr0UZ7BmzuOS8a1oBZ1J8v02hn7H
 
 -- Dumped from database version 18.1 (Homebrew)
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -24,7 +24,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public."RopewikiImage" (
-    id uuid NOT NULL,
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
     "ropewikiPage" uuid NOT NULL,
     "betaSection" uuid,
     "linkUrl" text,
@@ -42,7 +42,7 @@ CREATE TABLE public."RopewikiImage" (
 --
 
 CREATE TABLE public."RopewikiPage" (
-    id uuid NOT NULL,
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
     "pageId" text NOT NULL,
     name text NOT NULL,
     region uuid NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE public."RopewikiPage" (
 --
 
 CREATE TABLE public."RopewikiPageBetaSection" (
-    id uuid NOT NULL,
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
     "ropewikiPage" uuid NOT NULL,
     title text NOT NULL,
     text text NOT NULL,
@@ -156,7 +156,7 @@ ALTER TABLE ONLY public.schema_migrations
 --
 
 ALTER TABLE ONLY public."RopewikiImage"
-    ADD CONSTRAINT "uk_ropewikiImage_ropewikiPage_betaSection_fileUrl" UNIQUE ("ropewikiPage", "betaSection", "fileUrl");
+    ADD CONSTRAINT "uk_ropewikiImage_ropewikiPage_betaSection_fileUrl" UNIQUE NULLS NOT DISTINCT ("ropewikiPage", "betaSection", "fileUrl");
 
 
 --
@@ -234,7 +234,7 @@ ALTER TABLE ONLY public."RopewikiRegion"
 -- PostgreSQL database dump complete
 --
 
-\unrestrict MSLaUR0jhAYLmLbEVngMk9s470QOqiVEbpaMCm69pHBaEHxZygBkjeLd1YjEKKA
+\unrestrict 49ZSnyG2wafOkh9xuxO4sLfCmDCjbrTy5grYr0UZ7BmzuOS8a1oBZ1J8v02hn7H
 
 
 --
@@ -244,4 +244,6 @@ ALTER TABLE ONLY public."RopewikiRegion"
 INSERT INTO public.schema_migrations (version) VALUES
     ('20251217200307'),
     ('20251218183945'),
-    ('20251218202306');
+    ('20251218202306'),
+    ('20251219182510'),
+    ('20251219191048');
