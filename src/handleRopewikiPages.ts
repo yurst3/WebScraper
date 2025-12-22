@@ -3,68 +3,20 @@ import getRopewikiPageInfoForRegion from "./http/getRopewikiPageInfoForRegion";
 import RopewikiPageInfo from "./types/ropewiki";
 import getRopewikiPagesRevisionDates from "./http/getRopewikiPageRevisionDate";
 import getUpdatedDatesForPages from "./database/getUpdatedDatesForPages";
-import cliProgress from 'cli-progress';
-import getRopewikiPageHtml from "./http/getRopewikiPageHtml";
-import parseRopewikiPage from "./parsers/parseRopewikiPage";
-import upsertPage from "./database/upsertPage";
-import upsertBetaSections from "./database/upsertBetaSections";
-import upsertImages from "./database/upsertImages";
-import setBetaSectionsDeletedAt from "./database/setBetaSectionsDeletedAt";
-import setImagesDeletedAt from "./database/setImagesDeletedAt";
+import processPages from "./processPages";
 
-const CHUNK_SIZE = 100; // DO NOT EXCEED 2000
-const REGION = 'World';
+const CHUNK_SIZE = 2000; // DO NOT EXCEED 2000
 
-const processPages = async (
+const handleRopewikiPages = async (
     conn: Queryable,
-    pages: RopewikiPageInfo[],
-    pageRevisionDates: {[pageId: string]: Date | null},
-    regionNameIds: {[name: string]: string},
-    offset: number,
+    regionName: string,
+    regionPageCount: number,
+    regionNameIds: {[name: string]: string}
 ) => {
-    const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
-    progressBar.start(offset + pages.length, offset);
-
-    for (const page of pages) {
-        const latestRevisionDate: Date | null | undefined = pageRevisionDates[page.pageid];
-        if (!latestRevisionDate) { // This should never be null/undefined since we already filtered pages
-            progressBar.increment();
-            continue; 
-        }
-        const regionId: string | undefined = regionNameIds[page.region];
-        if (!regionId) {
-            console.error(`${page.pageid} ${page.name} doesn't have a valid region: ${page.region}`);
-            progressBar.increment();
-            continue;
-        }
-
-        const pageHTML: string = await getRopewikiPageHtml(page.pageid);
-        const pageUuid: string = await upsertPage(conn, page, regionId, latestRevisionDate);
-
-        const { beta, images } = await parseRopewikiPage(pageHTML);
-
-        // Upsert beta sections and image, overriding the deletedAt date if any were set
-        const betaTitleIds = await upsertBetaSections(conn, pageUuid, beta, latestRevisionDate);
-        const updatedBetaSectionIds = Object.values(betaTitleIds);
-        const updatedImageIds = await upsertImages(conn, pageUuid, images, betaTitleIds, latestRevisionDate);
-
-        // Assume that beta sections & images which have not been upserted are deleted
-        await setBetaSectionsDeletedAt(conn, pageUuid, updatedBetaSectionIds);
-        await setImagesDeletedAt(conn, pageUuid, updatedImageIds);
-
-        progressBar.increment();
-    }
-
-    progressBar.stop();
-}
-
-const handleRopewikiPages = async (conn: Queryable, regionNameIds: {[name: string]: string}) => {
-    let pagesReturned: number = CHUNK_SIZE;
-    let offset: number = 0;
-
-    while (pagesReturned === CHUNK_SIZE) {
+    for (let offset = 0; offset < regionPageCount; offset += CHUNK_SIZE) {
+        console.log(`Getting pages ${offset} to ${Math.min(offset + CHUNK_SIZE, regionPageCount - 1)} in "${regionName}" (${regionPageCount} total pages)...`)
         // Has a limit of 2000 pages per request
-        const pages: RopewikiPageInfo[] = await getRopewikiPageInfoForRegion(REGION, offset, CHUNK_SIZE);
+        const pages: RopewikiPageInfo[] = await getRopewikiPageInfoForRegion(regionName, offset, CHUNK_SIZE);
 
         // We only want to store valid pages (must have a pageid, name, region, and url)
         const validPages: RopewikiPageInfo[] = pages.filter(page => page.isValid);
@@ -85,13 +37,11 @@ const handleRopewikiPages = async (conn: Queryable, regionNameIds: {[name: strin
             return updatedDate < revisionDate; // Otherwise only parse if there has been a revision since the last update
         });
 
-        if (validPages.length - validPagesToParse.length > 0) console.log(`Skipping parsing and updating ${validPages.length - validPagesToParse.length} pages...`); 
+        if (validPages.length - validPagesToParse.length > 0) console.log(`Skipping parsing/updating for ${validPages.length - validPagesToParse.length} pages...`); 
 
         if (validPagesToParse.length) {
-            await processPages(conn, validPagesToParse, pageRevisionDates, regionNameIds, offset);
+            await processPages(conn, validPagesToParse, pageRevisionDates, regionNameIds);
         }
-
-        pagesReturned = pages.length;
     }
 }
 

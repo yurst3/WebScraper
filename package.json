@@ -8,6 +8,7 @@
   "main": "src/main.ts",
   "scripts": {
     "scrape": "ts-node --files src/main.ts",
+    "parse-test": "ts-node --files src/parseTest.ts",
     "lint:dev": "npx eslint .",
     "migrate:up": "npx dbmate -e DEVELOPMENT_DB_URL up && npx zapatos",
     "migrate:down": "npx dbmate -e DEVELOPMENT_DB_URL down && npx zapatos",

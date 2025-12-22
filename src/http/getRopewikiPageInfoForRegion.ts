@@ -29,6 +29,13 @@ const encode = (input: string) => {
 }
 
 const getRopewikiPageInfoForRegion = async (region: string, offset: number, limit: number): Promise<RopewikiPageInfo[]> => {
+    if (limit > 2000) {
+        throw new Error(`Limit must be less than or equal to 2000, got ${limit}`);
+    }
+    if (offset > 5000) {
+        throw new Error(`Offset must be less than or equal to 5000, got ${offset}`);
+    }
+
     try {
         const url = new URL('https://ropewiki.com/index.php');
         url.searchParams.append('title', 'Special:Ask');

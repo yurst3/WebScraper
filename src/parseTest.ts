@@ -1,0 +1,19 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import puppeteer from 'puppeteer';
+import getRopewikiPageHtml from './http/getRopewikiPageHtml';
+import fs from 'fs';
+import parseRopewikiPage from './parsers/parseRopewikiPage';
+
+(async () => {
+    const pageId = process.argv[2];
+    if (!pageId) throw new Error('parse-test needs an pageId arg');
+    const pageHTML = await getRopewikiPageHtml(pageId);
+
+    // const browser = await puppeteer.launch({ headless: false });
+    // const page = await browser.newPage();
+    // await page.setContent(pageHTML);
+
+    // const { beta, images } = await parseRopewikiPage(pageHTML);
+
+    // fs.writeFileSync('aberfoyleCanyonBeta.json', JSON.stringify(images, null, 4))
+})()

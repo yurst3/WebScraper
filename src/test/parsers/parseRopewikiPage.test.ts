@@ -18,6 +18,32 @@ describe('parseRopewikiPage', () => {
         expect(beta).toEqual(expectedBeta);
         expect(images).toEqual(expectedImages);
     }, 30000); // Increase timeout to 30 seconds for puppeteer
+
+    it('parses A Glera HTML and matches expected beta with no images', async () => {
+        const htmlPath = path.join(__dirname, '..', 'data', 'aGlera', 'aGlera.html');
+        const expectedBetaPath = path.join(__dirname, '..', 'data', 'aGlera', 'aGleraBeta.json');
+
+        const html = fs.readFileSync(htmlPath, 'utf-8');
+        const expectedBeta = JSON.parse(fs.readFileSync(expectedBetaPath, 'utf-8'));
+
+        const { beta, images } = await parseRopewikiPage(html);
+
+        expect(beta).toEqual(expectedBeta);
+        expect(images).toEqual([]);
+    }, 30000); // Increase timeout to 30 seconds for puppeteer
+
+    it('parses Aberfoyle Canyon HTML and matches expected beta with no duplicate sections', async () => {
+        const htmlPath = path.join(__dirname, '..', 'data', 'aberfoyleCanyon', 'aberfoyleCanyon.html');
+        const expectedBetaPath = path.join(__dirname, '..', 'data', 'aberfoyleCanyon', 'aberfoyleCanyonBeta.json');
+
+        const html = fs.readFileSync(htmlPath, 'utf-8');
+        const expectedBeta = JSON.parse(fs.readFileSync(expectedBetaPath, 'utf-8'));
+
+        const { beta, images } = await parseRopewikiPage(html);
+
+        expect(beta).toEqual(expectedBeta);
+        expect(images).toEqual([]);
+    }, 30000); // Increase timeout to 30 seconds for puppeteer
 });
 
 

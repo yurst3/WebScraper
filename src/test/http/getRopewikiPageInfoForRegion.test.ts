@@ -67,5 +67,76 @@ describe('getRopewikiPageInfoForRegion', () => {
         );
         expect(mockFetch).toHaveBeenCalledTimes(1);
     });
+
+    it('throws when limit is greater than 2000', async () => {
+        const region = 'World';
+        const offset = 0;
+        const limit = 2001;
+
+        await expect(getRopewikiPageInfoForRegion(region, offset, limit)).rejects.toThrow(
+            'Limit must be less than or equal to 2000, got 2001'
+        );
+    });
+
+    it('allows limit equal to 2000', async () => {
+        const region = 'World';
+        const offset = 0;
+        const limit = 2000;
+        const mockFetch = jest.fn<typeof fetch>().mockResolvedValue({
+            ok: true,
+            status: 200,
+            statusText: 'OK',
+            json: async () => ({ results: {} }),
+        } as Response);
+        globalThis.fetch = mockFetch as unknown as typeof fetch;
+
+        await getRopewikiPageInfoForRegion(region, offset, limit);
+
+        expect(mockFetch).toHaveBeenCalledTimes(1);
+    });
+
+    it('throws when offset is greater than 5000', async () => {
+        const region = 'World';
+        const offset = 5001;
+        const limit = 10;
+
+        await expect(getRopewikiPageInfoForRegion(region, offset, limit)).rejects.toThrow(
+            'Offset must be less than or equal to 5000, got 5001'
+        );
+    });
+
+    it('allows offset equal to 5000', async () => {
+        const region = 'World';
+        const offset = 5000;
+        const limit = 10;
+        const mockFetch = jest.fn<typeof fetch>().mockResolvedValue({
+            ok: true,
+            status: 200,
+            statusText: 'OK',
+            json: async () => ({ results: {} }),
+        } as Response);
+        globalThis.fetch = mockFetch as unknown as typeof fetch;
+
+        await getRopewikiPageInfoForRegion(region, offset, limit);
+
+        expect(mockFetch).toHaveBeenCalledTimes(1);
+    });
+
+    it('allows limit equal to 2000 and offset equal to 5000', async () => {
+        const region = 'World';
+        const offset = 5000;
+        const limit = 2000;
+        const mockFetch = jest.fn<typeof fetch>().mockResolvedValue({
+            ok: true,
+            status: 200,
+            statusText: 'OK',
+            json: async () => ({ results: {} }),
+        } as Response);
+        globalThis.fetch = mockFetch as unknown as typeof fetch;
+
+        await getRopewikiPageInfoForRegion(region, offset, limit);
+
+        expect(mockFetch).toHaveBeenCalledTimes(1);
+    });
 });
 

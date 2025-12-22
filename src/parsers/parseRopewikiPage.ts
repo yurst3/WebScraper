@@ -1,5 +1,6 @@
 import puppeteer from 'puppeteer';
 import { RopewikiBetaSection, RopewikiImage } from '../types/ropewiki';
+import uniqBy from 'lodash/uniqBy';
 
 const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } => {
     // Functions have to be defined inside evalPage() because it is being run in a browser context and can't reference other functions
@@ -123,6 +124,9 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
     }
 
     const parseBannerImage = () => {
+        // If there is an "add-photo element, there is no banner image for this page
+        if (document.getElementsByClassName('pops add-photo').length) return;
+
         const bannerImage: Element | null | undefined = document.querySelector('.tablecanyon')
             ?.querySelector('img');
         const bannerAnchor: Element | null | undefined = bannerImage?.parentElement;
@@ -164,7 +168,10 @@ const parseRopewikiPage = async (html: string) => {
 
     await browser.close();
 
-    return { beta, images };
+    return { 
+        beta: uniqBy(beta, 'title'),
+        images: uniqBy(images, image => `${image.betaSectionTitle}-${image.fileUrl}`)
+    };
 }
 
 export default parseRopewikiPage;
