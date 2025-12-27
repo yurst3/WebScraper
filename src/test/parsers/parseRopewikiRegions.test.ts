@@ -4,7 +4,7 @@ import path from 'path';
 
 // Mock uuid to avoid Jest ESM parsing issues while keeping deterministic IDs for tests
 jest.mock('uuid', () => ({
-    v5: (value: string, namespace: string): string => value,
+    v5: (value: string, namespace: string): string => value, // eslint-disable-line @typescript-eslint/no-unused-vars
 }));
 
 import parseRegionsHtml from '../../parsers/parseRopewikiRegions';

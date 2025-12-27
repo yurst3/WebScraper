@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
+/* eslint-disable @typescript-eslint/no-require-imports */
 require('dotenv').config();
 import { Pool } from 'pg';
 import handleRopewikiRegions from "./handleRopewikiRegions"

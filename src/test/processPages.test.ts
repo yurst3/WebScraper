@@ -64,6 +64,7 @@ describe('processPages', () => {
         } as unknown as Pool;
 
         // Reset the progress bar mocks by accessing through the mocked module
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
         if (mockProgressBar) {
@@ -124,6 +125,7 @@ describe('processPages', () => {
 
         await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
         expect(mockProgressBar.start).toHaveBeenCalledWith(2, 0);
@@ -172,6 +174,7 @@ describe('processPages', () => {
 
         await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
         expect(mockProgressBar.start).toHaveBeenCalledWith(1, 0);
@@ -206,6 +209,7 @@ describe('processPages', () => {
         await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
         expect(consoleErrorSpy).toHaveBeenCalledWith('728 Bear Creek Canyon doesn\'t have a valid region: Invalid Region');
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
         expect(mockProgressBar.increment).toHaveBeenCalledTimes(1);

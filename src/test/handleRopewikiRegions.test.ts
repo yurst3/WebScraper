@@ -14,7 +14,7 @@ jest.mock('../database/getRegions');
 
 // Mock uuid to avoid Jest ESM parsing issues while keeping deterministic IDs for tests
 jest.mock('uuid', () => ({
-    v5: (value: string, namespace: string): string => value,
+    v5: (value: string, namespace: string): string => value, // eslint-disable-line @typescript-eslint/no-unused-vars
 }));
 
 import getRopewikiPagesRevisionDates from '../http/getRopewikiPageRevisionDate';

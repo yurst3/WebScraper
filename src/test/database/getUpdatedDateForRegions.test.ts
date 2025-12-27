@@ -2,7 +2,6 @@ import 'dotenv/config';
 import { Pool } from 'pg';
 import { describe, it, expect, beforeAll, afterAll, afterEach } from '@jest/globals';
 import * as db from 'zapatos/db';
-import type * as s from 'zapatos/schema';
 import getUpdatedDateForRegions from '../../database/getUpdatedDateForRegions';
 
 describe('getUpdatedDateForRegions (integration)', () => {

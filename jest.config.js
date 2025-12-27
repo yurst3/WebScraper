@@ -16,7 +16,7 @@ module.exports = {
         "/node_modules/(?!(uuid)/)", // This regex tells Jest to ignore all node_modules *except* uuid
     ],
     moduleNameMapper: {
-        "^uuid$": require.resolve('uuid'),
+        "^uuid$": require.resolve('uuid'), // eslint-disable-line no-undef
     },
     setupFilesAfterEnv: ['<rootDir>/src/test/setupTests.ts'],
 };

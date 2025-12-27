@@ -2,7 +2,7 @@ import getChildRegions from "./database/getChildRegions";
 import getRegionCounts from "./http/getRegionCounts";
 import { Queryable } from "zapatos/db";
 
-const underLimit = (counts: {[name: string]: number}, limit: number): Boolean => {
+const underLimit = (counts: {[name: string]: number}, limit: number): boolean => {
     return Object.values(counts).every(count => count <= limit);
 }
 
@@ -17,7 +17,7 @@ const getRegionCountsUnderLimit = async (conn: Queryable, rootRegionName: string
     while (!underLimit(counts, limit)) {
         const overLimitNames = Object.keys(counts).filter(name => counts[name] as number > limit);
         const underLimitCounts:  {[name: string]: number} = Object.fromEntries(
-            Object.entries(counts).filter(([name, count]) => count <= limit)
+            Object.entries(counts).filter(([, count]) => count <= limit)
         );
 
         const overLimitChildren: string[][] = await Promise.all(overLimitNames.map(name => getChildRegions(conn, name)));
