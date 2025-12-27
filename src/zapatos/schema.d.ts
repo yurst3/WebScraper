@@ -56,9 +56,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.fileUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      fileUrl: string | null;
+      fileUrl: string;
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
@@ -74,9 +74,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      linkUrl: string | null;
+      linkUrl: string;
       /**
       * **RopewikiImage.ropewikiPage**
       * - `uuid` in database
@@ -118,9 +118,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.fileUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      fileUrl: string | null;
+      fileUrl: string;
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
@@ -136,9 +136,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      linkUrl: string | null;
+      linkUrl: string;
       /**
       * **RopewikiImage.ropewikiPage**
       * - `uuid` in database
@@ -180,7 +180,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.fileUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
       fileUrl?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
@@ -198,7 +198,7 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
       linkUrl?: string | db.Parameter<string> | db.SQLFragment | db.ParentColumn | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment | db.ParentColumn>;
       /**
@@ -242,9 +242,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.fileUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      fileUrl?: string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment;
+      fileUrl: string | db.Parameter<string> | db.SQLFragment;
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
@@ -260,9 +260,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      linkUrl?: string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment;
+      linkUrl: string | db.Parameter<string> | db.SQLFragment;
       /**
       * **RopewikiImage.ropewikiPage**
       * - `uuid` in database
@@ -304,9 +304,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.fileUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      fileUrl?: string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment>;
+      fileUrl?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
       /**
       * **RopewikiImage.id**
       * - `uuid` in database
@@ -322,9 +322,9 @@ declare module 'zapatos/schema' {
       /**
       * **RopewikiImage.linkUrl**
       * - `text` in database
-      * - Nullable, no default
+      * - `NOT NULL`, no default
       */
-      linkUrl?: string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | null | db.DefaultType | db.SQLFragment>;
+      linkUrl?: string | db.Parameter<string> | db.SQLFragment | db.SQLFragment<any, string | db.Parameter<string> | db.SQLFragment>;
       /**
       * **RopewikiImage.ropewikiPage**
       * - `uuid` in database

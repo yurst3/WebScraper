@@ -94,8 +94,7 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
         return fileUri;
     }
 
-    const attachDomain = (uri: string | undefined) => {
-        if (!uri) return undefined;
+    const attachDomain = (uri: string): string => {
         if (uri[0] === '/') return 'https://ropewiki.com' + uri;
         return uri;
     }
@@ -116,16 +115,18 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
             ?.children[0];
 
         // Example: /images/8/80/Bear_Creek_Canyon_Banner.jpg
-        const fileUri = getImageFileUri(imageElement);
+        const fileUri: string | undefined = getImageFileUri(imageElement);
 
         const caption = parseGalleryBoxCaption(captionParent?.childNodes);
             
-        images.push({
-            betaSectionTitle: currentBeta?.title,
-            linkUrl: attachDomain(linkUri),
-            fileUrl: attachDomain(fileUri),
-            caption,
-        });
+        if (linkUri && fileUri) {
+            images.push({
+                betaSectionTitle: currentBeta?.title,
+                linkUrl: attachDomain(linkUri),
+                fileUrl: attachDomain(fileUri),
+                caption,
+            });
+        }
     }
 
     const parseBannerImage = () => {
@@ -142,12 +143,14 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
 
         const fileUri = getImageFileUri(bannerImage);
 
-        images.push({
-            betaSectionTitle: undefined,
-            linkUrl: attachDomain(linkUri),
-            fileUrl: attachDomain(fileUri),
-            caption: undefined,
-        });
+        if (linkUri && fileUri) {
+            images.push({
+                betaSectionTitle: undefined,
+                linkUrl: attachDomain(linkUri),
+                fileUrl: attachDomain(fileUri),
+                caption: undefined,
+            });
+        }
     }
 
     const beta: RopewikiBetaSection[] = [];

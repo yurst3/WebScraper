@@ -1,4 +1,4 @@
-\restrict 49ZSnyG2wafOkh9xuxO4sLfCmDCjbrTy5grYr0UZ7BmzuOS8a1oBZ1J8v02hn7H
+\restrict ySkzUYhRO3pnjawrI5gsqXUmTrGhDe5WNtguYOMw1kJ7hUIMYtdxrpJORkxd6IA
 
 -- Dumped from database version 18.1 (Homebrew)
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -27,8 +27,8 @@ CREATE TABLE public."RopewikiImage" (
     id uuid DEFAULT gen_random_uuid() NOT NULL,
     "ropewikiPage" uuid NOT NULL,
     "betaSection" uuid,
-    "linkUrl" text,
-    "fileUrl" text,
+    "linkUrl" text NOT NULL,
+    "fileUrl" text NOT NULL,
     caption text,
     "createdAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updatedAt" timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -234,7 +234,7 @@ ALTER TABLE ONLY public."RopewikiRegion"
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 49ZSnyG2wafOkh9xuxO4sLfCmDCjbrTy5grYr0UZ7BmzuOS8a1oBZ1J8v02hn7H
+\unrestrict ySkzUYhRO3pnjawrI5gsqXUmTrGhDe5WNtguYOMw1kJ7hUIMYtdxrpJORkxd6IA
 
 
 --
@@ -246,4 +246,5 @@ INSERT INTO public.schema_migrations (version) VALUES
     ('20251218183945'),
     ('20251218202306'),
     ('20251219182510'),
-    ('20251219191048');
+    ('20251219191048'),
+    ('20251227152406');
