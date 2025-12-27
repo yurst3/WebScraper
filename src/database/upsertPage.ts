@@ -4,7 +4,7 @@ import RopewikiPageInfo from '../types/ropewiki';
 // Insert or update a RopewikiPage.
 // On conflict (same pageId), update the page fields and timestamps, including latestRevisionDate.
 const upsertPage = async (
-    conn: db.Queryable,
+    tx: db.Queryable,
     pageInfo: RopewikiPageInfo,
     regionId: string,
     latestRevisionDate: Date,
@@ -67,7 +67,7 @@ const upsertPage = async (
                 'deletedAt',
             ],
         })
-        .run(conn);
+        .run(tx);
 
     return result.id;
 };

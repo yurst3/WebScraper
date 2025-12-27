@@ -5,7 +5,7 @@ import { RopewikiBetaSection } from '../types/ropewiki';
 // On conflict (same ropewikiPage & title), update the text and timestamps, including latestRevisionDate.
 // Returns a map of title -> id for all upserted beta sections.
 const upsertBetaSections = async (
-    conn: db.Queryable,
+    tx: db.Queryable,
     pageUuid: string,
     betaSections: RopewikiBetaSection[],
     latestRevisionDate: Date,
@@ -29,7 +29,7 @@ const upsertBetaSections = async (
         .upsert('RopewikiPageBetaSection', rows, ['ropewikiPage', 'title'], {
             updateColumns: ['text', 'latestRevisionDate', 'updatedAt', 'deletedAt'],
         })
-        .run(conn);
+        .run(tx);
 
     return Object.fromEntries(result.map(row => [row.title, row.id]));
 };

@@ -1,4 +1,5 @@
 import { describe, it, expect, beforeEach, jest } from '@jest/globals';
+import { Pool } from 'pg';
 import processPages from '../processPages';
 import getRopewikiPageHtml from '../http/getRopewikiPageHtml';
 import parseRopewikiPage from '../parsers/parseRopewikiPage';
@@ -44,10 +45,24 @@ const mockSetBetaSectionsDeletedAt = setBetaSectionsDeletedAt as jest.MockedFunc
 const mockSetImagesDeletedAt = setImagesDeletedAt as jest.MockedFunction<typeof setImagesDeletedAt>;
 
 describe('processPages', () => {
-    const mockConn = {} as db.Queryable;
+    let mockPool: Pool;
+    let mockClient: {
+        query: jest.MockedFunction<(query: string) => Promise<unknown>>;
+        release: jest.MockedFunction<() => void>;
+    };
 
     beforeEach(() => {
         jest.clearAllMocks();
+        // Create mock client with query and release methods
+        mockClient = {
+            query: jest.fn<typeof mockClient.query>().mockResolvedValue({}),
+            release: jest.fn<typeof mockClient.release>(),
+        };
+        // Create mock pool with connect method
+        mockPool = {
+            connect: jest.fn<() => Promise<typeof mockClient>>().mockResolvedValue(mockClient),
+        } as unknown as Pool;
+
         // Reset the progress bar mocks by accessing through the mocked module
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
@@ -107,7 +122,7 @@ describe('processPages', () => {
             .mockResolvedValueOnce(['image-id-1'])
             .mockResolvedValueOnce([]);
 
-        await processPages(mockConn, pages, pageRevisionDates, regionNameIds);
+        await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
@@ -115,13 +130,21 @@ describe('processPages', () => {
         expect(mockProgressBar.increment).toHaveBeenCalledTimes(2);
         expect(mockProgressBar.stop).toHaveBeenCalledTimes(1);
 
+        expect(mockPool.connect).toHaveBeenCalledTimes(2);
+        expect(mockClient.query).toHaveBeenCalledTimes(4); // BEGIN + COMMIT for each of 2 pages
+        expect(mockClient.query).toHaveBeenNthCalledWith(1, 'BEGIN');
+        expect(mockClient.query).toHaveBeenNthCalledWith(2, 'COMMIT');
+        expect(mockClient.query).toHaveBeenNthCalledWith(3, 'BEGIN');
+        expect(mockClient.query).toHaveBeenNthCalledWith(4, 'COMMIT');
+        expect(mockClient.release).toHaveBeenCalledTimes(2);
+
         expect(mockGetRopewikiPageHtml).toHaveBeenCalledTimes(2);
         expect(mockGetRopewikiPageHtml).toHaveBeenNthCalledWith(1, '728');
         expect(mockGetRopewikiPageHtml).toHaveBeenNthCalledWith(2, '5597');
 
         expect(mockUpsertPage).toHaveBeenCalledTimes(2);
-        expect(mockUpsertPage).toHaveBeenNthCalledWith(1, mockConn, page1, 'region-id-123', pageRevisionDates['728']);
-        expect(mockUpsertPage).toHaveBeenNthCalledWith(2, mockConn, page2, 'region-id-123', pageRevisionDates['5597']);
+        expect(mockUpsertPage).toHaveBeenNthCalledWith(1, mockClient as unknown as db.Queryable, page1, 'region-id-123', pageRevisionDates['728']);
+        expect(mockUpsertPage).toHaveBeenNthCalledWith(2, mockClient as unknown as db.Queryable, page2, 'region-id-123', pageRevisionDates['5597']);
 
         expect(mockUpsertBetaSections).toHaveBeenCalledTimes(2);
         expect(mockUpsertImages).toHaveBeenCalledTimes(2);
@@ -147,7 +170,7 @@ describe('processPages', () => {
             'Test Region': 'region-id-123',
         };
 
-        await processPages(mockConn, pages, pageRevisionDates, regionNameIds);
+        await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
@@ -155,6 +178,7 @@ describe('processPages', () => {
         expect(mockProgressBar.increment).toHaveBeenCalledTimes(1);
         expect(mockProgressBar.stop).toHaveBeenCalledTimes(1);
 
+        expect(mockPool.connect).not.toHaveBeenCalled();
         expect(mockGetRopewikiPageHtml).not.toHaveBeenCalled();
         expect(mockUpsertPage).not.toHaveBeenCalled();
     });
@@ -179,12 +203,13 @@ describe('processPages', () => {
             'Test Region': 'region-id-123',
         };
 
-        await processPages(mockConn, pages, pageRevisionDates, regionNameIds);
+        await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
         expect(consoleErrorSpy).toHaveBeenCalledWith('728 Bear Creek Canyon doesn\'t have a valid region: Invalid Region');
         const cliProgress = require('cli-progress');
         const mockProgressBar = cliProgress.default.SingleBar.mock.results[0]?.value;
         expect(mockProgressBar.increment).toHaveBeenCalledTimes(1);
+        expect(mockPool.connect).not.toHaveBeenCalled();
         expect(mockGetRopewikiPageHtml).not.toHaveBeenCalled();
         expect(mockUpsertPage).not.toHaveBeenCalled();
 
@@ -218,10 +243,14 @@ describe('processPages', () => {
         mockUpsertBetaSections.mockResolvedValue({ 'Introduction': 'beta-id-1' });
         mockUpsertImages.mockResolvedValue(['image-id-1']);
 
-        await processPages(mockConn, pages, pageRevisionDates, regionNameIds);
+        await processPages(mockPool, pages, pageRevisionDates, regionNameIds);
 
-        expect(mockSetBetaSectionsDeletedAt).toHaveBeenCalledWith(mockConn, 'page-uuid-1', ['beta-id-1']);
-        expect(mockSetImagesDeletedAt).toHaveBeenCalledWith(mockConn, 'page-uuid-1', ['image-id-1']);
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('COMMIT');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
+        expect(mockSetBetaSectionsDeletedAt).toHaveBeenCalledWith(mockClient as unknown as db.Queryable, 'page-uuid-1', ['beta-id-1']);
+        expect(mockSetImagesDeletedAt).toHaveBeenCalledWith(mockClient as unknown as db.Queryable, 'page-uuid-1', ['image-id-1']);
     });
 
     it('propagates errors from getRopewikiPageHtml()', async () => {
@@ -245,7 +274,9 @@ describe('processPages', () => {
         const htmlError = new Error('Failed to fetch HTML');
         mockGetRopewikiPageHtml.mockRejectedValue(htmlError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Failed to fetch HTML');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Failed to fetch HTML');
+        
+        expect(mockPool.connect).not.toHaveBeenCalled();
     });
 
     it('propagates errors from upsertPage()', async () => {
@@ -270,7 +301,12 @@ describe('processPages', () => {
         const dbError = new Error('Database error');
         mockUpsertPage.mockRejectedValue(dbError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Database error');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Database error');
+        
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('ROLLBACK');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
     });
 
     it('propagates errors from parseRopewikiPage()', async () => {
@@ -296,7 +332,9 @@ describe('processPages', () => {
         const parseError = new Error('Parse error');
         mockParseRopewikiPage.mockRejectedValue(parseError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Parse error');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Parse error');
+        
+        expect(mockPool.connect).not.toHaveBeenCalled();
     });
 
     it('propagates errors from upsertBetaSections()', async () => {
@@ -326,7 +364,12 @@ describe('processPages', () => {
         const betaError = new Error('Beta sections error');
         mockUpsertBetaSections.mockRejectedValue(betaError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Beta sections error');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Beta sections error');
+        
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('ROLLBACK');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
     });
 
     it('propagates errors from upsertImages()', async () => {
@@ -357,7 +400,12 @@ describe('processPages', () => {
         const imagesError = new Error('Images error');
         mockUpsertImages.mockRejectedValue(imagesError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Images error');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Images error');
+        
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('ROLLBACK');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
     });
 
     it('propagates errors from setBetaSectionsDeletedAt()', async () => {
@@ -389,7 +437,12 @@ describe('processPages', () => {
         const deleteError = new Error('Delete beta sections error');
         mockSetBetaSectionsDeletedAt.mockRejectedValue(deleteError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Delete beta sections error');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Delete beta sections error');
+        
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('ROLLBACK');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
     });
 
     it('propagates errors from setImagesDeletedAt()', async () => {
@@ -422,7 +475,51 @@ describe('processPages', () => {
         const deleteError = new Error('Delete images error');
         mockSetImagesDeletedAt.mockRejectedValue(deleteError);
 
-        await expect(processPages(mockConn, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Delete images error');
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Delete images error');
+        
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('ROLLBACK');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
+    });
+
+    it('logs error and rolls back transaction on database error', async () => {
+        const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
+        const page = new RopewikiPageInfo({
+            printouts: {
+                pageid: ['728'],
+                name: ['Bear Creek Canyon'],
+                region: [{ fulltext: 'Test Region' }],
+                url: ['https://ropewiki.com/Bear_Creek_Canyon'],
+            },
+        });
+
+        const pages = [page];
+        const pageRevisionDates = {
+            '728': new Date('2024-01-01T00:00:00Z'),
+        };
+        const regionNameIds = {
+            'Test Region': 'region-id-123',
+        };
+
+        mockGetRopewikiPageHtml.mockResolvedValue('<html>Page</html>');
+        mockParseRopewikiPage.mockResolvedValue({
+            beta: [{ title: 'Introduction', text: 'Text' }],
+            images: [],
+        });
+        const dbError = new Error('Database error');
+        mockUpsertPage.mockRejectedValue(dbError);
+
+        await expect(processPages(mockPool, pages, pageRevisionDates, regionNameIds)).rejects.toThrow('Database error');
+
+        expect(consoleErrorSpy).toHaveBeenCalledWith('Error processing page 728 Bear Creek Canyon, transaction rolled back:', dbError);
+        expect(mockPool.connect).toHaveBeenCalledTimes(1);
+        expect(mockClient.query).toHaveBeenCalledWith('BEGIN');
+        expect(mockClient.query).toHaveBeenCalledWith('ROLLBACK');
+        expect(mockClient.release).toHaveBeenCalledTimes(1);
+
+        consoleErrorSpy.mockRestore();
     });
 });
 

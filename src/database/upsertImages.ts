@@ -5,7 +5,7 @@ import { RopewikiImage } from '../types/ropewiki';
 // On conflict (same ropewikiPage, betaSection & fileUrl), update the image fields and timestamps, including latestRevisionDate.
 // Returns an array of image IDs that were upserted.
 const upsertImages = async (
-    conn: db.Queryable,
+    tx: db.Queryable,
     pageUuid: string,
     images: RopewikiImage[],
     betaTitleIds: { [title: string]: string },
@@ -33,7 +33,7 @@ const upsertImages = async (
         .upsert('RopewikiImage', rows, ['ropewikiPage', 'betaSection', 'fileUrl'], {
             updateColumns: ['linkUrl', 'caption', 'betaSection', 'latestRevisionDate', 'updatedAt', 'deletedAt'],
         })
-        .run(conn);
+        .run(tx);
 
     return result.map(row => row.id as string);
 };

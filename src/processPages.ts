@@ -1,4 +1,5 @@
 import cliProgress from 'cli-progress';
+import { Pool } from 'pg';
 import { Queryable } from "zapatos/db";
 import RopewikiPageInfo from "./types/ropewiki";
 import getRopewikiPageHtml from "./http/getRopewikiPageHtml";
@@ -18,6 +19,9 @@ const processPages = async (
     const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
     progressBar.start(pages.length, 0);
 
+    // Get a client from the pool for transactions
+    const pool = conn as Pool;
+
     for (const page of pages) {
         const latestRevisionDate: Date | null | undefined = pageRevisionDates[page.pageid];
         if (!latestRevisionDate) { // This should never be null/undefined since we already filtered pages
@@ -32,18 +36,32 @@ const processPages = async (
         }
 
         const pageHTML: string = await getRopewikiPageHtml(page.pageid);
-        const pageUuid: string = await upsertPage(conn, page, regionId, latestRevisionDate);
-
         const { beta, images } = await parseRopewikiPage(pageHTML);
 
-        // Upsert beta sections and image, overriding the deletedAt date if any were set
-        const betaTitleIds = await upsertBetaSections(conn, pageUuid, beta, latestRevisionDate);
-        const updatedBetaSectionIds = Object.values(betaTitleIds);
-        const updatedImageIds = await upsertImages(conn, pageUuid, images, betaTitleIds, latestRevisionDate);
+        // Get a client and start a transaction for database operations
+        const client = await pool.connect();
+        try {
+            await client.query('BEGIN');
 
-        // Assume that beta sections & images which have not been upserted are deleted
-        await setBetaSectionsDeletedAt(conn, pageUuid, updatedBetaSectionIds);
-        await setImagesDeletedAt(conn, pageUuid, updatedImageIds);
+            const pageUuid: string = await upsertPage(client, page, regionId, latestRevisionDate);
+
+            // Upsert beta sections and image, overriding the deletedAt date if any were set
+            const betaTitleIds = await upsertBetaSections(client, pageUuid, beta, latestRevisionDate);
+            const updatedBetaSectionIds = Object.values(betaTitleIds);
+            const updatedImageIds = await upsertImages(client, pageUuid, images, betaTitleIds, latestRevisionDate);
+
+            // Assume that beta sections & images which have not been upserted are deleted
+            await setBetaSectionsDeletedAt(client, pageUuid, updatedBetaSectionIds);
+            await setImagesDeletedAt(client, pageUuid, updatedImageIds);
+
+            await client.query('COMMIT');
+        } catch (error) {
+            await client.query('ROLLBACK');
+            console.error(`Error processing page ${page.pageid} ${page.name}, transaction rolled back:`, error);
+            throw error;
+        } finally {
+            client.release();
+        }
         
         progressBar.increment();
     }

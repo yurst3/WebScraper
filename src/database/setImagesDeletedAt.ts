@@ -3,7 +3,7 @@ import * as db from 'zapatos/db';
 // Set deletedAt to now for all images with the given pageUuid
 // that are NOT in the updatedImageIds array and have deletedAt = null.
 const setImagesDeletedAt = async (
-    conn: db.Queryable,
+    tx: db.Queryable,
     pageUuid: string,
     updatedImageIds: string[],
 ): Promise<void> => {
@@ -19,7 +19,7 @@ const setImagesDeletedAt = async (
                 deletedAt: db.conditions.isNull,
             }
         )
-        .run(conn);
+        .run(tx);
 };
 
 export default setImagesDeletedAt;

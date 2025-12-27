@@ -17,6 +17,7 @@ module.exports = {
     ],
     moduleNameMapper: {
         "^uuid$": require.resolve('uuid'),
-    }
+    },
+    setupFilesAfterEnv: ['<rootDir>/src/test/setupTests.ts'],
 };
 
