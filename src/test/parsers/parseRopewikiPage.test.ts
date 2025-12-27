@@ -19,7 +19,7 @@ describe('parseRopewikiPage', () => {
         expect(images).toEqual(expectedImages);
     }, 30000); // Increase timeout to 30 seconds for puppeteer
 
-    it('parses A Glera HTML and matches expected beta with no images', async () => {
+    it('parses A Glera HTML and matches expected beta with no images and empty beta sections', async () => {
         const htmlPath = path.join(__dirname, '..', 'data', 'aGlera', 'aGlera.html');
         const expectedBetaPath = path.join(__dirname, '..', 'data', 'aGlera', 'aGleraBeta.json');
 
@@ -32,17 +32,49 @@ describe('parseRopewikiPage', () => {
         expect(images).toEqual([]);
     }, 30000); // Increase timeout to 30 seconds for puppeteer
 
-    it('parses Aberfoyle Canyon HTML and matches expected beta with no duplicate sections', async () => {
-        const htmlPath = path.join(__dirname, '..', 'data', 'aberfoyleCanyon', 'aberfoyleCanyon.html');
-        const expectedBetaPath = path.join(__dirname, '..', 'data', 'aberfoyleCanyon', 'aberfoyleCanyonBeta.json');
+    it('parses Devil Gulch HTML and includes beta sections with empty text but with images', async () => {
+        const htmlPath = path.join(__dirname, '..', 'data', 'devilGulch', 'devilGulch.html');
+        const expectedBetaPath = path.join(__dirname, '..', 'data', 'devilGulch', 'devilGulchBeta.json');
+        const expectedImagesPath = path.join(__dirname, '..', 'data', 'devilGulch', 'devilGulchImages.json');
 
         const html = fs.readFileSync(htmlPath, 'utf-8');
         const expectedBeta = JSON.parse(fs.readFileSync(expectedBetaPath, 'utf-8'));
+        const expectedImages = JSON.parse(fs.readFileSync(expectedImagesPath, 'utf-8'));
 
         const { beta, images } = await parseRopewikiPage(html);
 
         expect(beta).toEqual(expectedBeta);
-        expect(images).toEqual([]);
+        expect(images).toEqual(expectedImages);
+    }, 30000); // Increase timeout to 30 seconds for puppeteer
+
+    it('parses Boulder Creek North HTML and preserves non-thumbnail image fileUrls', async () => {
+        const htmlPath = path.join(__dirname, '..', 'data', 'boulderCreekNorth', 'boulderCreekNorth.html');
+        const expectedBetaPath = path.join(__dirname, '..', 'data', 'boulderCreekNorth', 'boulderCreekNorthBeta.json');
+        const expectedImagesPath = path.join(__dirname, '..', 'data', 'boulderCreekNorth', 'boulderCreekNorthImages.json');
+
+        const html = fs.readFileSync(htmlPath, 'utf-8');
+        const expectedBeta = JSON.parse(fs.readFileSync(expectedBetaPath, 'utf-8'));
+        const expectedImages = JSON.parse(fs.readFileSync(expectedImagesPath, 'utf-8'));
+
+        const { beta, images } = await parseRopewikiPage(html);
+
+        expect(beta).toEqual(expectedBeta);
+        expect(images).toEqual(expectedImages);
+    }, 30000); // Increase timeout to 30 seconds for puppeteer
+
+    it('parses Big Creek Sierra National Forest HTML and handles gallery box images with alternative layouts', async () => {
+        const htmlPath = path.join(__dirname, '..', 'data', 'bigCreekSierraNationalForest', 'bigCreekSierraNationalForest.html');
+        const expectedBetaPath = path.join(__dirname, '..', 'data', 'bigCreekSierraNationalForest', 'bigCreekSierraNationalForestBeta.json');
+        const expectedImagesPath = path.join(__dirname, '..', 'data', 'bigCreekSierraNationalForest', 'bigCreekSierraNationalForestImages.json');
+
+        const html = fs.readFileSync(htmlPath, 'utf-8');
+        const expectedBeta = JSON.parse(fs.readFileSync(expectedBetaPath, 'utf-8'));
+        const expectedImages = JSON.parse(fs.readFileSync(expectedImagesPath, 'utf-8'));
+
+        const { beta, images } = await parseRopewikiPage(html);
+
+        expect(beta).toEqual(expectedBeta);
+        expect(images).toEqual(expectedImages);
     }, 30000); // Increase timeout to 30 seconds for puppeteer
 });
 

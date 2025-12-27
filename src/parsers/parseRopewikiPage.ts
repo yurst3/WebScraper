@@ -78,16 +78,20 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
 
     const getImageFileUri = (imageElement: Element | null | undefined) => {
         // Example: /images/thumb/d/d4/Bear_Creek_Canyon_pic01.jpg/135px-Bear_Creek_Canyon_pic01.jpg
-        const thumbnailFileUri: string | undefined = imageElement?.attributes
+        let fileUri: string | undefined = imageElement?.attributes
             .getNamedItem('src')
             ?.value;
 
-        // Remove the "thumb" and last path item to get the original file uri
-        return thumbnailFileUri
-            ?.split('/')
+        const isThumbnailFile: boolean | undefined = fileUri?.includes('thumb');
+
+        if (isThumbnailFile) {
+            fileUri = fileUri?.split('/')
             ?.filter(pathItem => pathItem !== 'thumb')
             ?.slice(0,-1)
             ?.join('/');
+        }
+
+        return fileUri;
     }
 
     const attachDomain = (uri: string | undefined) => {
@@ -97,8 +101,8 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
     }
 
     const parseGalleryBoxImage = (element: Element) => {
-        const imageParent = element.querySelector('.thumbinner');
-        const captionParent = element.querySelector('.thumbcaption');
+        const imageParent = element.querySelector('.thumbinner') ?? element.querySelector('.thumb')?.children[0];
+        const captionParent = element.querySelector('.thumbcaption') ?? element.querySelector('.gallerytext');
 
         // Example: /File:Bear_Creek_Canyon_pic01.jpg
         const linkUri: string | undefined = imageParent
@@ -111,6 +115,7 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
             ?.children[0]
             ?.children[0];
 
+        // Example: /images/8/80/Bear_Creek_Canyon_Banner.jpg
         const fileUri = getImageFileUri(imageElement);
 
         const caption = parseGalleryBoxCaption(captionParent?.childNodes);
@@ -159,19 +164,47 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
     return { beta, images };
 }
 
+// Aberfoyle Canyon has duplicate "Background" beta sections, however both are empty
+const removeDuplicates = (
+    result: { beta: RopewikiBetaSection[], images: RopewikiImage[] }
+): { beta: RopewikiBetaSection[], images: RopewikiImage[] } => {
+    return { 
+        beta: uniqBy(result.beta, 'title'),
+        images: uniqBy(result.images, image => `${image.betaSectionTitle}-${image.fileUrl}`)
+    }
+}
+
+// See Devil Gulch test data and unit test
+const removeEmptyBetaSectionsWithoutImages = (
+    result: { beta: RopewikiBetaSection[], images: RopewikiImage[] }
+): { beta: RopewikiBetaSection[], images: RopewikiImage[] } => {
+    const imageBetaSectionTitles: Set<string | undefined> = new Set(
+        result.images.map(image => image.betaSectionTitle)
+    );
+
+    const beta: RopewikiBetaSection[] = result.beta.filter(betaSection => {
+        const isEmpty: boolean = betaSection.text.length === 0;
+        const hasImage: boolean = imageBetaSectionTitles.has(betaSection.title);
+        if (isEmpty && !hasImage) return false;
+        return true;
+    });
+
+    return { beta, images: result.images };
+}
+
 const parseRopewikiPage = async (html: string) => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.setContent(html);
 
-    const { beta, images } = await page.evaluate(evalPage);
+    let result = await page.evaluate(evalPage);
 
     await browser.close();
 
-    return { 
-        beta: uniqBy(beta, 'title'),
-        images: uniqBy(images, image => `${image.betaSectionTitle}-${image.fileUrl}`)
-    };
+    result = removeEmptyBetaSectionsWithoutImages(result);
+    result = removeDuplicates(result);
+    
+    return result;
 }
 
 export default parseRopewikiPage;

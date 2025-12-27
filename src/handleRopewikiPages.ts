@@ -14,7 +14,7 @@ const handleRopewikiPages = async (
     regionNameIds: {[name: string]: string}
 ) => {
     for (let offset = 0; offset < regionPageCount; offset += CHUNK_SIZE) {
-        console.log(`Getting pages ${offset} to ${Math.min(offset + CHUNK_SIZE, regionPageCount - 1)} in "${regionName}" (${regionPageCount} total pages)...`)
+        console.log(`Getting pages ${offset + 1} to ${Math.min(offset + CHUNK_SIZE, regionPageCount)} in "${regionName}" (${regionPageCount} total pages)...`)
         // Has a limit of 2000 pages per request
         const pages: RopewikiPageInfo[] = await getRopewikiPageInfoForRegion(regionName, offset, CHUNK_SIZE);
 

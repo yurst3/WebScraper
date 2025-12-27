@@ -9,11 +9,14 @@ import parseRopewikiPage from './parsers/parseRopewikiPage';
     if (!pageId) throw new Error('parse-test needs an pageId arg');
     const pageHTML = await getRopewikiPageHtml(pageId);
 
+    fs.writeFileSync('bigCreekSierraNationalForest.html', pageHTML)
+
     // const browser = await puppeteer.launch({ headless: false });
     // const page = await browser.newPage();
     // await page.setContent(pageHTML);
 
-    // const { beta, images } = await parseRopewikiPage(pageHTML);
+    const { beta, images } = await parseRopewikiPage(pageHTML);
 
-    // fs.writeFileSync('aberfoyleCanyonBeta.json', JSON.stringify(images, null, 4))
+    fs.writeFileSync('bigCreekSierraNationalForestBeta.json', JSON.stringify(beta, null, 4))
+    fs.writeFileSync('bigCreekSierraNationalForestImages.json', JSON.stringify(images, null, 4))
 })()
