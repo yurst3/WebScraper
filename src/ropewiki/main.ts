@@ -20,8 +20,8 @@ Since 7000 isn't a multiple of 2000, we'll go with 6000 to make the code a littl
 const REGION_COUNT_LIMIT = 6000;
 
 (async () => {
+    const beginTime = new Date();
     try {
-        const beginTime = new Date();
         // If there has been a recent revision to the Regions page, pull the Regions, parse, upsert them, and return the resulting ids
         const regionNameIds: {[name: string]: string} = await handleRopewikiRegions(pool);
         // Find which regions have a page count under the limit
@@ -33,10 +33,9 @@ const REGION_COUNT_LIMIT = 6000;
             // Pull all pages in the region, parse them, upsert them
             await handleRopewikiPages(pool, region, count, regionNameIds);
         }
-
-        const totalTime = (new Date().getTime()) - beginTime.getTime();
-        console.log(`Total time: ${Math.floor(totalTime / (1000 * 60 * 60))} h ${Math.floor(totalTime / (1000 * 60))} m ${Math.floor(totalTime / 1000)} s`);
     } finally {
         await pool.end();
+        const totalTime = (new Date().getTime()) - beginTime.getTime();
+        console.log(`Total time: ${Math.floor(totalTime / (1000 * 60 * 60))} h ${Math.floor(totalTime / (1000 * 60))} m ${Math.floor(totalTime / 1000)} s`);
     }
 })()
