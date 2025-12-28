@@ -20,8 +20,8 @@ const upsertImages = async (
         return {
             ropewikiPage: pageUuid,
             betaSection: image.betaSectionTitle ? betaTitleIds[image.betaSectionTitle] ?? null : null,
-            linkUrl: image.linkUrl ?? null,
-            fileUrl: image.fileUrl ?? null,
+            linkUrl: image.linkUrl,
+            fileUrl: image.fileUrl,
             caption: image.caption ?? null,
             latestRevisionDate,
             updatedAt: now,

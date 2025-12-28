@@ -241,7 +241,7 @@ describe('processPages', () => {
         mockGetRopewikiPageHtml.mockResolvedValue('<html>Page</html>');
         mockParseRopewikiPage.mockResolvedValue({
             beta: [{ title: 'Introduction', text: 'Text' }],
-            images: [{ fileUrl: 'image1.jpg', linkUrl: undefined, betaSectionTitle: undefined, caption: undefined }],
+            images: [{ fileUrl: 'image1.jpg', linkUrl: 'link1', betaSectionTitle: undefined, caption: undefined }],
         });
         mockUpsertPage.mockResolvedValue('page-uuid-1');
         mockUpsertBetaSections.mockResolvedValue({ 'Introduction': 'beta-id-1' });
@@ -398,7 +398,7 @@ describe('processPages', () => {
         mockUpsertPage.mockResolvedValue('page-uuid-1');
         mockParseRopewikiPage.mockResolvedValue({
             beta: [{ title: 'Introduction', text: 'Text' }],
-            images: [{ fileUrl: 'image1.jpg', linkUrl: undefined, betaSectionTitle: undefined, caption: undefined }],
+            images: [{ fileUrl: 'image1.jpg', linkUrl: 'link1', betaSectionTitle: undefined, caption: undefined }],
         });
         mockUpsertBetaSections.mockResolvedValue({ 'Introduction': 'beta-id-1' });
         const imagesError = new Error('Images error');
@@ -471,7 +471,7 @@ describe('processPages', () => {
         mockUpsertPage.mockResolvedValue('page-uuid-1');
         mockParseRopewikiPage.mockResolvedValue({
             beta: [{ title: 'Introduction', text: 'Text' }],
-            images: [{ fileUrl: 'image1.jpg', linkUrl: undefined, betaSectionTitle: undefined, caption: undefined }],
+            images: [{ fileUrl: 'image1.jpg', linkUrl: 'link1', betaSectionTitle: undefined, caption: undefined }],
         });
         mockUpsertBetaSections.mockResolvedValue({ 'Introduction': 'beta-id-1' });
         mockUpsertImages.mockResolvedValue(['image-id-1']);

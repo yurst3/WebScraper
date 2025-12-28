@@ -21,6 +21,7 @@ const REGION_COUNT_LIMIT = 6000;
 
 (async () => {
     try {
+        const beginTime = new Date();
         // If there has been a recent revision to the Regions page, pull the Regions, parse, upsert them, and return the resulting ids
         const regionNameIds: {[name: string]: string} = await handleRopewikiRegions(pool);
         // Find which regions have a page count under the limit
@@ -32,6 +33,9 @@ const REGION_COUNT_LIMIT = 6000;
             // Pull all pages in the region, parse them, upsert them
             await handleRopewikiPages(pool, region, count, regionNameIds);
         }
+
+        const totalTime = (new Date().getTime()) - beginTime.getTime();
+        console.log(`Total time: ${Math.floor(totalTime / (1000 * 60 * 60))} h ${Math.floor(totalTime / (1000 * 60))} m ${Math.floor(totalTime / 1000)} s`);
     } finally {
         await pool.end();
     }

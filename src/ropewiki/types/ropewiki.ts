@@ -11,8 +11,8 @@ export interface RopewikiBetaSection {
 
 export interface RopewikiImage {
     betaSectionTitle: string | undefined;
-    linkUrl: string | undefined;
-    fileUrl: string | undefined;
+    linkUrl: string;
+    fileUrl: string;
     caption: string | undefined;
 }
 
