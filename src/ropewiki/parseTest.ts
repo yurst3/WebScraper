@@ -9,7 +9,7 @@ import parseRopewikiPage from './parsers/parseRopewikiPage';
     if (!pageId) throw new Error('parse-test needs an pageId arg');
     const pageHTML = await getRopewikiPageHtml(pageId);
 
-    fs.writeFileSync('bigCreekSierraNationalForest.html', pageHTML)
+    // fs.writeFileSync('bigCreekSierraNationalForest.html', pageHTML)
 
     // const browser = await puppeteer.launch({ headless: false });
     // const page = await browser.newPage();

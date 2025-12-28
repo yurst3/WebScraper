@@ -51,6 +51,9 @@ const evalPage = (): { beta: RopewikiBetaSection[], images: RopewikiImage[] } =>
                     parseChildNodes(child.childNodes);
                     if ((child as Element).className !== 'gallery') currentBeta.text += '</ul>\n';
                     break;
+                case 'DIV':
+                    if ((child as Element).id === 'referencepic') parseChildNodes(child.childNodes);
+                    break;
                 default:
                     break;
             }
